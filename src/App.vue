@@ -138,7 +138,7 @@
 </template>
 
 <script>
-import logo from './assets/vue.svg'
+import logo from '../public/logo.png'
 import { auth } from './store/auth'
 
 export default {

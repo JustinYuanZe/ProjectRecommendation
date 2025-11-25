@@ -135,7 +135,7 @@
 
 <script>
 import { auth } from '../store/auth'
-import logo from '../assets/vue.svg'
+import logo from '../../public/p1.png'
 
 export default {
   name: 'Home',
