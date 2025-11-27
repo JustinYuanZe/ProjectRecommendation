@@ -1,0 +1,122 @@
+[
+  {
+    "code": "AD115",
+    "name": "Design StudioI 人因工程與設計 另類DIY文創微學程",
+    "description": "In this hands-on studio course, AD115: Design Studio I 人因工程與設計 另類DIY文創微學程, students engage with the principles of human-centered design, exploring innovative DIY approaches to creative problem-solving and product development. Through a series of design projects and workshops, students develop essential skills in design thinking, user research, and prototyping, applying them to real-world challenges and emerging technologies. By the end of the course, students will have a foundational understanding of design principles and practices, as well as the creative confidence to tackle complex problems in a rapidly changing world.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AD116",
+    "name": "Design StudioII",
+    "description": "In this practical design course, students will apply theoretical concepts to real-world problems through hands-on projects and collaborative group work. Taught in Spanish, AD116 Design Studio II covers the development of visual communication, spatial design, and creative problem-solving skills, culminating in a comprehensive design project. Students will refine their critical thinking, creativity, and technical skills to produce innovative and effective design solutions.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AD117",
+    "name": "Art StudioI",
+    "description": "\"AD117: Art Studio I, se ofrece en español. En este curso, los estudiantes exploran las habilidades básicas de la creación artística a través de la experimentación con diferentes medios y técnicas, desarrollando sus habilidades visuales y críticas a la obra de arte. A lo largo del semestre, los estudiantes crearán una variedad de obras que aborden conceptos y temas artísticos fundamentales.\"",
+    "taught_in_english": false
+  },
+  {
+    "code": "AD118",
+    "name": "Art StudioII",
+    "description": "\"AD118 - Art Studio II: Este curso es una continuación de los conceptos y habilidades desarrollados en el curso previo de Estudio de Arte. Los estudiantes explorarán técnicas y materiales avanzados para desarrollar su habilidad creativa, analizarán obras de arte contemporáneo y crearán proyectos individuales que demuestran su comprensión de los principios artísticos. Al finalizar el curso, los estudiantes habrán mejorado significativamente su habilidad para expresar ideas visuales a través de la pintura, escultura y otros medios.\"",
+    "taught_in_english": false
+  },
+  {
+    "code": "AD149",
+    "name": "Body Aesthetics",
+    "description": "In this course, AD149 \"Body Aesthetics,\" students will explore the complex relationship between culture, society, and bodily appearance, examining the historical and contemporary contexts that shape beauty standards and bodily norms. Through in-depth analysis and critical discussions, students will develop a nuanced understanding of the social, cultural, and philosophical factors that influence the way we perceive and experience the body.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AD153",
+    "name": "Drawing",
+    "description": "This course, AD153 Drawing, introduces students to the fundamental techniques and principles of visual representation through drawing. Students will learn to observe, record, and communicate their understanding of the world through various drawing mediums, developing their skills in form, space, value, and texture. Through hands-on practice and critical analysis, students will refine their artistic expression and technical skills in this comprehensive drawing course taught in [insert language].",
+    "taught_in_english": false
+  },
+  {
+    "code": "AD249",
+    "name": "Animation Theory and Practice",
+    "description": "This course, Animation Theory and Practice (AD249), is a comprehensive exploration of the principles and techniques underlying animation. Students will delve into the theoretical foundations of animation, examining the historical, cultural, and artistic contexts that inform its practice, while also developing hands-on skills in animation production. Through a combination of lectures, workshops, and project-based learning, students will gain a nuanced understanding of animation's role in storytelling and visual communication.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AD250",
+    "name": "2D Computer Drawing Teaching in English",
+    "description": "In this hands-on course, AD250: 2D Computer Drawing Teaching in English, students will develop their skills in creating and visualizing 2D digital art using industry-standard software. Through a combination of lectures, demonstrations, and practical exercises, students will gain a comprehensive understanding of digital drawing principles, techniques, and best practices. By the end of the course, students will be able to create polished 2D digital artwork and confidently communicate their ideas through effective visual storytelling.",
+    "taught_in_english": true
+  },
+  {
+    "code": "AD251",
+    "name": "3D Computer Drawing Teaching in English",
+    "description": "In this course, AD251: 3D Computer Drawing Teaching in English, students will learn the fundamentals of 3D computer-aided design, visualization, and animation techniques using industry-standard software. Through hands-on projects and lectures, students will develop their skills in creating 3D models, textures, and lighting effects for various applications in architecture, engineering, and design fields. The course emphasizes effective communication of 3D designs in English, preparing students for careers in teaching or industry.",
+    "taught_in_english": true
+  },
+  {
+    "code": "AD279",
+    "name": "Contemporary Sketch",
+    "description": "In this course (AD279), students will explore the fundamental techniques and mediums of contemporary sketching, delving into the nuances of line, value, and texture. Through a series of hands-on exercises and projects, students will develop their observation and communication skills, learning to effectively capture the essence of the human form and the natural world in various media, including graphite, charcoal, and ink.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AI001",
+    "name": "Probability and Statistics Teaching in Internet",
+    "description": "In this course, students will develop a comprehensive understanding of statistical concepts and probabilistic principles applied to the assessment and evaluation of educational data in an online learning environment. Through hands-on learning experiences and real-world case studies, students will learn to design and implement effective probability and statistics teaching methods suitable for internet-based educational settings.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AI002",
+    "name": "AI Ethics Teaching in Internet",
+    "description": "Este curso de AI002, AI Ethics Teaching in Internet, aborda los fundamentos éticos de la enseñanza de la inteligencia artificial en el entorno del internet. Estudiantes aprenderán a analizar los impactos morales y sociales de la IA en la educación en línea y a desarrollar estrategias para incorporar consideraciones éticas en la creación de contenidos y plataformas educativas. Al finalizar el curso, los estudiantes estarán capacitados para diseñar y implementar soluciones de IA éticas y responsables en entornos educativos.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AM556",
+    "name": "Exhibition and Curator",
+    "description": "In this comprehensive course (AM556), students delve into the theoretical and practical aspects of exhibition and curatorship, exploring the complexities of visual display and the role of the curator in shaping audience experience. Through a combination of lectures, discussions, and hands-on projects, students develop a deep understanding of exhibition design, curation strategies, and the cultural context of exhibition-making. Upon completion, students will be equipped to design, produce, and evaluate exhibitions that engage diverse audiences and promote meaningful cultural exchange.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AM582",
+    "name": "Art and Design Creation ExecutionI",
+    "description": "This course, Art and Design Creation Execution I, provides students with a comprehensive introduction to the principles and practices of art and design creation. Through hands-on projects and collaborative activities, students will develop their creative skills, learn to effectively communicate their ideas, and execute their design concepts. By the end of the course, students will have a solid foundation in the technical, aesthetic, and critical aspects of art and design creation.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AM584",
+    "name": "Professional Practice Community Art Festival Curation and Execution",
+    "description": "In this interdisciplinary course, AM584, students will delve into the complexities of curating and executing a professional community art festival, exploring the intersection of arts management, community engagement, and cultural programming. Through project-based learning and collaborative workshops, students will develop the skills and knowledge necessary to conceptualize, plan, and implement a successful art festival that fosters community connection and cultural exchange. By the end of the course, students will have a comprehensive understanding of the festival curation and execution process.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AM601",
+    "name": "Taiwanese Art History",
+    "description": "This course provides an in-depth examination of the development and evolution of art in Taiwan, from pre-colonial to contemporary periods. Students will analyze key artworks, artists, and cultural movements, exploring the historical and social contexts that have shaped Taiwanese art. Through a critical and interdisciplinary approach, students will gain a nuanced understanding of Taiwan's rich artistic heritage.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AM603",
+    "name": "Visual Arts Administration",
+    "description": "\"AM603 Visual Arts Administration: Este curso ofrece una visión integral de la gestión de arte visual, abordando temas como la planificación y gestión de exposiciones, marketing y promoción de arte, financiamiento y recursos para proyectos artísticos, y la regulación y ética en la industria del arte. Los estudiantes aprenderán a analizar y solucionar problemas en entornos complejos de arte visual, y desarrollarán habilidades prácticas para liderar y trabajar en equipos en el sector del arte. A través de seminarios, talleres y proyectos, los estudiantes aplicarán teorías y conceptos a casos reales de la industria del arte visual.\"",
+    "taught_in_english": false
+  },
+  {
+    "code": "AM613",
+    "name": "Research Methodology and Paper Writing",
+    "description": "In this course, AM613, students will develop a comprehensive understanding of research methodologies and techniques, with a focus on practical application in academic writing. Through a series of lectures and assignments, students will learn to design, conduct, and critically evaluate research, as well as develop their skills in writing clear and effective academic papers in Spanish.",
+    "taught_in_english": false
+  },
+  {
+    "code": "AM622",
+    "name": "Contemporary Art",
+    "description": "\"Esta asignatura, AM622, explora la evolución contemporánea del arte, desde la segunda mitad del siglo XX hasta la actualidad. A través de debates teóricos, críticas de arte y proyectos creativos, los estudiantes analizarán las tendencias y movimientos artísticos más relevantes, así como las relaciones entre el arte y la sociedad en la era digital. Al finalizar el curso, los estudiantes tendrán una comprensión profunda de los procesos creativos y críticos que definen la escena artística contemporánea.\"",
+    "taught_in_english": false
+  },
+  {
+    "code": "AM654",
+    "name": "Museum development and current issues",
+    "description": "This course examines the contemporary challenges and trends in museum development, exploring the intersections of cultural policy, community engagement, and institutional management. Students will analyze case studies from around the world, developing a nuanced understanding of the complexities involved in museum operations and strategic decision-making.",
+    "taught_in_english": false
+  }
+]

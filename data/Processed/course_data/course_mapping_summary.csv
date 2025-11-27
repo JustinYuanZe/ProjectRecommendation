@@ -1,0 +1,914 @@
+﻿Course_Code,Course_Name,Taught_in_English,Total_Sections,Sections
+AD115,Design StudioI 人因工程與設計 另類DIY文創微學程,False,3,"A, B, C"
+AD116,Design StudioII,False,3,"A, B, C"
+AD117,Art StudioI,False,3,"A, B, C"
+AD118,Art StudioII,False,3,"A, B, C"
+AD149,Body Aesthetics,False,1,A
+AD153,Drawing,False,1,A
+AD249,Animation Theory and Practice,False,1,A
+AD250,2D Computer Drawing Teaching in English,True,1,A
+AD251,3D Computer Drawing Teaching in English,True,1,A
+AD279,Contemporary Sketch,False,1,A
+AI001,Probability and Statistics Teaching in Internet,False,1,A
+AI002,AI Ethics Teaching in Internet,False,1,B
+AM556,Exhibition and Curator,False,1,A
+AM582,Art and Design Creation ExecutionI,False,1,A
+AM584,Professional Practice Community Art Festival Curation and Execution,False,1,A
+AM601,Taiwanese Art History,False,1,A
+AM603,Visual Arts Administration,False,1,A
+AM613,Research Methodology and Paper Writing,False,1,A
+AM622,Contemporary Art,False,1,A
+AM654,Museum development and current issues,False,1,A
+AM656,Studies for Exhibition and Practice in Contemporary Visual Art,False,1,A
+AM657,Art and Cultural Industry 創新產品開發學程 創新產品開發學程,False,1,A
+AM660,Cultural Creativity and Placemaking,False,1,A3
+BI519,Fermentation Engineering,False,1,A
+BI522,Bioprocessing Engineering,False,1,A
+BI531,Biostatistics,False,1,A
+BI544,Molecular Genetics Teaching in English,True,1,A
+BI546,Clinical Medicine,False,1,A
+BI562,Exploring Biotechnology Teaching in English,True,1,A
+BI565,Seminar,False,2,A
+CB542,Data Mining and Its Applications in Biomedical Domains,False,1,A
+CB545,Clinical Applications of Medical Signal and Image Teaching in English,True,1,A1
+CB554,Seminar,False,1,A
+CB582,Big Data Analytics,False,1,A
+CB584,Operating Systems Teaching in English,True,1,A
+CB585,Cryptography Teaching in English,True,1,A
+CB586,Computer Networking Teaching in English,True,1,A
+CB589,VLSI Testing & Design,False,1,A
+CB594,Cybersecurity Teaching in English,True,1,A1
+CB621,Special topics on statistical genomics,False,1,A
+CC125,Reading Guidance,False,1,A
+CC132,Introduction to Chinese Literature,False,1,A
+CC377,Chinese Painting一,False,1,A
+CC484,Brief Design Introduction and Application,False,1,A
+CC487,Creative Writing of Modern Chinese Literature,False,2,"A, B"
+CC489,Practical Guided Tour Interpretation,False,1,A
+CC509,Special Topics in Classical Chinese Literature,False,1,A
+CC523,Special Topics in Chinese Thoughts,False,1,A
+CC532,Special Topics in Taiwan Literature,False,1,A
+CC551,Special Topics Research on Modern Poems,False,1,A
+CC553,Special Topics on the Interpretation of Confucian Canons,False,1,A
+CC562,Special Topics on Chinese Culture,False,1,A
+CC569,Research Methodology,False,1,A
+CC570,Special Topics on Ethnic Languages and Culture,False,1,A
+CH103,General Chemistry,False,2,"A, B"
+CH105,General Chemistry & Analysis Laboratory,False,6,"A, B"
+CH115,Computer ProgrammingI,False,2,"A, B"
+CH125,Introduction to Chemical Engineering & Material Science,False,1,A
+CH128,General PhysicsI,False,2,"A, B"
+CH129,General PhysicsII,False,4,"A, B"
+CH130,CalculusI,False,2,"A, B"
+CH131,CalculusII,False,4,"A, B"
+CH218,Transport Phenomena and Unit OperationsI Teaching in English 全校性跨領域--綠色能源學程,True,2,"A, B"
+CH220,Material Science Teaching in English 全校性跨領域--材料科技學程,True,2,A
+CH222,Introduction to Electronic Material 全校性跨領域--材料科技學程,False,1,A
+CH226,Organic Chemistry & Materials Laboratory,False,2,"A, B"
+CH227,Physical Chemistry & Materials Laboratory,False,2,"A, B"
+CH229,Cell BiologyII 生技醫藥產業學程,False,1,A
+CH231,Organic ChemistryII,False,2,"A, B"
+CH233,Engineering MathematicsII,False,1,A
+CH235,Physical ChemistryII Teaching in English,True,2,"A, B"
+CH339,Polymerization 全校性跨領域--材料科技學程,False,1,A
+CH345,Inorganic Chemistry,False,4,"A, B"
+CH349,Industrial Microbiology 生技醫藥產業學程,False,1,A
+CH448,Inorganic Materials 全校性跨領域--材料科技學程,False,1,A
+CH502,Technical Writing Teaching in English,True,1,A
+CH503,Advanced Chemical Engineering Kinetics Teaching in English,True,1,A
+CH511,Design for Experimental,False,1,B
+CH514,Advanced Chemical Engineering Thermodynamics Teaching in English,True,1,A
+CH518,Environmental Systems Engineering Teaching in English,True,1,A
+CH525,Advanced Instrumental Analysis Teaching in English 全校性跨領域--材料科技學程,True,1,A
+CH526,Advanced Instrumental AnalysisII,False,1,B
+CH527,Polymer Physics Teaching in English,True,1,A
+CH534,Special Topics on Separations Technology Teaching in English,True,1,A
+CH535,Special Topics on Controlled Drug Release Teaching in English 生技醫藥產業學程,True,1,A
+CH537,Special Topics on Optoelectronic Materials,False,1,B
+CH539,Special Topics on Electrochemistry Teaching in English 全校性跨領域--材料科技學程,True,1,A
+CH566,Special Topics on Proton-exchange-membrane Fuel Cells Teaching in English 全校性跨領域--材料科技學程,True,1,A
+CH568,Inorganic Nanomaterials,False,1,B
+CH570,Technical Writing,False,1,B
+CH577,Chemical Vapor Deposition,False,1,B
+CH578,Catalyst Principles and Applications Teaching in English 全校性跨領域--材料科技學程,True,1,A
+CH586,Environmental Biotechnology 生技醫藥產業學程,False,1,B
+CH589,Special Topics on Organic Semiconductor Materials,False,1,B
+CH599,Biomedical Engineering Teaching in English 生技醫藥產業學程,True,1,A
+CH600,Physical Chemistry of Materials Teaching in English 全校性跨領域--材料科技學程,True,1,A
+CH609,Regenerative Medicine Teaching in English,True,1,A
+CH610,Cellular Signal Transduction Teaching in English,True,1,A
+CH617,Physical Metallurgy Teaching in English 全校性跨領域--材料科技學程,True,1,A
+CH620,Analysis of Materials properties Teaching in English,True,1,A
+CH623,SeminarI Teaching in English,True,1,A
+CH624,SeminarII,False,1,A
+CH625,Introduction to Magnetic Materials Teaching in English 全校性跨領域--材料科技學程,True,1,A
+CH701,Materials and Processing of Lithium Battery Teaching in English 全校性跨領域--材料科技學程,True,1,A
+CI001,Fundamental Computer Programming- C++ LabI Teaching in English,True,1,D2
+CI002,Fundamental Computer Programming- C++ LabII,True,4,"A1, A2, D1, D2"
+CI004,Fundamental Computer Programming- Web Programming II,False,2,"C1, C2"
+CI006,Fundamental Computer ProgrammingII,False,2,"B1, B2"
+CL148,"Chinese Reading, Critical Thinking, and Expression I",True,34,"A, B, C, D, E1, E2, F2, F3, G1, G2, G3, H1, H2, I1, I2, J1, J2, K1, K2, L1, L2, M, N, O, P1, P2, Q, R, S, T, U, V, W, X"
+CM104,Accounting PrincipleII,True,7,"A1, C, D, E, F, G1, I"
+CM106,EconomicsII,True,7,"A, C, E, F, G, H, I"
+CM108,Management 休閒旅遊管理產業學程 科技與社會微學程 通訊產業與管理學程（電通學院） 通訊產業與管理學程（管院） 電子化企業學程 數位應用與管理產業學程,False,1,A1
+CM113,The Commercial Law,True,9,"A, B, C, D, E, F, G, H, I"
+CM114,Ethical Decisions and Corporate Social Responsibility 人文素養與多元創意微學程,False,4,"A, B, C, D"
+CM115,Introduction to Computer Software and Applications Teaching in English,True,2,"G, H"
+CM117,Mathematics for Management,False,1,C
+CM120,English for Business Studies Teaching in English,True,1,A
+CM203,Marketing Management 文創產業與管理微學程 文創產業與管理學程（人社院） 文創產業與管理學程（管院） 休閒旅遊管理產業學程 老人福祉科技跨域產業學程 金融服務業產業學程 通訊產業與管理學程（電通學院） 通訊產業與管理學程（管院） 跨文化行銷與溝通管院 跨文化行銷與溝通學程 電子化企業學程 零售產業與管理學程 數位應用與管理產業學程 醫療產業服務與行銷管理學程,True,9,"A, B, C, D, E, F, G, H, I"
+CM508,Operations Management,False,1,A
+CM509,Innovation and Technology Management,False,1,A
+CM511,Business Research Methods Teaching in English,True,1,E
+CM524,Empirical Finance Teaching in English,True,1,S1
+CM525,Corporate Finance Teaching in English,True,1,S1
+CM529,Advanced Managerial Accounting,False,1,S2
+CM537,Network Analysis,False,1,A
+CM538,Modeling and Analysis for Managerial Decision Making Teaching in English,True,1,E
+CM541,Project Management,False,1,A
+CM565,International Human Resource Management Teaching in English,True,1,E
+CM574,Seminar on Audit Profession,False,1,S2
+CM591,High-Tech Business Management,False,1,C
+CM614,Accounting Seminar,False,1,S2
+CM620,Transnational Management,False,1,C
+CM629,Service Industry Management,False,1,C
+CM633,Fixed Income Security Analysis,False,1,S1
+CM636,Case Study in Finance,False,1,S1
+CM647,Managerial Finance Teaching in English,True,2,"M1, M2"
+CM686,International Finance and Trade Teaching in English,True,1,E
+CM702,Strategic Thinking and Problem Solving,False,1,B
+CM704,International Mobile Learning,False,1,B1
+CM710,Big Data Analytics in Marketing,False,1,D
+CM720,Organizational Behavior Theory and Practice Teaching in English,True,2,"M1, M2"
+CM721,Marketing Strategy Teaching in English,True,2,"M1, M2"
+CM722,Business Strategy Planning and Practice Teaching in English,True,2,"M1, M3"
+CM724,Case Study Methodology in Business Research,False,1,B
+CM725,Special Topics in Cultural Diversity Teaching in English,True,1,E
+CM726,Local Culture and Business Application Teaching in English,True,1,E
+CM733,Seminar on Finance II,False,1,S1
+CM736,Empirical Statistical Analysis II,False,1,M
+CM739,Blockchain in Finance 人工智慧與金融科技微學程 人工智慧與金融科技學程,False,1,S3
+CM741,Data Analytics and Disruptive Technologies Teaching in English,True,1,S2
+CM742,Transforming Consumer Behavior in The Digital Age Teaching in English,True,1,E
+CM753,Quantitative Investing and Program Trading Practices,False,1,S1
+CM755,Deep Learning,False,1,S3
+CM760,Influencer Marketing,False,1,D
+CM761,Sustainability Accounting and Assurance,False,1,S2
+CM762,Sustainability and Corporate Governance,False,1,S3
+CM901,Research Methodology for Social Sciences Teaching in English,True,1,A
+CM943,Strategic Theories and Management Teaching in English,True,1,A
+CM951,Special Topics in Investment Management Teaching in English,True,1,A
+CM953,Behavioral Science Theories and Management Teaching in English,True,1,A
+CM964,Data Analysis and Business Decision,False,1,B
+CM965,Business Diagnosis,False,1,B
+CM973,Management Theories and Application,False,1,B1
+CS106,Computer ProgrammingI 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 互動多媒體微學程 互動多媒體學程 智慧校園與智慧照護學程,False,3,"A, B"
+CS107,Discrete Mathematics,True,2,"A, B"
+CS114,Computer ProgrammingII 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 互動多媒體微學程 互動多媒體學程,False,3,"A, B"
+CS140,Introduction to Computer Science 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程,True,2,"A, B"
+CS147,CalculusI,False,1,A
+CS148,CalculusII,False,2,"A, B"
+CS151,Website Programming Practice,False,1,A
+CS152,General Physics,False,1,A
+CS153,Circuit Theory,True,3,"A, B1"
+CS154,Introduction to Medical EngineeringI,False,1,A
+CS155,Introduction to Medical EngineeringII,False,1,A
+CS156,Introduction to Medical Informatics,False,1,A
+CS157,Competitive ProgrammingI,False,1,A
+CS203,Data Structures 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 互動多媒體微學程 互動多媒體學程,False,3,"A, B"
+CS204,Digital System Design,False,1,A
+CS205,Engineering Mathematics,False,1,A
+CS206,Digital Systems Design and Practice,False,2,"A, B"
+CS222,Programming Languages,False,1,A
+CS226,Probability and Statistics,True,3,"A, B"
+CS229,Introduction to Data Communications,False,2,"A, B"
+CS233,Linear Algebra,False,3,"A, B"
+CS249,Windows Programming 互動多媒體微學程 互動多媒體學程,False,1,A
+CS250,Assembly Language and Computer Organization 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程,False,2,"A, B"
+CS258,Introduction to Therapeutic Radiology,False,1,A
+CS303,Introduction to Java 互動多媒體微學程 互動多媒體學程,False,1,A
+CS305,Introduction to Operating System 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程,True,3,"A, B"
+CS309,Introduction to Algorithms 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 金融科技微學程四,False,2,A
+CS311,Introduction to Computer Networks,False,1,A
+CS321,Introduction to Compiler 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程,True,2,"A, B"
+CS322,Mobile Application Programming 互動多媒體微學程 互動多媒體學程,False,1,A
+CS324,Windows ProgrammingII,False,1,A
+CS335,Introduction to Wireless Internet,False,1,A
+CS337,Cloud Computing and Services 人工智慧與金融科技微學程 人工智慧與金融科技學程 金融科技微學程二 智慧校園與智慧照護學程,False,1,A
+CS341,Introduction to Biology 人工智慧與生物資訊微學程 人工智慧與生物資訊學程,False,1,A
+CS349,Artificial Intelligence of Things 人工智慧與金融科技微學程 人工智慧與金融科技學程 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程 智慧校園與智慧照護學程,False,1,A
+CS352,Introduction to Database System 人工智慧與生物資訊微學程 人工智慧與生物資訊學程,False,1,A
+CS354,Introduction to Computer and Network Security,False,1,A
+CS378,Introduction to VLSI Design 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程,False,1,A
+CS380,Web Programming 互動多媒體微學程 互動多媒體學程 智慧校園與智慧照護學程,False,2,"A, B"
+CS383,Introduction to Medical ImagingI,False,1,A
+CS410,Information and Communication Technology for Intelligent Applications,False,1,A
+CS412,Data Mining 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 智慧校園與智慧照護學程,False,1,A
+CS416,Special ProjectI,False,1,A
+CS417,Special ProjectII,False,3,"A, B, C"
+CS423,Network LabI,False,1,A
+CS426,Practical TrainingIII,False,3,"A, B, C"
+CS427,Practical TrainingIV,False,3,"A, B, C"
+CS502,Special Topics on Mobile Multimedia Networking,False,1,A
+CS508,Computer Vision Teaching in English,True,1,A
+CS509,Digital Learning,False,1,B
+CS512,Embedded Real-Time Operating Systems,False,1,B
+CS514,Human-Computer Interaction Design 互動多媒體微學程 互動多媒體學程,False,1,B
+CS519,Wireless Networking,False,1,A
+CS522,Interactive Video Game Development Teaching in English 互動多媒體微學程 互動多媒體學程,True,1,A
+CS528,Big Data Analytics 智慧校園與智慧照護學程,False,1,A
+CS529,Internet of Things,False,1,B
+CS534,Biostatistics Teaching in English,True,1,A1
+CS535,Computational Biology,False,1,A
+CS536,Medical Informatics and Medical Decision Making,False,1,A
+CS537,Bioinformatics,False,1,A
+CS538,Data Mining and Its Applications in Biomedical Domains,False,1,A
+CS539,Clinical Applications of Medical Signal and Image Teaching in English,True,1,A1
+CS554,Seminar,False,2,A
+CS555,Operating Systems Teaching in English,True,1,A
+CS556,Research Project,False,2,B
+CS561,Database Systems,False,1,B
+CS564,Cybersecurity Teaching in English,True,1,A1
+CS565,Cryptography Teaching in English,True,1,A
+CS567,Image Processing 人工智慧「智慧視覺分析」微學程 人工智慧「電腦輔助診斷應用」微學程 人工智慧學程 互動多媒體微學程 互動多媒體學程 數位科技應用學程,False,1,A
+CS569,Computer Graphics Teaching in English 互動多媒體微學程 互動多媒體學程,True,1,A
+CS578,Computer Networking Teaching in English,True,1,A
+CS606,Special Topics on Computer Assisted Instruction,False,1,A
+CS624,Computation Theory,False,1,B
+CS641,Artificial Intelligence Teaching in English 人工智慧與生物資訊微學程 人工智慧與生物資訊學程,True,1,A
+CS646,Generative AI and Applications Teaching in English,True,1,A
+CS650,Electronic Design Automation Teaching in English 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程,True,1,A
+CS657,Machine Learning 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 智慧校園與智慧照護學程,False,1,B
+CS660,Deep Learning 人工智慧與金融科技微學程 人工智慧與金融科技學程,False,1,B
+CS668,VLSI Testing & Design 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程,False,1,A
+CS674,Special Topics on Software Engineering,False,1,A
+CS675,Special Topics on Intelligent Systems,False,1,A
+CS678,Graph Theory Teaching in English,True,1,A
+CS679,Special Topics on Distributed Systems,False,1,A
+CS683,Special Topics on Electronic Design Automation,False,1,A
+CZ105,Fundamental Statistical Analysis,False,1,A
+CZ106,Energy Technology,False,1,A
+CZ107,Greenhouse Gas Inventory Technology,False,1,A
+CZ108,Net Zero Carbon Strategic Planning,False,1,A
+CZ112,Material & Energy Balance,False,1,A
+CZ114,Climate Change Impact,False,1,A
+CZ123,Training Course of ISO 14067,False,1,A
+Course,Course_Course,False,1,ID and Class
+DE101,Calculus I Teaching in English,True,1,A
+DE102,Calculus II Teaching in English,True,2,A
+DE103,Computer Programming Lab.I Teaching in English 智慧製造學程,True,1,A
+DE104,Computer Programming Lab.II Teaching in English 智慧製造學程,True,2,A
+DE105,Introduction to Chemical Engineering & Materials Science Teaching in English,True,1,A
+DE106,Introduction to Industrial Engineering Teaching in English,True,1,A
+DE107,General Chemistry Teaching in English,True,1,A1
+DE108,General Physics Teaching in English,True,2,A
+DE110,Introduction to Mechanical Engineering Teaching in English,True,2,A
+DE111,Introduction to Biotechnology and Biomedicine Teaching in English,True,2,A
+DE121,Materials Science Teaching in English 全校性跨領域--材料科技學程,True,1,A
+DE201,Special Topics in Engineering I Teaching in English,True,1,A
+DE204,Experimental Design Teaching in English,True,1,A
+DE207,Green Ergonomics & Sustainable Manufacturing Teaching in English,True,1,A
+DE211,Engineering Drawing Teaching in English,True,2,A
+DE217,Engineering Mathematics II Teaching in English,True,1,A1
+DE218,Mechanics of Materials Teaching in English,True,1,A
+DE235,Transport Phenomena and Unit Operations I Teaching in English 全校性跨領域--綠色能源學程,True,2,"A, B"
+DE236,Physical Chemistry II Teaching in English,True,2,"A, B"
+DE253,Linear Algebra Teaching in English,True,2,"A, B"
+DE354,Production Planning and Control II Teaching in English,True,2,"A, B"
+EE800,Researching Project,False,2,B
+EE801,Adaptive Signal Processing,False,1,B
+EE803,Signal Detection,False,1,B
+EE804,Random Signal Processing,False,1,B
+EE806,Deep Learning and its Vision Applications,False,1,B
+EE845,Digital Signal Processing,False,1,B
+EE849,Image Processing,False,1,B
+EE850,Antenna Design and Characteristic Measurement,False,1,B
+EE852,Science & Technology Innovation and Foresight Thinking,False,1,B
+EE853,Analysis and Best Practice to High-Tech Industry,False,1,B
+EE880,Fourier Optics,False,1,B
+EE881,Image Inspection and Detection Technique,False,1,B
+EEA112,Digital Logic Design 智慧型控制學程 數位科技應用學程 積體電路設計學程,False,2,"A, B"
+EEA122,General PhysicsII Teaching in English,True,2,"A, B"
+EEA124,General Physics Lab.II,False,2,"A, B"
+EEA125,CalculusII,False,2,"A, B"
+EEA128,Digital Logic Design Laboratory,False,2,"A, B"
+EEA130,Programming Language Lab.II 智慧電網學程 數位科技應用學程,False,2,"A, B"
+EEA204,Engineering MathematicsII,False,2,"A, B"
+EEA206,ElectronicsII 智慧型控制學程 積體電路設計學程,False,2,"A, B"
+EEA227,ElectromagneticsI 全校性跨領域--綠色能源學程 智慧電網學程,False,2,"A, B"
+EEA232,Electronic Circuits ExperimentsII,False,2,"A, B"
+EEA243,Advance in Electric Circuits 智慧電網學程,False,2,"A, B"
+EEA305,Signals and Systems 智慧生醫學程,False,2,"A, B"
+EEA478,Electrical Topics,False,1,A
+EEA525,Optimal Control,False,1,A
+EEA529,Stochastic Control,False,1,A
+EEA531,VLSI Signal Processing Teaching in English 積體電路設計學程,True,1,A
+EEA564,Communication Electronics Teaching in English 人工智慧「智慧終端晶片設計」微學程 人工智慧學程 積體電路設計學程,True,1,A
+EEA588,Digital VLSI Design 人工智慧「智慧終端晶片設計」微學程 人工智慧學程 積體電路設計學程,False,1,A
+EEA600,Neural Network Teaching in English 人工智慧「智慧控制與無人載具」微學程 人工智慧「智慧視覺分析」微學程 人工智慧學程 智慧型控制學程,True,1,A
+EEA607,Seminar,False,1,A
+EEA608,The Advanced VLSI System Design Teaching in English,True,1,A
+EEA625,Computer Vision Teaching in English 人工智慧「智慧視覺分析」微學程 人工智慧「電腦輔助診斷應用」微學程 人工智慧學程 智慧生醫學程,True,1,A
+EEA647,Transmission Standards of Digital Home Network 物聯網學程 數位科技應用學程,False,1,A
+EEA656,Algorithms of Image Processing: Development and Applications Teaching in English,True,1,A
+EEA658,Special topics on next generation network and network implementation,False,1,A
+EEA665,Advanced Design and Implementation of Integrated Circuits Ⅱ,False,1,A
+EEA667,Advanced Design and Implementation of Integrated Circuits Ⅳ,False,1,A
+EEA677,Data Science Teaching in English,True,1,A
+EEA680,Deep Learning Teaching in English 人工智慧學程 數位科技應用學程,True,1,A
+EEA685,Systems Engineering,False,1,A
+EEA689,Wireless Power Transfer Technology in 5G and IoT Era Teaching in English,True,1,A
+EEA699,Reinforcement Learning Teaching in English 人工智慧學程,True,1,A
+EEA704,Power Systems and Green Energy Teaching in English,True,1,A
+EEA802,Projects Production,False,1,A
+EEB101,CalculusI,False,2,"A, B"
+EEB102,CalculusII,False,2,"A, B"
+EEB108,Introduction to Computer Science 物聯網學程,False,2,"A, B"
+EEB110,Linear Algebra 數位科技應用學程,False,2,"A, B"
+EEB111,Digital Logic Design 智慧型控制學程 數位科技應用學程 積體電路設計學程,False,2,"A, B"
+EEB113,Data Structures 物聯網學程 智慧生醫學程 數位科技應用學程,False,1,A
+EEB116,General Physics,False,2,"A, B"
+EEB118,Logic Circuit Lab. Teaching in English,True,2,"A, B"
+EEB124,General Physics Lab.,False,2,"A, B"
+EEB126,Programming Language Labs I 人工智慧學程,False,2,"A, B"
+EEB127,Programming Language Labs II,False,2,"A, B"
+EEB131,Introduction to Artificial Intelligence and Information Technology Teaching in English,True,1,A
+EEB202,ElectronicsII 智慧型控制學程 積體電路設計學程,False,2,"A, B"
+EEB204,Engineering MathematicsII,False,1,A
+EEB206,Electronic Circuits ExperimentsII,False,2,"A, B"
+EEB209,Micro-Computer Systems 物聯網學程 智慧型控制學程 數位科技應用學程,False,1,A
+EEB210,ElectromagneticsI 全校性跨領域--綠色能源學程 智慧電網學程,False,1,A
+EEB211,Signals and Systems 智慧生醫學程,False,2,"A, B"
+EEB215,Introduction to Computer Vision and Image Processing,False,1,A
+EEB216,Game Programming,False,1,A
+EEB221,Electrical Topics,False,1,A
+EEB222,Introduction to Cloud Computing Teaching in English,True,1,A
+EEB312,Communications Network 物聯網學程,False,2,"A, B"
+EEB501,Research Project,False,2,A
+EEB502,Seminar,False,2,A
+EEB504,Microwave Engineering,False,1,A
+EEB505,High Frequency Circuit Design,False,1,A
+EEB507,Antenna Theory,False,1,A
+EEB512,Coding Theory,False,1,A
+EEB515,Advanced High-Frequency Circuit Design,False,1,A
+EEB523,Software Defined Radio With Lab.,False,1,A
+EEB524,Micro-wave Measurements and Experiments,False,1,A
+EEB532,Pattern Recognition Teaching in English,True,1,A
+EEB555,Electromagnetics for high speed digital system design Teaching in English,True,1,A
+EEB560,Advanced to Electromagnetic Compatibility,False,1,A
+EEB561,Antenna Design and Characteristic Measurement,False,1,A
+EEB564,Introduction to RF System Design for Mobile Communications Systems,False,1,A
+EEB567,Network Programming and Applications 物聯網學程,False,1,A
+EEB569,Machine Learning Teaching in English 人工智慧「智慧控制與無人載具」微學程 人工智慧「智慧視覺分析」微學程 人工智慧「電腦輔助診斷應用」微學程 物聯網學程,True,1,A
+EEB570,Programming with Mobile Applications 物聯網學程,False,1,A
+EEB580,Software Defined Networking: Innovative Applications and Practice,False,1,A
+EEB582,Database Systems,False,1,A
+EEB584,"Internet of Things: Introduction, Technologies, and Applications Teaching in English 物聯網學程",True,1,A
+EEB585,Neural Networks and Deep Learning Teaching in English,True,1,A
+EEB589,5G Network Function Virtualization: Introduction and Applications,False,1,A
+EEB592,Science & Technology Innovation and Foresight Thinking,False,1,A
+EEB593,Robotics Teaching in English,True,1,A
+EEB601,Field Study,False,2,A
+EEB602,Low Orbit Satellite Communications: an Introduction to Ground Station System Engineering,False,1,A
+EEB608,Orthogonal Frequency Division Multiplexing and Orthogonal Time Frequency Space Modulation,False,1,A
+EEC101,General PhysicsI Teaching in English,True,1,A
+EEC102,General PhysicsII Teaching in English,True,1,A
+EEC103,General Physics Lab.I,False,1,A
+EEC105,CalculusI Teaching in English,True,1,A
+EEC106,CalculusII Teaching in English,True,1,A
+EEC107,Introduction to Computer Science 物聯網學程,False,1,A
+EEC110,Linear Algebra 數位科技應用學程,False,1,A
+EEC113,Programming Language Lab I,False,1,A
+EEC114,Programming Language Lab II,False,1,A
+EEC115,Introduction of Electronic Engineering,False,1,A
+EEC116,Introduction to Semiconductor Industry,False,1,A
+EEC117,Quantum Computers and Quantum,False,1,A
+EEC201,Circuit Theory 智慧型控制學程 智慧電網學程,False,1,A
+EEC202,Engineering MathematicsI,False,1,A
+EEC203,Engineering MathematicsII,False,1,A
+EEC204,ElectronicsI 全校性跨領域--材料科技學程 全校性跨領域--綠色能源學程 智慧型控制學程 智慧電網學程 積體電路設計學程,False,1,A
+EEC205,ElectronicsII 智慧型控制學程 積體電路設計學程,False,1,A
+EEC206,Electronic Circuits Lab.I,False,1,A
+EEC207,Electronic Circuits Lab.II Teaching in English,True,1,A
+EEC208,ElectromagneticsI 全校性跨領域--綠色能源學程 智慧電網學程,False,1,A
+EEC214,Semiconductor Optics,False,1,A
+EEC215,Semiconductor Optics Laboratory,False,2,"A, B"
+EEC216,Electrical Topics,False,1,A
+EEC308,ElectromagneticsII 智慧電網學程,False,1,A
+EEC313,Photonics Industry 通訊產業與管理學程（電通學院） 通訊產業與管理學程（管院）,False,1,A
+EEC321,Electro-Optics Programming,False,1,A
+EEC323,Photonics Applications of Embedded Systems,False,1,A
+EEC414,Colorimetry 數位科技應用學程,False,1,A
+EG003,Fundamental Computer ProgrammingI,False,2,"A, B"
+EG005,Fundamental Computer ProgrammingII,False,2,"A, B"
+EG007,Fundamental Computer Programming I,False,2,"A, B"
+EG008,Fundamental Computer Programming I 智慧製造學程,True,3,"A, B, C"
+EG009,Fundamental Computer ProgrammingII,False,2,"A, B"
+EG010,Fundamental Computer ProgrammingII 智慧製造學程,True,3,"A, B, C"
+EG201,Introduction to Intelligent Production 工業4.0－智慧生產學程 智慧製造學程,False,2,A
+EI101,CalculusI Teaching in English,True,1,A
+EI103,General PhysicsI Teaching in English,True,2,"A, B"
+EI105,Introduction to Computer Science Teaching in English,True,1,A
+EI109,Programming Language LabsI Teaching in English,True,1,A
+EI111,Science and Technology English Conversation Teaching in English,True,1,A
+EI115,Linear Algebra Teaching in English,True,1,A
+EI201,ElectronicsI Teaching in English,True,1,A
+EI203,Engineering MathematicsI Teaching in English,True,1,A
+EI205,Circuit Theory Teaching in English,True,1,A
+EI207,Electronic Circuits ExperimentsI Teaching in English,True,1,A
+EI209,Science and Technology English Writing Teaching in English 專業科技傳播學程,True,1,A
+EI211,Probability for Engineers,False,2,"A, B"
+EI219,Data Structures,False,2,"A, B"
+EI221,Innovations in Medical High-Tech Applications Teaching in English,True,1,A
+EL112,Japanese Conversation,False,1,C
+EL137,JapaneseII,False,5,"A, B, E, F, I"
+EL139,JapaneseIV,False,4,"E, F, G, J"
+EL162,JapaneseVI,False,1,C
+EL170,Mandarin ChineseI,False,11,"A, B, C, D"
+EL171,Mandarin ChineseII,False,8,"A, B, C"
+EL220,Learning English Through Films Teaching in English,True,10,"A, B, C, D, D1, E, E1, F, G, H"
+EL221,English Through Literature & Reading,False,4,"A, C, E, G"
+EL222,English for Engineering & Technology,False,5,"A, B1, D, F1, H"
+EL223,Media & News English Teaching in English,True,2,"C, G"
+EL224,English Around the World 寰宇文化微學程,False,2,"E, H"
+EL225,Business English,False,5,"A, C, D, F, H"
+EL226,Learning English Through the Internet 寰宇文化微學程,False,3,"A, C, D"
+EL227,Practical English Writing,True,6,"D1, D2, D3, D4, H1, H2"
+EL228,Oral English Communication Teaching in English 寰宇文化微學程,True,7,"A, C, D, F, G, H, J"
+EL231,Business English: Ethical issues in a Global Economy Teaching in English,True,2,"C1, G1"
+EL232,IELTS Test Preparation Teaching in English,True,1,B
+EL233,English Public Speaking Teaching in English 寰宇文化微學程,True,1,D
+EL235,Introductory English-Chinese Translation 寰宇文化微學程,False,2,"D, F"
+EL238,English for Tourism Teaching in English 寰宇文化微學程,True,4,"A, B, C, H"
+EL260,English Testing,False,4,"B, C, E, H"
+EL270,Mandarin ChineseIII,False,3,A
+EL271,Mandarin ChineseIV,False,3,A
+EL304,GermanII,False,1,B
+EL306,GermanIV,False,1,A
+EL312,FrenchII,False,1,A
+EL314,FrenchIV,False,1,A
+EL322,SpanishII,False,2,"A, B"
+EL332,SpanishIV,False,1,A
+EL344,KoreanII,False,1,A
+EL346,KoreanIV,False,1,B
+EL370,Mandarin ChineseV,False,2,"A, E"
+EL372,Chinese Proficiency Test,False,4,"A, B"
+EL373,Advanced Mandarin Conversation,False,2,A
+EL374,Advanced Mandarin Readings,False,2,A
+EL375,Chinese Proficiency Test,False,2,C
+EL419,Advanced EnglishI,False,8,"A1, A2, E1, E2"
+EL429,English Oral InterpretationI,False,2,E
+EL431,English TranslationI,False,2,A
+EN001,Fundamental Computer Programming- PythonI,False,1,A
+EN003,Fundamental Computer Programming-C 智慧電網學程 數位科技應用學程,False,2,"A, B"
+EN004,Fundamental Computer Programming- Python 人工智慧學程,True,3,"A, B, C"
+EXZ001,University Social Responsibility and Community Development,False,2,A
+EXZ002,Net Zero Carbon Planning and Management,False,2,B
+EXZ004,Future Interaction Design: Between Machines and Humans,False,2,A
+EXZ005,Digital Fabrication Design: Physical and Virtual Space,False,2,B
+FC003,A Guide to Classics Teaching in English,True,14,"K, L, A, B, C1, C2, D1, D2, E, F, G, H, I, J"
+FL115,Japanese Language Lab.I,False,1,A
+FL116,Japanese Language Lab.II,False,1,A
+FL126,Elementary Japanese ConversationI,False,2,"A, B"
+FL127,Elementary Japanese ConversationII,False,2,"A, B"
+FL134,English Outside ReadingI,False,2,A
+FL135,English Outside ReadingII,False,2,A
+FL144,Japanese I,False,1,A
+FL145,Japanese II,False,1,A
+FL153,Technology-Enhanced Language Learning Teaching in English,True,2,"A, B"
+FL154,Academic English : Listening & Speaking Teaching in English,True,2,"A, B"
+FL155,English Outside Reading,False,1,A
+FL156,Japanese Outside Reading,False,1,A
+FL157,Pop Culture in East Asia,False,1,A
+FL158,Digital Literacy in the Age of AI Teaching in English,True,1,A
+FL209,International Business English Teaching in English,True,1,A
+FL242,English Outside ReadingIII,False,1,A
+FL243,English Outside ReadingIV,False,1,A
+FL248,English Translation in Practice,False,1,A
+FL252,Japanese III,False,1,A
+FL254,Japanese Speech I,False,2,"A, B"
+FL256,Japanese Writing Practice I,False,2,"A, B"
+FL258,Intercultural Communication Skills Teaching in English,True,1,A
+FL261,Introduction to Reading Skills in Japanese,False,1,A
+FL267,Practical English Writing Teaching in English,True,1,A
+FL303,Introduction to Western LiteratureI Teaching in English 文化產業微學程 文化產業學程（學士班） 文創產業與管理微學程 文創產業與管理學程（人社院） 文創產業與管理學程（管院）,True,1,A
+FL321,Communication Theories and Practice Teaching in English 專業科技傳播學程,True,1,A
+FL341,English Teaching Materials and Activities Teaching in English,True,1,A
+FL352,Japanese Culture 文化產業微學程 文創產業與管理微學程 文創產業與管理學程（人社院） 文創產業與管理學程（管院）,False,1,A
+FL358,Japanese Outside ReadingI,False,1,A
+FL359,Japanese Outside ReadingII,False,1,A
+FL369,Introduction to the English Language Teaching in English,True,1,A
+FL373,Speech and Debate Teaching in English,True,2,"A, B"
+FL374,Work-Place English Teaching in English,True,1,A
+FL380,Reading and Discussion,False,2,"A, B"
+FL381,Advanced Japanese I,False,1,A
+FL386,Introduction to Japanese Literature 數位文創出版產業學程,False,1,A
+FL390,Advanced Japanese Listening,False,1,A
+FL396,Introduction of Economics Teaching in English,True,1,A
+FL411,Japanese Teaching Methodology,False,1,A
+FL425,English Consecutive Interpreting,False,1,A
+FL442,English Presentation Skills Teaching in English,True,2,"A, B"
+FL445,Japanese Oral Interpretation,False,1,A
+FL449,Japanese Communication Techniques,False,1,A
+FL455,Japanese Outside ReadingIII,False,1,A
+FL456,Japanese Outside ReadingIV,False,1,A
+FL465,English Reading and Writing Teaching in English,True,2,"A, B"
+FL469,Work-Place Japanese Conversation,False,1,A
+FL470,Language and Society Teaching in English,True,1,A
+FL471,Theory and Practice of English for Specific Purposes,False,1,A
+FL473,Introduction to Learning Chinese as a Foreign Language Teaching in English,True,1,A
+FL475,Graduation Project I,False,1,A
+FL476,Graduation Project II,False,1,A
+FL502,Research in Applied Linguistics Teaching in English,True,1,A
+FL509,Sociolinguistics Teaching in English,True,1,A
+FL511,Research Methodologies,False,1,B
+FL524,Computer-Assisted Language Learning and Computer Literacy Teaching in English,True,1,A
+FL530,Japanese Literature and Culture,False,1,B
+FL531,Japanese Children's Literature,False,1,B
+FL536,Topics in Japanese Grammar,False,1,B
+FL550,Quantitative Research Method Teaching in English,True,1,A
+FL557,Guided Practice in English Research Writing Teaching in English,True,1,A
+FL563,English Writing Teaching in English,True,1,A
+FL568,Applications of Online Resources to Teach English Teaching in English,True,1,A
+FL572,Computer Applications for Academic Writing in Japanese,False,1,B
+FL574,Literature Review in Japanese,False,1,B
+FL594,Cultural and Creative Industries Teaching in English,True,1,A
+GI503,Research Methodology Teaching in English,True,1,A
+GI516,Seminar on Research ProjectsII,False,1,A
+GI525,Seminar on Research ProjectsI,False,1,A
+GI570,Research of Information Communication Industry Teaching in English,True,1,A
+GI622,Electronic Commerce Teaching in English,True,1,A
+GI633,Research of Intellectual Property Teaching in English,True,1,A
+GI634,Digital Multimedia Applications Teaching in English,True,1,A
+GI637,Digital Learning and Interface Design,False,1,A
+GI644,User Experience Research of Digital Media Teaching in English,True,1,A
+GM511,Marketing Management,False,3,"A, B, V"
+GM526,Project Management,False,2,"A1, V"
+GM528,Business Research Method,False,3,"V, A, B"
+GM588,Managerial Accounting,False,1,V
+GM701,Organizational Behavior and Leadership,False,2,"A1, B"
+GM714,Strategic Alliance,False,1,A
+GM733,Team Building and Management,False,1,A
+GM741,Management of Technological Innovation,False,1,A
+GM746,Business Operation & Problem Diagnosis,False,1,A
+GM748,Lectures on Physical and Mental Happiness,False,1,A
+GM750,Overseas Studies,False,1,A
+GM751,Motivation and Leadership Studies,False,1,A
+GM752,Market Segmentation Planning,False,1,A
+GM756,Efficient Investments and Financial Planning,False,1,A
+GM758,Big Data Analytics for Business Intelligence and Strategic Decisions,False,1,A1
+GM760,Corporate Innovation and Creative Thinking,False,1,A
+GM762,Corporate Governance and Corporate Sustainability,False,1,A
+GM765,Business Crisis Management,False,1,A
+GM766,Enterprise Financial Analysis and Decision Making,False,2,"A, B"
+GM768,Artificial Intelligent in Enterprise Management,False,1,A
+GM769,New Business Model Research and Practice,False,1,A
+GM774,Sustainable Development: Carbon Neutrality and Carbon Trading,False,1,A
+GM775,Talent Density and Team Competitiveness,False,1,A
+GN201,Mathematics and Logic Thinking,True,2,"A, B"
+GN220,Introduction to Medical Engineering,False,1,A
+GN225,Appreciation of Landscape,False,1,A
+GN237,Camera World,False,2,"A, B"
+GN247,Introduction to Energy Technology,False,1,A
+GN407,History of Science Teaching in English,True,1,A
+GN409,Nature Inspired Design Teaching in English,True,1,A
+GN410,Introduction to Cosmetics and Its Application,False,2,"A, B"
+GN424,Travel in Taiwan with Geosciences,False,1,A
+GN425,Discovering the Earth's Atmosphere,False,1,A
+GN428,The Past and the Future of the Digital Technologies 科技與社會微學程 數位與創新永續微學程,False,1,A
+GN430,Fundamental Cloud Computing and Practic,False,1,A
+GS205,Figures and Chinese History,False,1,A
+GS206,The History of Chinese Art,False,1,A
+GS211,Social Psychology,False,1,A
+GS341,Introduction to the Study of Law,False,1,A
+GS349,Introduction to Psychology,False,2,"A, B"
+GS357,Marriages & Families,False,1,A
+GS372,Intellectual Property Rights 文化產業微學程 文化產業學程（學士班） 科技創業與管理微學程,False,2,"A, B"
+GS375,Assiduity about Society 社會關懷與創意知能微學程,False,1,A
+GS396,Global Cities and Social Space Teaching in English,True,1,A
+GS418,Self Management and Career Development,True,2,"A, B"
+GS425,Technology Development and Society Change,False,1,A
+GS426,Gender Education,False,1,A
+GS430,Media and International Relations,False,2,"A, B"
+GS434,A brief introduction to European History Teaching in English,True,1,A
+GS447,Labor Protection & Rights,False,1,A
+GS448,"Digital Media Literacy, Thinking, and Practice",False,1,A
+GS449,Childhood And Culture,False,1,A
+HS005,Digital Applications in Humanities I,False,5,"A, B, C, D, E1"
+HS006,Digital Applications in Humanities II,False,5,"A, B, C, D, E"
+HS112,Fundamental of Digital Makers 科技創業與管理微學程 科技與社會微學程 數位與創新永續微學程,False,1,A
+HS113,Advenced of Digital Makers,False,1,A
+IC116,Photography,False,1,A
+IC120,Digital Image Processing Teaching in English,True,2,"A, B"
+IC145,Fundamentals of ArtsI: Drawing,False,1,A
+IC151,Introduction to Design Principles Teaching in English,True,2,"A, B"
+IC168,Fundamentals of ArtsII: Creative Drawing,False,1,A
+IC172,Data Structure,False,1,A
+IC175,Design History,False,1,A
+IC181,Introduction to Computer Science Teaching in English,True,2,"A, B"
+IC184,Computer ProgrammingI,False,1,A
+IC189,Mixed Media Design,False,1,A
+IC191,Color Theory,False,1,A
+IC192,Computer ProgrammingII,False,1,A
+IC194,Principles of Animation,False,1,A
+IC196,Mixed Reality 互動媒體學程 含微學程,False,1,A
+IC200,Computer Programming Lab.II,False,2,"A, B"
+IC205,Computer Graphics Design,False,1,A
+IC212,Computer Programming,False,1,A
+IC224,General Physics,False,1,A
+IC225,Interactive Script Production,False,1,A
+IC238,Windows Programming,False,1,A
+IC242,Game Planning,False,1,A
+IC248,Linear Algebra,False,1,A
+IC249,Case Study on Cultural Industries,False,1,A
+IC256,Creativity Techniques 互動媒體學程 含微學程,False,1,A
+IC272,Illustration,False,1,A
+IC275,Java Programming,False,1,A
+IC286,Computer Programming Lab.I,False,2,"A, B"
+IC287,Introduction to Calculus,False,1,A
+IC294,Designing Wearable Technology I Teaching in English,True,1,A
+IC296,Creative Media Practice,False,2,A
+IC297,Exhibition Display Technology Teaching in English 互動多媒體微學程 互動多媒體學程 互動媒體學程 含微學程,True,1,A
+IC322,Advanced Film and Video Production Workshop,False,1,A
+IC324,Cross-Media Integration,False,1,A
+IC326,Portfolio Design and Presentation,False,2,"A, B"
+IC331,Analysis for Social Media Services,False,1,A
+IC336,Computer Programming Lab.,False,1,A
+IC337,3D Computer Animation,False,1,A
+IC340,Introduction to Multimedia,False,1,A
+IC341,Fundamentals of Digital Audiovisual Design Teaching in English,True,2,"A, B"
+IC344,Human Computer Interaction Application Teaching in English,True,1,A
+IC346,Virtual Reality Teaching in English 互動媒體學程 含微學程,True,1,A
+IC347,Visual Effects for Film and Video,False,1,A
+IC348,Topics on ICT & Innovation,False,1,A
+IC349,User-Interface Design 互動多媒體微學程 互動多媒體學程,False,1,A
+IC350,Marketing Technology,False,1,B
+IC362,Intellectual Property,False,1,A
+IC401,Internship Ⅰ,False,2,"A, B"
+IC451,InternshipII,False,1,A
+IC454,Seminar on Information CommunicationI,False,1,A
+IC456,Seminar on Information CommunicationII,False,1,A
+IC464,Field StudyI,False,2,"A, B"
+IC465,Field StudyII,False,3,"A, B, C"
+ID001,General Education Forum,False,4,"A, B, C, D"
+ID003,Culture of Historic Monuments and Local Lives,False,1,A
+ID004,"Islands, Ethnic and Culture",False,1,A
+ID005,Guide to Local Culture,False,1,A
+ID007,Recount of the City’s Life and Culture 科技與社會微學程,False,1,A
+ID008,Taoyuan Tourism and History,False,2,"A, B"
+ID009,Hakka and Taiwan,False,2,"A, B"
+IE110,CalculusII,False,1,A
+IE114,Engineering Graphics,False,2,"A, B"
+IE124,Linear Algebra Teaching in English,True,2,"A, B"
+IE211,Work Study,False,2,"A, B"
+IE233,Research Methodology,False,2,"A, B"
+IE237,Statistical Modeling and Computerized Implementations 人因工程與設計 工業4.0－智慧生產學程,False,1,A
+IE301,Industrial Accounting,False,1,A
+IE312,Logistics Management 電子化供應鏈,False,1,A
+IE329,Operations ResearchII Teaching in English,True,2,"A, B"
+IE337,Practical Electronic Commerce 電子化供應鏈,False,1,A
+IE342,Procurement Management 電子化供應鏈,False,1,A
+IE346,General Printed Circuit Board Technology 工業4.0－智慧生產學程,False,1,A
+IE348,Production Planning and ControlII Teaching in English,True,2,"A, B"
+IE349,Facilities Planning,False,2,"A, B"
+IE354,Cloud Computing Technology and Services,False,1,A
+IE376,Quality Management in Healthcare,False,1,A
+IE503,Simulation Teaching in English,True,1,A
+IE507,Mathematical ProgrammingI Teaching in English,True,1,A
+IE520,Taguchi Quality Engineering,False,1,B
+IE531,Advanced Quality Control,False,1,B
+IE538,Experimental Design and Applications,False,1,A
+IE541,Decision Analysis,False,1,B
+IE543,Production Planning,False,1,B
+IE565,Human Factors,False,1,B
+IE581,Service Systems Design Teaching in English,True,1,A
+IE586,Seminar,False,1,A
+IE593,Advanced Production Control,False,1,B
+IE625,Big Data Analytics Teaching in English,True,1,A
+IE630,Advanced Project Management Teaching in English,True,1,A
+IE631,Sustainable Development,False,1,A
+IH210,Introduction to Computer Graphics in Design II Teaching in English,True,1,A
+IH216,Introduction to Cultural Studies Teaching in English 文化產業微學程 文化產業學程（學士班） 文創產業與管理微學程 文創產業與管理學程（人社院） 另類DIY文創微學程,True,1,A
+IH228,Art & HumanityII 文創產業與管理微學程 文創產業與管理學程（人社院）,False,1,A
+IH233,Introduction to Marketing Teaching in English 跨文化行銷與溝通管院 跨文化行銷與溝通學程,True,1,A
+IH238,Language and Culture Teaching in English,True,1,A
+IH241,Social Statistics II Teaching in English,True,1,A
+IH246,Drama Theatre English Teaching in English,True,1,A
+IH248,Multimedia Content Management and Creation with AI Teaching in English 跨文化行銷與溝通管院 跨文化行銷與溝通學程,True,1,A
+IH250,Creative Thinking and Problem Solving,False,1,A
+IM112,Basic Computer Concepts,False,2,"A, B"
+IM119,ProgrammingI 資訊安全微學程 數據分析微學程,False,4,"A1, B, C"
+IM120,ProgrammingII,False,4,"A, B"
+IM121,Accounting,False,2,C1
+IM122,Economics,False,1,A
+IM127,CalculusⅠ,False,1,A
+IM128,CalculusⅡ,False,2,A
+IM132,Management Information Systems Teaching in English 資訊安全微學程 電子化企業學程,True,4,"A, B"
+IM214,Fundamental of Data Structures,False,2,"A, B"
+IM216,Discrete Mathematics,False,2,"A, B"
+IM230,Introduction to Multimedia,False,2,C
+IM231,StatisticsⅠ,False,1,A
+IM236,Introduction to Data Analytics 「社會數據分析」跨領域微學程 數據分析微學程,False,1,C
+IM241,Digital Marketing in Practice 電子化企業學程,False,1,C
+IM242,Introduction to Business Management 電子化企業學程,False,2,"A, B"
+IM323,Computer Networks 資訊安全微學程,False,1,C
+IM334,Introduction to Information Security Management 資訊安全微學程,False,2,C
+IM409,Information and Law 電子化供應鏈,False,1,C
+IM501,SeminarI,False,1,A
+IM504,Intelligent Management Systems,False,1,A
+IM507,Decision Support Systems Teaching in English,True,1,A1
+IM508,SeminarII,False,1,A
+IM514,Business Research Method,False,1,B
+IM531,Problem Solving and Decision Making Teaching in English,True,1,A
+IM532,Knowledge Discovery and Data Mining,False,1,A
+IM542,Fuzzy Systems Theory and Applications,False,1,A
+IM547,Seminar on Information Technology Management Teaching in English,True,1,A
+IM564,E-Business Management,False,1,A
+IM574,Special Topics in e-Business,False,1,A
+IM591,Information Management Theory and Practice Teaching in English,True,2,"A, B"
+IM592,Business Administration Theory and Practice Teaching in English,True,2,"A, B"
+IM593,Quantitative Method Decision Making,False,2,"B, A"
+IM595,Vocational Training,False,1,A
+IM606,SeminarIV,False,1,A
+IM608,Applied ProjectII,False,1,B
+IM620,Information Security,False,2,"A, B"
+IM628,Applied Project,False,1,S
+IM701,Introduction to Data Science,False,2,"A, B"
+IM712,Machine Learning,False,1,A
+IM716,Machine Learning II Predictive Modelling,False,1,A
+IM717,Social Network Data Analytics,False,1,B
+IM720,Financial Data Analytics,False,1,B
+IM736,Social Media Analytics,False,1,A
+IM802,Information Industry and Regulation Teaching in English,True,1,A
+IM803,Information and Social Innovation,False,2,"B, S"
+IM831,Information Ethics,False,1,B
+IM838,Digital Governance,False,1,B
+IM901,Seminar in Advanced Information ManagementI,False,1,A
+IM902,Seminar in Advanced Information ManagementII,False,1,A
+IM903,Seminar in Advanced Information ManagementIII,False,1,A
+IN101,CalculusI Teaching in English,True,3,A1
+IN102,Introduction to Computer Science Teaching in English,True,3,A
+IN103,Computer ProgrammingI Teaching in English,True,3,A
+IN104,Intellectual Property Teaching in English,True,3,A
+IN105,CalculusII Teaching in English,True,3,A
+IN106,Discrete Mathematics Teaching in English,True,3,A
+IN107,Computer ProgrammingII Teaching in English 人工智慧投資管院 人工智慧投資學程,True,3,A
+IN110,Management Information Systems Teaching in English 人工智慧投資管院 人工智慧投資學程,True,3,A
+IN111,English Listening and Reading I Teaching in English,True,3,A
+IN112,English Listening and Reading II Teaching in English,True,3,A
+IP001,Seminar on Cultural Industries: Theories and Policies,False,1,A
+IP007,Introduction to Thesis Writing,False,1,A
+IP012,Qualitative Research,False,1,A
+IP027,"Seminar in Community, Ethnics, and the Sixth Industries",False,1,A
+IP028,Independent Research I,False,1,A
+IP030,Seminar in Europe Culture and Creative Industries,False,1,A
+IP032,Seminar in Cultural Governance and Policy,False,1,A
+IP033,Seminar in Cultural Studies,False,1,A
+IP034,Seminar in Art Festival and Creative City,False,1,A
+LC101,EnglishI: Freshmen English ; advanced-level Teaching in English 寰宇文化微學程,True,11,"A1, A2, B2, D1, F1, I2, I3, I4, J2, J3, J4"
+LC102,EnglishI: Freshmen English; Intermediate-level Teaching in English 寰宇文化微學程,True,13,"B1, B2, C1, D2, D3, E3, E4, F1, F2, G1, G2, H2, H3"
+LC103,EnglishI: Freshmen English; Entry-level Teaching in English 寰宇文化微學程,True,23,"A1, A2, A3, B1, B2, B3, C1, C2, C3, D2, D3, E1, E2, E3, F1, F2, F3, G1, G3, H1, H2, H3, H4"
+LC201,EnglishII: Freshmen English ; advanced-level Teaching in English 寰宇文化微學程,True,22,"A1, A2, B2, D1, F1, I2, I3, I4, J2, J3, J4"
+LC202,EnglishII: Freshmen English ; Intermediate-level Teaching in English 寰宇文化微學程,True,26,"B1, B2, C1, D2, D3, E3, E4, F1, F2, G1, G2, H2, H3"
+LC203,EnglishII: Freshmen English; Entry-level Teaching in English 寰宇文化微學程,True,46,"A1, A2, A3, B1, B2, B3, C1, C2, C3, D2, D3, E1, E2, E3, F1, F2, F3, G1, G3, H1, H2, H3, H4"
+LE113,Drama Appreciation,False,2,"A, B"
+LE213,Folk Music,False,2,"A, B"
+LE308,Aesthetics,True,2,"A, B"
+LE330,Language and Logic,False,1,A
+LE348,An Introduction to Japanese Culture 人文素養與多元創意微學程,False,1,A
+LE357,Classical Music Appreciation,False,2,"A, B"
+LE406,A Guide to Picture Storybooks,False,2,"A, B"
+LE418,British History and Culture,False,1,A
+LE419,Introduction to the Major World Religions,False,1,A
+LE425,Russian Idea and Culture,False,1,A
+LE432,Cultural Relics and Literature 人文素養與多元創意微學程,False,1,A
+LE440,Learning I-Ching: Introduction to the Legendary Book of China,False,1,A
+LE446,Western Civilization and The Classics Teaching in English,True,1,A
+LE450,Exploring the Reading Industry Chain,False,1,A
+LE451,Introduction to Indigenous Peoples' Culture,False,1,A
+LS201,Introduction to Life Science Teaching in English,True,1,A
+LS204,Science of Chinese Medicine,False,1,A
+LS206,Introduction to Chinese Medicine and Healthcare,False,1,A
+LS210,Introduction to Biology Teaching in English,True,1,A
+LS217,Introduction to Drugs,False,1,A
+LS223,Bioethics,False,1,A
+LS228,The Dialogue between Humanities and Sciences on Food,False,1,A
+LS229,Health Management,False,2,"A, B"
+LS230,Introduction to Common Diseases,False,2,"A, B"
+LS231,Food Safety and Biotechnology,False,1,A
+LS233,Medicine and Humanities Teaching in English 社會關懷與創意知能微學程,True,1,A
+LS234,Introduction to Public Health,False,1,A
+LS236,Introduction to Life and Death,False,1,A
+LS237,Life and Physical Activity,False,1,A
+LS241,"Health, Leisure and Life",False,2,"A, B"
+LS243,Introduction to Life Education,False,1,A
+LS244,Health and Life,False,1,A
+ME105,Calculus I,False,2,"A, B"
+ME107,Calculus II,False,2,"A, B"
+ME115,Engineering Materials 全校性跨領域--材料科技學程,False,2,"A, B"
+ME117,General Physics,False,1,A
+ME119,Engineering Drawing,False,2,"A, B"
+ME123,Computer Programming Lab. I 智慧製造學程,False,2,"A, B"
+ME124,Computer Programming Lab. II 智慧製造學程,False,2,"A, B"
+ME125,Workshop Practice I,False,2,"A, B"
+ME126,Workshop Practice II,False,2,"A, B"
+ME127,Introduction to Mechanical Engineering,False,1,A
+ME128,Applied Mechanics Statics,True,2,"A, B"
+ME202,Engineering Mathematics I,True,2,"A, B"
+ME204,Engineering Mathematics II,True,2,"A, B"
+ME206,Thermodynamics I 全校性跨領域--綠色能源學程,True,2,"A, B"
+ME207,Mechanisms Teaching in English,True,1,A
+ME210,Thermodynamics II 全校性跨領域--綠色能源學程,False,2,"A, B"
+ME214,Applied Mechanics Dynamics,True,2,"A, B"
+ME224,Introduction to Electric Circuits and Electronics,False,1,A
+ME303,Introduction to Manufacturing Processes 智慧製造學程,False,2,"A, B"
+ME308,Mechanical Engineering Lab.II,False,2,"A, B"
+ME309,Mechanics of Materials 全校性跨領域--材料科技學程,True,2,"A, B"
+ME310,Mechanical Design II Teaching in English,True,1,A
+ME311,Research Project I 全校性跨領域--綠色能源學程,False,6,"A, B, C, D, E, F"
+ME322,Heat Transfer Teaching in English,True,1,A
+ME335,Automatic Control 工業4.0－智慧生產學程,True,2,"A, B"
+ME381,Practice of Mechanical Engineering,False,1,A
+ME382,Robot Operating System,False,1,A
+ME383,Competencies and Key Employability Skills of Mechanical Engineers,False,1,A
+ME444,Computer-Aided Drafting,False,1,A
+ME470,Automotive Engineering,False,1,A
+ME475,Mechanical Drawing,False,1,A1
+ME517,Finite Element Method,False,1,A
+ME553,Electrochemical Engineering 全校性跨領域--綠色能源學程,False,1,A
+ME570,Incineration,False,1,B
+ME577,Fire Protection Engineering,False,1,B
+ME584,Advanced Technologies in Energy and its Applications Teaching in English 全校性跨領域--綠色能源學程,True,1,A
+ME602,Robotics 智慧製造學程,False,1,B
+ME612,Introduction to Semiconductor Manufacturing Technology,False,1,B
+ME613,Artificial Intelligence Teaching in English 智慧製造學程,True,1,A
+ME614,Introduction to Power System Integration,False,1,B
+MN021,Basic biomedical programming I 智慧校園與智慧照護學程,False,1,A1
+MN022,Basic biomedical programming II 智慧校園與智慧照護學程,False,1,A1
+MT110,All-Out Defense Education and Researching of Military - National Defense Policy,False,2,A
+MT111,All-Out Defense Education and Researching of Military - Defense Mobilization,False,1,A
+MT112,All-Out Defense Education and Researching of Military – Defense Technology,False,1,A
+MT114,All-Out Defense Education and Researching of Military- International Situations,False,1,A
+MT115,All-Out Defense Education and Researching of Military - All-Out Defense,False,1,A
+PL101,Physical Education,False,35,"A1, A2, A3, A4, A5, B1, B2, C1, C2, D1, D2, E1, E2, E3, F1, F2, G1, G2, H1, H2, H3, H4, H5, H6, H7, H8, I, J, K, M, P, Q, R, S, T"
+PL211,Swimming,False,2,A
+PL212,Volleyball,False,10,"A, B, C, D, E"
+PL213,Woodball,False,6,"A, B, C"
+PL215,Tennis,False,4,"A, B"
+PL219,Table Tennis,False,6,"A, B, C"
+PL221,Bowling,False,10,"A, B, C, D, E, F"
+PL223,Cycling,False,4,"A, B"
+PL224,Basketball,False,4,"A, B"
+PL225,Badminton,False,14,"A, B, C, D, E, F, G"
+PL331,School Sport Team Training,False,14,"A, B, D, E, F, G, H, I"
+PL333,Health-Related Physical Fitness,False,1,A
+PL334,Free Weight Exercise,False,10,"A, B, C, D, E"
+PL335,Yoya Fitness,False,4,"A, B"
+PL336,KENDO,False,6,"A, B, C"
+PL337,Pickleball,False,6,"A, B, C"
+PL338,Popular Aerobic Dance,False,4,"A, B"
+PM501,Advanced Quality Control Teaching in English,True,1,A
+PM502,Data Mining Teaching in English,True,1,A
+PM503,Analysis of Materials properties Teaching in English,True,1,A
+PM504,Polymer Physics Teaching in English,True,1,A
+PM505,Mandarin Chinese I Teaching in English,True,1,A
+SC121,Human Resources Management,False,1,A
+SC125,A General Introduction to Volumtary Service 社會關懷與創意知能微學程,False,1,A
+SC130,Introduction of Social Work,False,1,A
+SC132,Big Data and Policy Analysis Application Basic 「社會數據分析」跨領域微學程 科技與人文相遇微學程 科技與社會微學程 數位人文微學程,False,1,A
+SC134,The Development of Careers II,False,1,A
+SC219,Social Psychology,False,1,A
+SC225,Human Behavior in the Environment 老人福祉科技跨域產業學程,False,1,A
+SC249,Big Data and Policy Analysis Advanced 「社會數據分析」跨領域微學程,False,1,A
+SC320,Sociology of Consumption,False,1,A
+SC330,Social Stratification & Mobility,False,1,A
+SC334,Management of Non-Profit Organizations,False,1,A
+SC343,Program Design & Evaluation,False,1,A
+SC346,The Development of Careers VI,False,1,A
+SC348,Social Research MethodsII,False,1,A
+SC501,Sociological Theory,False,1,A
+SC515,Qualitative Research,False,2,"B, A"
+SC516,Survey Research,False,1,B
+SC522,Introduction to Thesis Writing,False,2,"A, B"
+SC528,Special Topics on Social Policy,False,1,B
+SC537,Special Topics on Sociology of Family,False,1,A
+SC550,Special Topics on Social Statistics,False,1,A
+SC554,Selected Topics in Sustainability and Corporate Social Responsibility,False,1,B
+SC562,Special Topics on Public Administration,False,1,A
+SC564,Selected Topics in Social Enterprise,False,1,A
+SC566,Special Topics on Topics on Professional Ethics and Decision-Making,False,1,A
+SC572,Special Topics on Medical Care and Health,False,1,A
+SC578,Special Topics on Public Policy,False,1,B
+SC579,Special topics on Population Studies and Policies,False,1,B
+SN001,Social Psychology,False,1,A
+SN004,Nursing Professional Career Development,False,1,A
+SN006,Health Promotion & Healthy Life,False,2,"A1, A"
+SN007,Complementary and Alternative Medicine,False,1,A
+SN021,Nursing Technology and Practical Applications,False,2,A
+SN101,Anatomy,False,1,A
+SN102,Physiology,False,1,A
+SN103,Introduction to Nursing 智慧校園與智慧照護學程,False,1,A
+SN104,Organic & Biochemistry,False,1,A
+SN105,Microbiology & Immunology,False,1,A
+SN106,Nursing Ethics and Legal Fundamentals 智慧校園與智慧照護學程,False,2,"A, B"
+SN203,Human Development 智慧校園與智慧照護學程,False,2,"A, B"

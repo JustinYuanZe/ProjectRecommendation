@@ -3,7 +3,7 @@ import os
 
 # --- CORRECTED PATHS (relative to project root) ---
 RAW_DATA_PATH = "data/Raw/Data regarding occupation and position etc"
-OUTPUT_FILE = "data/processed/refined_skills_and_interests.txt"
+OUTPUT_FILE = "data/Processed/refined_skills_and_interests.txt"
 
 FILES_TO_PROCESS = {
     "Abilities to Work Activities.txt": "Abilities Element Name",
