@@ -10,7 +10,16 @@ DATA_FILE = os.path.join(project_root, 'data', 'Processed', 'course_data', 'fina
 
 advisor = YZUAdvisorEngine(DATA_FILE)
 app = FastAPI(title="YZU AI Career Advisor API")
+from fastapi.middleware.cors import CORSMiddleware
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"], 
+    allow_headers=["*"],
+)
+# ------------------------------------------------
 @app.on_event("startup")
 def startup_event():
     try:
