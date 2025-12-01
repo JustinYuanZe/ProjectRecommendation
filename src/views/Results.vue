@@ -8,32 +8,7 @@
             Career Counseling Results
           </v-card-title>
 
-          <div v-if="profile && results">
-            <!-- User Info Summary -->
-            <v-card class="mb-6" elevation="2">
-              <v-card-title class="bg-primary text-white">
-                <v-icon left>mdi-account</v-icon>
-                Personal Information
-              </v-card-title>
-              <v-card-text class="pa-4">
-                <v-row>
-                  <v-col cols="12" md="6">
-                    <p><strong>Full Name:</strong> {{ profile.fullName }}</p>
-                    <p><strong>Major:</strong> {{ profile.major }}</p>
-                    <p><strong>GPA:</strong> {{ profile.gpa }}</p>
-                  </v-col>
-                  <v-col cols="12" md="6">
-                    <p><strong>Skills:</strong></p>
-                    <v-chip-group>
-                      <v-chip v-for="skill in profile.skills" :key="skill" size="small">
-                        {{ skill }}
-                      </v-chip>
-                    </v-chip-group>
-                  </v-col>
-                </v-row>
-              </v-card-text>
-            </v-card>
-
+          <div v-if="results">
             <!-- Career Recommendations -->
             <v-card class="mb-6" elevation="2">
               <v-card-title class="bg-success text-white">
@@ -51,7 +26,7 @@
                         <div>
                           <div class="font-weight-bold">{{ recommendation.title }}</div>
                           <div class="text-caption text-grey">
-                            Compatibility Score: {{ recommendation.score }}/{{ maxScore }}
+                            Score: {{ recommendation.score }} / {{ recommendation.maxScore }}
                           </div>
                         </div>
                       </div>
@@ -81,19 +56,20 @@
             <v-card class="mb-6" elevation="2">
               <v-card-title class="bg-info text-white">
                 <v-icon left>mdi-target</v-icon>
-                Skills Match Analysis
+                Category Score Analysis
               </v-card-title>
               <v-card-text class="pa-4">
-                <div v-for="(recommendation, index) in results.topRecommendations.slice(0, 2)" :key="index">
-                  <h4 class="mb-3">{{ recommendation.title }}</h4>
-                  <div class="mb-4">
-                    <div class="d-flex justify-space-between mb-1">
-                      <span>Compatibility</span>
-                      <span>{{ Math.round((recommendation.score / maxScore) * 100) }}%</span>
-                    </div>
-                    <v-progress-linear :model-value="(recommendation.score / maxScore) * 100"
-                      :color="getScoreColor(index)" height="8"></v-progress-linear>
+                <div v-for="(recommendation, index) in results.topRecommendations" :key="index" class="mb-4">
+                  <h4 class="mb-2">{{ recommendation.title }}</h4>
+                  <div class="d-flex justify-space-between mb-1">
+                    <span>Compatibility</span>
+                    <span>{{ getPercentage(recommendation.score, recommendation.maxScore) }}%</span>
                   </div>
+                  <v-progress-linear 
+                    :model-value="getPercentage(recommendation.score, recommendation.maxScore)"
+                    :color="getScoreColor(index)" 
+                    height="8"
+                  ></v-progress-linear>
                 </div>
               </v-card-text>
             </v-card>
@@ -136,9 +112,9 @@
           <div v-else class="text-center">
             <v-icon color="warning" size="64">mdi-alert</v-icon>
             <h3 class="text-h5 mt-4 mb-4">No results found</h3>
-            <p class="mb-4">You need to complete your profile and assessment test first.</p>
-            <v-btn color="primary" :to="{ name: 'Profile' }" prepend-icon="mdi-account-edit">
-              Back to Profile
+            <p class="mb-4">You need to complete the assessment test first.</p>
+            <v-btn color="primary" :to="{ name: 'CareerTest' }" prepend-icon="mdi-clipboard-list">
+              Take the Test
             </v-btn>
           </div>
         </v-card>
@@ -155,9 +131,7 @@ export default {
   name: 'Results',
   data() {
     return {
-      profile: null,
-      results: null,
-      maxScore: 8
+      results: null
     }
   },
   computed: {
@@ -166,7 +140,7 @@ export default {
 
       const topField = this.results.topRecommendations[0]
       const tips = {
-        technology: [
+        technical: [
           "Learn new programming languages that fit current trends",
           "Participate in open source projects to gain experience",
           "Obtain reputable technology certifications",
@@ -184,21 +158,15 @@ export default {
           "Join design communities for feedback",
           "Follow modern design and art trends"
         ],
-        social: [
-          "Develop communication and presentation skills",
-          "Participate in volunteer and community activities",
-          "Learn applied psychology and counseling skills",
-          "Build experience working with diverse groups"
-        ],
-        analytical: [
-          "Learn data analysis tools (Excel, SQL, Python)",
-          "Develop statistical and modeling skills",
-          "Participate in research projects",
-          "Practice logical thinking and problem solving"
+        interdisciplinary: [
+          "Explore emerging fields combining technology with other domains",
+          "Develop strong communication skills for diverse audiences",
+          "Stay informed about how technology impacts various industries",
+          "Build a versatile skill set spanning technical and soft skills"
         ]
       }
 
-      return tips[topField.field] || tips.analytical
+      return tips[topField.field] || tips.technical
     }
   },
   mounted() {
@@ -206,11 +174,6 @@ export default {
   },
   methods: {
     async loadData() {
-      const savedProfile = localStorage.getItem('careerProfile')
-      if (savedProfile) {
-        this.profile = JSON.parse(savedProfile)
-      }
-
       if (auth.isLoggedIn && auth.user && auth.accessToken) {
         try {
           const response = await fetch(`${API_ENDPOINTS.TEST_RESULTS}/${auth.user.id}`, {
@@ -237,38 +200,36 @@ export default {
       }
     },
     getScoreColor(index) {
-      const colors = ['success', 'info', 'warning']
+      const colors = ['success', 'info', 'warning', 'grey']
       return colors[index] || 'grey'
     },
+    getPercentage(score, maxScore) {
+      // Convert from -maxScore to +maxScore range to 0-100%
+      const minScore = -maxScore
+      const range = maxScore - minScore
+      return Math.round(((score - minScore) / range) * 100)
+    },
     downloadResults() {
-      if (!this.profile || !this.results) return
+      if (!this.results) return
 
       const content = this.generateResultsText()
       const blob = new Blob([content], { type: 'text/plain;charset=utf-8' })
       const url = window.URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.href = url
-      link.download = `ket-qua-tu-van-nghe-nghiep-${this.profile.fullName.replace(/\s+/g, '-')}.txt`
+      link.download = `career-assessment-results-${new Date().toISOString().split('T')[0]}.txt`
       link.click()
       window.URL.revokeObjectURL(url)
     },
     generateResultsText() {
       let content = "=== CAREER COUNSELING RESULTS ===\n\n"
 
-      content += "PERSONAL INFORMATION:\n"
-      content += `Full Name: ${this.profile.fullName}\n`
-      content += `Email: ${this.profile.email}\n`
-      content += `Major: ${this.profile.major}\n`
-      content += `GPA: ${this.profile.gpa}\n`
-      content += `Skills: ${this.profile.skills.join(', ')}\n`
-      content += `Interests: ${this.profile.interests.join(', ')}\n\n`
-
       content += "CAREER RECOMMENDATIONS:\n"
       this.results.topRecommendations.forEach((rec, index) => {
         content += `\n${index + 1}. ${rec.title}\n`
         content += `   Description: ${rec.description}\n`
         content += `   Careers: ${rec.careers.join(', ')}\n`
-        content += `   Compatibility Score: ${rec.score}/${this.maxScore}\n`
+        content += `   Score: ${rec.score}/${rec.maxScore}\n`
       })
 
       content += "\nDEVELOPMENT SUGGESTIONS:\n"

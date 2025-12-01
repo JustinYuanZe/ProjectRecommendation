@@ -20,20 +20,29 @@
           </div>
 
           <div v-else-if="!showResults && questions.length > 0">
+            <!-- Part Header -->
+            <v-alert v-if="showPartHeader" type="info" variant="tonal" class="mb-4">
+              <div class="font-weight-bold">Part {{ questions[currentQuestion].part }}: {{ questions[currentQuestion].partTitle }}</div>
+              <div class="text-body-2 mt-1">{{ questions[currentQuestion].partObjective }}</div>
+            </v-alert>
+
             <v-card class="pa-4 mb-6" elevation="2">
+              <v-chip size="small" color="primary" class="mb-2">{{ questions[currentQuestion].id }}</v-chip>
               <v-card-text class="text-h6">
                 {{ questions[currentQuestion].question }}
               </v-card-text>
             </v-card>
 
-            <v-radio-group v-model="answers[currentQuestion]" class="mb-6">
-              <v-radio v-for="(option, index) in questions[currentQuestion].options" :key="index" :value="option.value"
-                class="mb-2">
-                <template v-slot:label>
-                  <span class="text-body-1">{{ option.text }}</span>
-                </template>
-              </v-radio>
-            </v-radio-group>
+            <div class="rating-scale mb-6">
+              <v-radio-group v-model="answers[questions[currentQuestion].id]" inline class="justify-center">
+                <div class="scale-options">
+                  <label v-for="option in ratingOptions" :key="option.value" class="scale-option" :class="{ 'selected': answers[questions[currentQuestion].id] === option.value }">
+                    <v-radio :value="option.value" class="scale-radio"></v-radio>
+                    <span class="scale-text">{{ option.text }}</span>
+                  </label>
+                </div>
+              </v-radio-group>
+            </div>
 
             <v-card-actions class="justify-space-between">
               <v-btn color="secondary" :disabled="currentQuestion === 0" @click="previousQuestion"
@@ -41,12 +50,12 @@
                 Previous
               </v-btn>
 
-              <v-btn v-if="currentQuestion < questions.length - 1" color="primary" :disabled="!answers[currentQuestion]"
+              <v-btn v-if="currentQuestion < questions.length - 1" color="primary" :disabled="answers[questions[currentQuestion].id] === undefined"
                 @click="nextQuestion" append-icon="mdi-arrow-right">
                 Next
               </v-btn>
 
-              <v-btn v-else color="success" :disabled="!answers[currentQuestion]" @click="finishTest"
+              <v-btn v-else color="success" :disabled="answers[questions[currentQuestion].id] === undefined" @click="finishTest"
                 prepend-icon="mdi-check">
                 Complete
               </v-btn>
@@ -78,12 +87,26 @@ export default {
       answers: {},
       showResults: false,
       questions: [],
-      loading: true
+      loading: true,
+      ratingOptions: [
+        { value: -2, text: 'Strongly Disagree' },
+        { value: -1, text: 'Disagree' },
+        { value: 0, text: 'Neutral' },
+        { value: 1, text: 'Agree' },
+        { value: 2, text: 'Strongly Agree' }
+      ]
     }
   },
   computed: {
     progress() {
       return ((this.currentQuestion + 1) / this.questions.length) * 100
+    },
+    showPartHeader() {
+      if (this.questions.length === 0) return false
+      if (this.currentQuestion === 0) return true
+      const currentPart = this.questions[this.currentQuestion].part
+      const prevPart = this.questions[this.currentQuestion - 1]?.part
+      return currentPart !== prevPart
     }
   },
   async mounted() {
@@ -128,12 +151,24 @@ export default {
       this.showResults = true
     },
     async calculateResults() {
-      const answerCounts = {}
-      Object.values(this.answers).forEach(answer => {
-        answerCounts[answer] = (answerCounts[answer] || 0) + 1
+      // Calculate scores by category
+      const categoryScores = {
+        technical: 0,
+        business: 0,
+        creative: 0,
+        interdisciplinary: 0
+      }
+
+      // Process each answer
+      this.questions.forEach(question => {
+        const answer = this.answers[question.id]
+        if (answer !== undefined) {
+          const category = question.category
+          categoryScores[category] = (categoryScores[category] || 0) + answer
+        }
       })
 
-      const results = this.generateCareerRecommendations(answerCounts)
+      const results = this.generateCareerRecommendations(categoryScores)
       localStorage.setItem('careerResults', JSON.stringify(results))
 
       if (auth.isLoggedIn && auth.user && auth.accessToken) {
@@ -161,77 +196,161 @@ export default {
 
       return results
     },
-    generateCareerRecommendations(answerCounts) {
+    generateCareerRecommendations(categoryScores) {
       const careers = {
-        technology: {
-          title: "Information Technology",
-          careers: ["Programmer", "Software Engineer", "Data Scientist", "DevOps Engineer"],
-          description: "Suitable for those who love technology and solving technical problems"
+        technical: {
+          title: "Software Engineering & Computer Science",
+          careers: ["Software Developer", "Data Scientist", "Machine Learning Engineer", "Systems Architect", "Cybersecurity Specialist"],
+          description: "Suitable for those who love technology, problem-solving, and building complex systems"
         },
         business: {
-          title: "Business & Management",
-          careers: ["Project Manager", "Business Analyst", "Marketing Manager", "Business Consultant"],
-          description: "Suitable for those with management skills and business understanding"
+          title: "Business Information Systems & IT Management",
+          careers: ["IT Project Manager", "Business Analyst", "IT Consultant", "Product Manager", "Data Analyst"],
+          description: "Suitable for those with management skills and business understanding combined with technology"
         },
         creative: {
-          title: "Creative & Design",
-          careers: ["UI/UX Designer", "Graphic Designer", "Content Creator", "Architect"],
-          description: "Suitable for those with creativity and aesthetic sense"
+          title: "Digital Design & Media Technology",
+          careers: ["UI/UX Designer", "Front-end Developer", "Digital Content Creator", "Interactive Media Designer", "Web Designer"],
+          description: "Suitable for those with creativity and aesthetic sense in digital media"
         },
-        social: {
-          title: "Social & People",
-          careers: ["Human Resources", "Psychologist", "Teacher", "Social Worker"],
-          description: "Suitable for those who enjoy interaction and helping others"
-        },
-        analytical: {
-          title: "Analysis & Research",
-          careers: ["Data Analyst", "Researcher", "Accountant", "Financial Specialist"],
-          description: "Suitable for those with logical thinking and love for analysis"
+        interdisciplinary: {
+          title: "Interdisciplinary IT & Emerging Technologies",
+          careers: ["Tech Entrepreneur", "Innovation Consultant", "Digital Transformation Specialist", "EdTech Developer", "HealthTech Specialist"],
+          description: "Suitable for those who thrive at the intersection of technology and other fields"
         }
       }
 
-      const fieldScores = {
-        technology: 0,
-        business: 0,
-        creative: 0,
-        social: 0,
-        analytical: 0
-      }
+      // Calculate max possible scores per category
+      const maxScorePerCategory = {}
+      this.questions.forEach(q => {
+        maxScorePerCategory[q.category] = (maxScorePerCategory[q.category] || 0) + 2
+      })
 
-      if (answerCounts.technical || answerCounts.data || answerCounts.tech_learning) {
-        fieldScores.technology += (answerCounts.technical || 0) + (answerCounts.data || 0) + (answerCounts.tech_learning || 0)
-      }
-
-      if (answerCounts.management || answerCounts.business || answerCounts.market_trends) {
-        fieldScores.business += (answerCounts.management || 0) + (answerCounts.business || 0) + (answerCounts.market_trends || 0)
-      }
-
-      if (answerCounts.creative || answerCounts.design || answerCounts.arts_design) {
-        fieldScores.creative += (answerCounts.creative || 0) + (answerCounts.design || 0) + (answerCounts.arts_design || 0)
-      }
-
-      if (answerCounts.social || answerCounts.people || answerCounts.human_psychology) {
-        fieldScores.social += (answerCounts.social || 0) + (answerCounts.people || 0) + (answerCounts.human_psychology || 0)
-      }
-
-      if (answerCounts.analytical || answerCounts.data || answerCounts.detailed) {
-        fieldScores.analytical += (answerCounts.analytical || 0) + (answerCounts.data || 0) + (answerCounts.detailed || 0)
-      }
-
-      const sortedFields = Object.entries(fieldScores)
+      // Sort fields by score
+      const sortedFields = Object.entries(categoryScores)
         .sort(([, a], [, b]) => b - a)
-        .slice(0, 3)
         .map(([field, score]) => ({
           field,
           score,
+          maxScore: maxScorePerCategory[field] || 1,
           ...careers[field]
         }))
 
       return {
         topRecommendations: sortedFields,
-        answerSummary: answerCounts
+        categoryScores
       }
     }
   }
 }
 </script>
+
+<style scoped>
+.rating-scale {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 32px 24px;
+}
+
+.scale-options {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.scale-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 16px;
+  min-width: 120px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  max-width: 160px;
+}
+
+.scale-option:hover {
+  border-color: #1976d2;
+  background: #f5f5f5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scale-option.selected {
+  border-color: #1976d2;
+  background: #e3f2fd;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+}
+
+.scale-radio {
+  transform: scale(1.5);
+}
+
+.scale-radio :deep(.v-selection-control__input) {
+  width: 24px;
+  height: 24px;
+}
+
+.scale-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #424242;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.scale-option.selected .scale-text {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+  .scale-options {
+    gap: 12px;
+  }
+  
+  .scale-option {
+    min-width: 100px;
+    padding: 16px 12px;
+    max-width: 140px;
+  }
+  
+  .scale-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .rating-scale {
+    padding: 24px 16px;
+  }
+  
+  .scale-options {
+    gap: 8px;
+  }
+  
+  .scale-option {
+    min-width: 80px;
+    padding: 14px 8px;
+    max-width: 120px;
+    gap: 8px;
+  }
+  
+  .scale-text {
+    font-size: 0.85rem;
+  }
+  
+  .scale-radio {
+    transform: scale(1.3);
+  }
+}
+</style>
