@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { mount } from '@vue/test-utils'
 import CareerTest from '../../src/views/CareerTest.vue'
 import { auth } from '../../src/store/auth'
+import { API_URL } from '../../src/config/api'
 
 const fetchMock = vi.fn()
 globalThis.fetch = fetchMock
@@ -66,7 +67,7 @@ describe('CareerTest - Database Storage', () => {
 
     // Verify API was called with correct data
     expect(fetchMock).toHaveBeenCalledWith(
-      'http://localhost:3000/test-results',
+      `${API_URL}/test-results`,
       expect.objectContaining({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

@@ -125,7 +125,7 @@
 
 <script>
 import { auth } from '../store/auth'
-import { API_ENDPOINTS } from '../config/api'
+import { API_URL } from '../config/api'
 
 export default {
   name: 'Results',
@@ -176,7 +176,7 @@ export default {
     async loadData() {
       if (auth.isLoggedIn && auth.user && auth.accessToken) {
         try {
-          const response = await fetch(`${API_ENDPOINTS.TEST_RESULTS}/${auth.user.id}`, {
+          const response = await fetch(`${API_URL}/test-results/${auth.user.id}`, {
             headers: {
               'Authorization': auth.getAuthHeader()
             }

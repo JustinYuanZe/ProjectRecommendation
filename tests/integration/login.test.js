@@ -2,6 +2,7 @@ import { mount } from '@vue/test-utils'
 import { describe, it, expect, vi } from 'vitest'
 import Login from '../../src/views/Login.vue'
 import { auth } from '../../src/store/auth'
+import { API_URL } from '../../src/config/api'
 
 const fetchMock = vi.fn()
 globalThis.fetch = fetchMock
@@ -49,7 +50,7 @@ describe('Login View Integration', () => {
     await wrapper.find('form').trigger('submit')
 
     // Check fetch called
-    expect(fetchMock).toHaveBeenCalledWith('http://localhost:3000/login', expect.any(Object))
+    expect(fetchMock).toHaveBeenCalledWith(`${API_URL}/login`, expect.any(Object))
 
     // Check auth store updated
     // We need to wait for the async handleLogin to finish

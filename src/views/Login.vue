@@ -34,7 +34,7 @@
 
 <script>
 import { auth } from '../store/auth'
-import { API_ENDPOINTS } from '../config/api'
+import { API_URL } from '../config/api'
 
 export default {
   name: 'Login',
@@ -54,7 +54,7 @@ export default {
     async handleLogin() {
       this.loading = true
       try {
-        const response = await fetch(API_ENDPOINTS.LOGIN, {
+        const response = await fetch(`${API_URL}/login`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username: this.username, password: this.password })

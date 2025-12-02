@@ -148,7 +148,7 @@
 
 <script>
 import { auth } from '../store/auth'
-import { API_ENDPOINTS } from '../config/api'
+import { API_URL } from '../config/api'
 
 export default {
   name: 'Register',
@@ -274,7 +274,7 @@ export default {
 
       this.loading = true
       try {
-        const response = await fetch(API_ENDPOINTS.REGISTER, {
+        const response = await fetch(`${API_URL}/register`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

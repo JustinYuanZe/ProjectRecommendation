@@ -77,7 +77,7 @@
 
 <script>
 import { auth } from '../store/auth'
-import { API_ENDPOINTS } from '../config/api'
+import { API_URL } from '../config/api'
 
 export default {
   name: 'CareerTest',
@@ -119,7 +119,7 @@ export default {
   methods: {
     async loadQuestions() {
       try {
-        const response = await fetch(API_ENDPOINTS.QUESTIONS)
+        const response = await fetch(`${API_URL}/questions`)
         const data = await response.json()
         if (data.success) {
           this.questions = data.questions
@@ -173,7 +173,7 @@ export default {
 
       if (auth.isLoggedIn && auth.user && auth.accessToken) {
         try {
-          const response = await fetch(API_ENDPOINTS.TEST_RESULTS, {
+          const response = await fetch(`${API_URL}/test-results`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

@@ -227,7 +227,7 @@
 
 <script>
 import { auth } from '../store/auth'
-import { API_ENDPOINTS } from '../config/api'
+import { API_URL } from '../config/api'
 
 export default {
   name: 'Profile',
@@ -341,7 +341,7 @@ export default {
           : null
 
         // Update user profile via API
-        const response = await fetch(`${API_ENDPOINTS.BASE_URL}/users/${this.user.id}/profile`, {
+        const response = await fetch(`${API_URL}/users/${this.user.id}/profile`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

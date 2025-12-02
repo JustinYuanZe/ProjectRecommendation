@@ -138,14 +138,14 @@
 </template>
 
 <script>
-import logo from '../public/logo.png'
 import { auth } from './store/auth'
 
 export default {
   name: 'App',
   data() {
     return {
-      logo,
+      // public assets are served at root path — use /logo.png
+      logo: '/logo.png',
       auth,
       menuItems: [
         { title: 'Home', to: { name: 'Home' } },

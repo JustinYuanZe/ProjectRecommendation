@@ -135,13 +135,13 @@
 
 <script>
 import { auth } from '../store/auth'
-import logo from '../../public/p1.png'
 
 export default {
   name: 'Home',
   data() {
     return {
-      heroImage: logo,
+      // public assets are served at root path — use /p1.png
+      heroImage: '/p1.png',
       features: [
         {
           icon: 'mdi-compass-outline',

@@ -2,6 +2,7 @@ import { mount } from '@vue/test-utils'
 import { describe, it, expect, vi } from 'vitest'
 import Register from '../../src/views/Register.vue'
 import { auth } from '../../src/store/auth'
+import { API_URL } from '../../src/config/api'
 
 const fetchMock = vi.fn()
 globalThis.fetch = fetchMock
@@ -64,7 +65,7 @@ describe('Register View Functional', () => {
 
     await wrapper.find('form').trigger('submit')
 
-    expect(fetchMock).toHaveBeenCalledWith('http://localhost:3000/register', expect.any(Object))
+    expect(fetchMock).toHaveBeenCalledWith(`${API_URL}/register`, expect.any(Object))
     
     await new Promise(r => setTimeout(r, 1100)) // Wait for timeout in component
     expect(auth.isLoggedIn).toBe(true)
