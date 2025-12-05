@@ -5,7 +5,7 @@
         <v-card class="pa-6" elevation="4">
           <v-card-title class="text-h4 text-center mb-6">
             <v-icon left color="success">mdi-chart-line</v-icon>
-            Career Counseling Results
+            {{ $t('results.title') }}
           </v-card-title>
 
           <div v-if="results">
@@ -13,7 +13,7 @@
             <v-card class="mb-6" elevation="2">
               <v-card-title class="bg-success text-white">
                 <v-icon left>mdi-star</v-icon>
-                Suitable Career Recommendations
+                {{ $t('results.recommendationsTitle') }}
               </v-card-title>
               <v-card-text class="pa-0">
                 <v-expansion-panels variant="accordion">
@@ -26,7 +26,7 @@
                         <div>
                           <div class="font-weight-bold">{{ recommendation.title }}</div>
                           <div class="text-caption text-grey">
-                            Score: {{ recommendation.score }} / {{ recommendation.maxScore }}
+                            {{ $t('results.score') }}: {{ recommendation.score }} / {{ recommendation.maxScore }}
                           </div>
                         </div>
                       </div>
@@ -34,7 +34,7 @@
                     <v-expansion-panel-text>
                       <div class="pa-4">
                         <p class="mb-4">{{ recommendation.description }}</p>
-                        <h4 class="mb-3">Specific Careers:</h4>
+                        <h4 class="mb-3">{{ $t('results.specificCareers') }}</h4>
                         <v-row>
                           <v-col cols="12" md="6" v-for="career in recommendation.careers" :key="career">
                             <v-card class="pa-3" elevation="1" color="grey-lighten-5">
@@ -56,13 +56,13 @@
             <v-card class="mb-6" elevation="2">
               <v-card-title class="bg-info text-white">
                 <v-icon left>mdi-target</v-icon>
-                Category Score Analysis
+                {{ $t('results.scoreAnalysisTitle') }}
               </v-card-title>
               <v-card-text class="pa-4">
                 <div v-for="(recommendation, index) in results.topRecommendations" :key="index" class="mb-4">
                   <h4 class="mb-2">{{ recommendation.title }}</h4>
                   <div class="d-flex justify-space-between mb-1">
-                    <span>Compatibility</span>
+                    <span>{{ $t('results.compatibility') }}</span>
                     <span>{{ getPercentage(recommendation.score, recommendation.maxScore) }}%</span>
                   </div>
                   <v-progress-linear 
@@ -78,11 +78,11 @@
             <v-card class="mb-6" elevation="2">
               <v-card-title class="bg-orange text-white">
                 <v-icon left>mdi-lightbulb</v-icon>
-                Development Suggestions
+                {{ $t('results.developmentTitle') }}
               </v-card-title>
               <v-card-text class="pa-4">
                 <v-alert type="info" variant="tonal" class="mb-4">
-                  Based on your results, here are suggestions for career development:
+                  {{ $t('results.developmentIntro') }}
                 </v-alert>
 
                 <v-list>
@@ -96,25 +96,25 @@
             <!-- Action Buttons -->
             <v-card-actions class="justify-center">
               <v-btn color="secondary" :to="{ name: 'CareerTest' }" prepend-icon="mdi-refresh">
-                Retake Test
+                {{ $t('results.retakeTest') }}
               </v-btn>
 
               <v-btn color="primary" @click="downloadResults" prepend-icon="mdi-download" class="ml-4">
-                Download Results
+                {{ $t('results.downloadResults') }}
               </v-btn>
 
               <v-btn color="success" :to="{ name: 'Home' }" prepend-icon="mdi-home" class="ml-4">
-                Go Home
+                {{ $t('results.goHome') }}
               </v-btn>
             </v-card-actions>
           </div>
 
           <div v-else class="text-center">
             <v-icon color="warning" size="64">mdi-alert</v-icon>
-            <h3 class="text-h5 mt-4 mb-4">No results found</h3>
-            <p class="mb-4">You need to complete the assessment test first.</p>
+            <h3 class="text-h5 mt-4 mb-4">{{ $t('results.noResults') }}</h3>
+            <p class="mb-4">{{ $t('results.noResultsDesc') }}</p>
             <v-btn color="primary" :to="{ name: 'CareerTest' }" prepend-icon="mdi-clipboard-list">
-              Take the Test
+              {{ $t('results.takeTest') }}
             </v-btn>
           </div>
         </v-card>
@@ -139,34 +139,14 @@ export default {
       if (!this.results || !this.results.topRecommendations.length) return []
 
       const topField = this.results.topRecommendations[0]
-      const tips = {
-        technical: [
-          "Learn new programming languages that fit current trends",
-          "Participate in open source projects to gain experience",
-          "Obtain reputable technology certifications",
-          "Build an online portfolio showcasing your projects"
-        ],
-        business: [
-          "Develop data analysis and reporting skills",
-          "Take project management courses (PMP, Agile)",
-          "Build professional networking relationships",
-          "Join internship programs at companies"
-        ],
-        creative: [
-          "Build a diverse creative portfolio",
-          "Learn the latest professional design tools",
-          "Join design communities for feedback",
-          "Follow modern design and art trends"
-        ],
-        interdisciplinary: [
-          "Explore emerging fields combining technology with other domains",
-          "Develop strong communication skills for diverse audiences",
-          "Stay informed about how technology impacts various industries",
-          "Build a versatile skill set spanning technical and soft skills"
-        ]
+      const tipsKey = `results.${topField.field}Tips`
+      
+      // Try to get translated tips, fallback to technical
+      const tips = this.$tm(tipsKey)
+      if (tips && tips.length > 0) {
+        return tips
       }
-
-      return tips[topField.field] || tips.technical
+      return this.$tm('results.technicalTips')
     }
   },
   mounted() {
@@ -204,7 +184,6 @@ export default {
       return colors[index] || 'grey'
     },
     getPercentage(score, maxScore) {
-      // Convert from -maxScore to +maxScore range to 0-100%
       const minScore = -maxScore
       const range = maxScore - minScore
       return Math.round(((score - minScore) / range) * 100)
@@ -222,22 +201,22 @@ export default {
       window.URL.revokeObjectURL(url)
     },
     generateResultsText() {
-      let content = "=== CAREER COUNSELING RESULTS ===\n\n"
+      let content = `=== ${this.$t('results.title').toUpperCase()} ===\n\n`
 
-      content += "CAREER RECOMMENDATIONS:\n"
+      content += `${this.$t('results.recommendationsTitle').toUpperCase()}:\n`
       this.results.topRecommendations.forEach((rec, index) => {
         content += `\n${index + 1}. ${rec.title}\n`
-        content += `   Description: ${rec.description}\n`
-        content += `   Careers: ${rec.careers.join(', ')}\n`
-        content += `   Score: ${rec.score}/${rec.maxScore}\n`
+        content += `   ${rec.description}\n`
+        content += `   ${this.$t('results.specificCareers')} ${rec.careers.join(', ')}\n`
+        content += `   ${this.$t('results.score')}: ${rec.score}/${rec.maxScore}\n`
       })
 
-      content += "\nDEVELOPMENT SUGGESTIONS:\n"
+      content += `\n${this.$t('results.developmentTitle').toUpperCase()}:\n`
       this.developmentTips.forEach((tip, index) => {
         content += `${index + 1}. ${tip}\n`
       })
 
-      content += `\nReport generated on: ${new Date().toLocaleString('en-US')}\n`
+      content += `\n${new Date().toLocaleString()}\n`
 
       return content
     }

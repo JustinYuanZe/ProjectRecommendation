@@ -5,24 +5,24 @@
         <v-card class="pa-6" elevation="4">
           <v-card-title class="text-h4 text-center mb-4">
             <v-icon left color="primary">mdi-clipboard-list</v-icon>
-            Career Assessment Test
+            {{ $t('test.title') }}
           </v-card-title>
 
           <v-card-subtitle class="text-center mb-4">
-            Question {{ currentQuestion + 1 }} / {{ questions.length }}
+            {{ $t('test.questionOf', { current: currentQuestion + 1, total: questions.length }) }}
           </v-card-subtitle>
 
           <v-progress-linear :model-value="progress" color="primary" height="8" class="mb-6"></v-progress-linear>
 
           <div v-if="loading" class="text-center py-8">
             <v-progress-circular indeterminate color="primary"></v-progress-circular>
-            <p class="mt-4">Loading questions...</p>
+            <p class="mt-4">{{ $t('test.loadingQuestions') }}</p>
           </div>
 
           <div v-else-if="!showResults && questions.length > 0">
             <!-- Part Header -->
             <v-alert v-if="showPartHeader" type="info" variant="tonal" class="mb-4">
-              <div class="font-weight-bold">Part {{ questions[currentQuestion].part }}: {{ questions[currentQuestion].partTitle }}</div>
+              <div class="font-weight-bold">{{ $t('test.part', { number: questions[currentQuestion].part }) }}: {{ questions[currentQuestion].partTitle }}</div>
               <div class="text-body-2 mt-1">{{ questions[currentQuestion].partObjective }}</div>
             </v-alert>
 
@@ -36,7 +36,7 @@
             <div class="rating-scale mb-6">
               <v-radio-group v-model="answers[questions[currentQuestion].id]" inline class="justify-center">
                 <div class="scale-options">
-                  <label v-for="option in ratingOptions" :key="option.value" class="scale-option" :class="{ 'selected': answers[questions[currentQuestion].id] === option.value }">
+                  <label v-for="option in translatedRatingOptions" :key="option.value" class="scale-option" :class="{ 'selected': answers[questions[currentQuestion].id] === option.value }">
                     <v-radio :value="option.value" class="scale-radio"></v-radio>
                     <span class="scale-text">{{ option.text }}</span>
                   </label>
@@ -47,26 +47,26 @@
             <v-card-actions class="justify-space-between">
               <v-btn color="secondary" :disabled="currentQuestion === 0" @click="previousQuestion"
                 prepend-icon="mdi-arrow-left">
-                Previous
+                {{ $t('common.previous') }}
               </v-btn>
 
               <v-btn v-if="currentQuestion < questions.length - 1" color="primary" :disabled="answers[questions[currentQuestion].id] === undefined"
                 @click="nextQuestion" append-icon="mdi-arrow-right">
-                Next
+                {{ $t('common.next') }}
               </v-btn>
 
               <v-btn v-else color="success" :disabled="answers[questions[currentQuestion].id] === undefined" @click="finishTest"
                 prepend-icon="mdi-check">
-                Complete
+                {{ $t('test.complete') }}
               </v-btn>
             </v-card-actions>
           </div>
 
           <div v-else-if="showResults" class="text-center">
             <v-icon color="success" size="64">mdi-check-circle</v-icon>
-            <h3 class="text-h5 mt-4 mb-4">Assessment completed!</h3>
+            <h3 class="text-h5 mt-4 mb-4">{{ $t('test.completed') }}</h3>
             <v-btn color="primary" size="large" :to="{ name: 'Results' }" prepend-icon="mdi-chart-line">
-              View Results
+              {{ $t('test.viewResults') }}
             </v-btn>
           </div>
         </v-card>
@@ -87,14 +87,7 @@ export default {
       answers: {},
       showResults: false,
       questions: [],
-      loading: true,
-      ratingOptions: [
-        { value: -2, text: 'Strongly Disagree' },
-        { value: -1, text: 'Disagree' },
-        { value: 0, text: 'Neutral' },
-        { value: 1, text: 'Agree' },
-        { value: 2, text: 'Strongly Agree' }
-      ]
+      loading: true
     }
   },
   computed: {
@@ -107,6 +100,15 @@ export default {
       const currentPart = this.questions[this.currentQuestion].part
       const prevPart = this.questions[this.currentQuestion - 1]?.part
       return currentPart !== prevPart
+    },
+    translatedRatingOptions() {
+      return [
+        { value: -2, text: this.$t('test.stronglyDisagree') },
+        { value: -1, text: this.$t('test.disagree') },
+        { value: 0, text: this.$t('test.neutral') },
+        { value: 1, text: this.$t('test.agree') },
+        { value: 2, text: this.$t('test.stronglyAgree') }
+      ]
     }
   },
   async mounted() {
@@ -151,7 +153,6 @@ export default {
       this.showResults = true
     },
     async calculateResults() {
-      // Calculate scores by category
       const categoryScores = {
         technical: 0,
         business: 0,
@@ -159,7 +160,6 @@ export default {
         interdisciplinary: 0
       }
 
-      // Process each answer
       this.questions.forEach(question => {
         const answer = this.answers[question.id]
         if (answer !== undefined) {
@@ -220,13 +220,11 @@ export default {
         }
       }
 
-      // Calculate max possible scores per category
       const maxScorePerCategory = {}
       this.questions.forEach(q => {
         maxScorePerCategory[q.category] = (maxScorePerCategory[q.category] || 0) + 2
       })
 
-      // Sort fields by score
       const sortedFields = Object.entries(categoryScores)
         .sort(([, a], [, b]) => b - a)
         .map(([field, score]) => ({

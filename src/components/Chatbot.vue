@@ -25,7 +25,7 @@
       <v-card-title class="chatbot-header d-flex align-center justify-space-between">
         <div class="d-flex align-center">
           <v-icon color="white" class="mr-2">mdi-robot-happy</v-icon>
-          <span class="text-white font-weight-bold">Career Assistant</span>
+          <span class="text-white font-weight-bold">{{ $t('chatbot.title') }}</span>
         </div>
         <div>
           <v-btn
@@ -33,7 +33,7 @@
             variant="text"
             size="small"
             @click="clearChat"
-            title="Clear chat"
+            :title="$t('chatbot.clearChat')"
           >
             <v-icon color="white" size="small">mdi-delete-outline</v-icon>
           </v-btn>
@@ -42,7 +42,7 @@
             variant="text"
             size="small"
             @click="toggleChat"
-            title="Close"
+            :title="$t('common.close')"
           >
             <v-icon color="white">mdi-close</v-icon>
           </v-btn>
@@ -54,14 +54,14 @@
         <div v-if="messages.length === 0" class="welcome-section pa-4">
           <div class="text-center mb-4">
             <v-icon size="48" color="primary" class="mb-2">mdi-robot-happy</v-icon>
-            <h3 class="text-h6 mb-1">Hi! I'm your Career Assistant</h3>
-            <p class="text-body-2 text-grey">I can help you explore careers, prepare for interviews, and plan your professional journey.</p>
+            <h3 class="text-h6 mb-1">{{ $t('chatbot.welcome') }}</h3>
+            <p class="text-body-2 text-grey">{{ $t('chatbot.welcomeDesc') }}</p>
           </div>
           <div class="starter-questions">
-            <p class="text-caption text-grey-darken-1 mb-2">Try asking:</p>
+            <p class="text-caption text-grey-darken-1 mb-2">{{ $t('chatbot.tryAsking') }}</p>
             <v-chip
-              v-for="question in starterQuestions"
-              :key="question"
+              v-for="(question, key) in translatedStarterQuestions"
+              :key="key"
               size="small"
               class="mr-1 mb-1"
               @click="handleQuickReply(question)"
@@ -106,7 +106,7 @@
           <div class="message-content">
             <div class="message-bubble bot-bubble">
               <v-progress-circular indeterminate size="20" color="primary"></v-progress-circular>
-              <span class="ml-2">Thinking...</span>
+              <span class="ml-2">{{ $t('chatbot.thinking') }}</span>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
       <v-card-actions class="chatbot-input pa-2">
         <v-text-field
           v-model="inputMessage"
-          placeholder="Type your message..."
+          :placeholder="$t('chatbot.placeholder')"
           variant="outlined"
           density="compact"
           hide-details
@@ -149,17 +149,19 @@ export default {
       isOpen: false,
       messages: [],
       inputMessage: '',
-      loading: false,
-      starterQuestions: [
-        "What careers match my results?",
-        "How do I prepare for tech interviews?",
-        "What skills should I learn?",
-        "Help me write a resume",
-        "Best job search websites?"
-      ]
+      loading: false
     }
   },
   computed: {
+    translatedStarterQuestions() {
+      return [
+        this.$t('chatbot.starterQuestions.q1'),
+        this.$t('chatbot.starterQuestions.q2'),
+        this.$t('chatbot.starterQuestions.q3'),
+        this.$t('chatbot.starterQuestions.q4'),
+        this.$t('chatbot.starterQuestions.q5')
+      ]
+    },
     dynamicQuickReplies() {
       const results = this.getLatestResultSummary()
       if (results.hasCompletedQuiz) {
@@ -244,7 +246,8 @@ export default {
           auth.user,
           currentPage,
           testState,
-          latestResultSummary
+          latestResultSummary,
+          this.$i18n.locale
         )
         
         // Send to chatbot service
@@ -275,7 +278,7 @@ export default {
         console.error('Error sending message:', error)
         this.messages.push({
           type: 'bot',
-          text: 'Sorry, I encountered an error. Please try again.',
+          text: this.$t('chatbot.errorMessage'),
           timestamp: new Date()
         })
       } finally {

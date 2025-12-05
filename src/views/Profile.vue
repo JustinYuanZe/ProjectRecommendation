@@ -5,28 +5,28 @@
         <v-card class="pa-6" elevation="4">
           <v-card-title class="text-h4 text-center mb-4">
             <v-icon left color="primary">mdi-account-edit</v-icon>
-            User Profile
+            {{ $t('profile.title') }}
           </v-card-title>
 
           <v-card-subtitle class="text-center mb-4">
-            Username: {{ user?.username }} | Department: {{ user?.department }}
+            {{ $t('profile.subtitle', { username: user?.username, department: user?.department }) }}
           </v-card-subtitle>
 
           <v-form ref="form" @submit.prevent="saveProfile" v-model="valid">
             <v-row>
               <!-- Identity & Gender -->
               <v-col cols="12" md="6">
-                <v-radio-group v-model="profile.identity" label="Identity" row>
-                  <v-radio label="Student" value="student"></v-radio>
-                  <v-radio label="Unemployed" value="Unemployed"></v-radio>
-                  <v-radio label="Employed" value="employed"></v-radio>
+                <v-radio-group v-model="profile.identity" :label="$t('profile.identity')" row>
+                  <v-radio :label="$t('profile.student')" value="student"></v-radio>
+                  <v-radio :label="$t('profile.unemployed')" value="Unemployed"></v-radio>
+                  <v-radio :label="$t('profile.employed')" value="employed"></v-radio>
                 </v-radio-group>
               </v-col>
 
               <v-col cols="12" md="6">
-                <v-radio-group v-model="profile.gender" label="Gender" row>
-                  <v-radio label="Female" value="female"></v-radio>
-                  <v-radio label="Male" value="male"></v-radio>
+                <v-radio-group v-model="profile.gender" :label="$t('profile.gender')" row>
+                  <v-radio :label="$t('profile.female')" value="female"></v-radio>
+                  <v-radio :label="$t('profile.male')" value="male"></v-radio>
                 </v-radio-group>
               </v-col>
 
@@ -34,7 +34,7 @@
               <v-col cols="12" md="6">
                 <v-text-field
                   v-model="profile.accountNumber"
-                  label="Account Number"
+                  :label="$t('profile.accountNumber')"
                   prepend-icon="mdi-account-box"
                   variant="outlined"
                 ></v-text-field>
@@ -43,7 +43,7 @@
               <v-col cols="12" md="6">
                 <v-text-field
                   v-model="profile.name"
-                  label="Full Name"
+                  :label="$t('profile.fullName')"
                   prepend-icon="mdi-account"
                   variant="outlined"
                 ></v-text-field>
@@ -51,13 +51,13 @@
 
               <!-- Date of Birth -->
               <v-col cols="12">
-                <label class="text-subtitle-2 mb-2 d-block">Date of Birth</label>
+                <label class="text-subtitle-2 mb-2 d-block">{{ $t('profile.dateOfBirth') }}</label>
                 <v-row dense>
                   <v-col cols="4">
                     <v-select
                       v-model="dobYear"
                       :items="years"
-                      label="Year"
+                      :label="$t('profile.year')"
                       variant="outlined"
                       density="compact"
                     ></v-select>
@@ -66,7 +66,7 @@
                     <v-select
                       v-model="dobMonth"
                       :items="months"
-                      label="Month"
+                      :label="$t('profile.month')"
                       variant="outlined"
                       density="compact"
                     ></v-select>
@@ -75,7 +75,7 @@
                     <v-select
                       v-model="dobDay"
                       :items="days"
-                      label="Day"
+                      :label="$t('profile.day')"
                       variant="outlined"
                       density="compact"
                     ></v-select>
@@ -87,7 +87,7 @@
               <v-col cols="12" md="6">
                 <v-text-field
                   v-model="profile.email"
-                  label="Email Address"
+                  :label="$t('profile.email')"
                   prepend-icon="mdi-email"
                   type="email"
                   :rules="emailRules"
@@ -98,7 +98,7 @@
               <v-col cols="12" md="6">
                 <v-text-field
                   v-model="profile.mobilePhone"
-                  label="Mobile Phone"
+                  :label="$t('profile.mobilePhone')"
                   prepend-icon="mdi-phone"
                   variant="outlined"
                 ></v-text-field>
@@ -107,14 +107,14 @@
               <!-- Enrollment Information -->
               <v-col cols="12">
                 <v-divider class="my-4"></v-divider>
-                <h3 class="text-h6 mb-3">Enrollment Information</h3>
+                <h3 class="text-h6 mb-3">{{ $t('profile.enrollmentInfo') }}</h3>
               </v-col>
 
               <v-col cols="12" md="6">
                 <v-select
                   v-model="profile.enrollmentYear"
                   :items="enrollmentYears"
-                  label="Enrollment Year"
+                  :label="$t('profile.enrollmentYear')"
                   prepend-icon="mdi-calendar"
                   variant="outlined"
                 ></v-select>
@@ -124,7 +124,7 @@
                 <v-select
                   v-model="profile.enrollmentLevel"
                   :items="enrollmentLevels"
-                  label="Year/Level"
+                  :label="$t('profile.enrollmentLevel')"
                   prepend-icon="mdi-school"
                   variant="outlined"
                 ></v-select>
@@ -134,7 +134,7 @@
               <v-col cols="12" md="6">
                 <v-text-field
                   v-model="profile.schoolCity"
-                  label="School City"
+                  :label="$t('profile.schoolCity')"
                   prepend-icon="mdi-city"
                   variant="outlined"
                 ></v-text-field>
@@ -143,7 +143,7 @@
               <v-col cols="12" md="6">
                 <v-text-field
                   v-model="profile.schoolName"
-                  label="School Name"
+                  :label="$t('profile.schoolName')"
                   prepend-icon="mdi-school-outline"
                   variant="outlined"
                 ></v-text-field>
@@ -153,8 +153,8 @@
               <v-col cols="12" md="6">
                 <v-select
                   v-model="profile.durationOfStudy"
-                  :items="durations"
-                  label="Duration of Study"
+                  :items="translatedDurations"
+                  :label="$t('profile.durationOfStudy')"
                   prepend-icon="mdi-book-open-page-variant"
                   variant="outlined"
                 ></v-select>
@@ -163,7 +163,7 @@
               <v-col cols="12" md="6">
                 <v-text-field
                   v-model="profile.departmentInstitute"
-                  label="Department/Institute"
+                  :label="$t('profile.departmentInstitute')"
                   prepend-icon="mdi-domain"
                   variant="outlined"
                 ></v-text-field>
@@ -173,7 +173,7 @@
                 <v-select
                   v-model="profile.yearClass"
                   :items="yearClasses"
-                  label="Year/Class"
+                  :label="$t('profile.yearClass')"
                   prepend-icon="mdi-counter"
                   variant="outlined"
                 ></v-select>
@@ -182,7 +182,7 @@
               <v-col cols="12" md="6">
                 <v-text-field
                   v-model="profile.studentId"
-                  label="Student ID"
+                  :label="$t('profile.studentId')"
                   prepend-icon="mdi-card-account-details"
                   variant="outlined"
                 ></v-text-field>
@@ -196,7 +196,7 @@
                     :to="{ name: 'Home' }"
                     prepend-icon="mdi-arrow-left"
                   >
-                    Back
+                    {{ $t('common.back') }}
                   </v-btn>
                   
                   <v-btn
@@ -206,7 +206,7 @@
                     class="ml-4"
                     :loading="loading"
                   >
-                    Save Changes
+                    {{ loading ? $t('profile.saving') : $t('profile.saveChanges') }}
                   </v-btn>
                 </v-card-actions>
               </v-col>
@@ -219,7 +219,7 @@
     <v-snackbar v-model="snackbar.show" :color="snackbar.color">
       {{ snackbar.text }}
       <template v-slot:actions>
-        <v-btn variant="text" @click="snackbar.show = false">Close</v-btn>
+        <v-btn variant="text" @click="snackbar.show = false">{{ $t('common.close') }}</v-btn>
       </template>
     </v-snackbar>
   </v-container>
@@ -260,11 +260,7 @@ export default {
       days: [],
       enrollmentYears: [],
       enrollmentLevels: [1, 2, 3, 4, 5, 6],
-      durations: ['Bachelor', 'Master', 'Doctorate'],
       yearClasses: [1, 2, 3, 4, 5],
-      emailRules: [
-        v => !v || /.+@.+\..+/.test(v) || 'Email must be valid'
-      ],
       snackbar: {
         show: false,
         text: '',
@@ -272,25 +268,35 @@ export default {
       }
     }
   },
+  computed: {
+    emailRules() {
+      return [
+        v => !v || /.+@.+\..+/.test(v) || this.$t('profile.invalidEmail')
+      ]
+    },
+    translatedDurations() {
+      return [
+        { title: this.$t('profile.bachelor'), value: 'Bachelor' },
+        { title: this.$t('profile.master'), value: 'Master' },
+        { title: this.$t('profile.doctorate'), value: 'Doctorate' }
+      ]
+    }
+  },
   created() {
-    // Populate date and enrollment lists
     const currentYear = new Date().getFullYear()
     for (let y = 1950; y <= currentYear; y++) this.years.push(y)
     for (let m = 1; m <= 12; m++) this.months.push(m)
     for (let d = 1; d <= 31; d++) this.days.push(d)
     for (let y = 2000; y <= currentYear; y++) this.enrollmentYears.push(y)
 
-    // Load user data from auth store
     this.user = auth.user
     
-    // Redirect to login if not authenticated
     if (!this.user || !auth.isLoggedIn) {
       this.$router.push({ name: 'Login' })
       return
     }
 
     if (this.user?.profile) {
-      // Populate profile fields from user data
       const p = this.user.profile
       this.profile = {
         identity: p.identity || 'student',
@@ -309,7 +315,6 @@ export default {
         studentId: p.studentId || ''
       }
 
-      // Parse dateOfBirth
       if (p.dateOfBirth && typeof p.dateOfBirth === 'object') {
         this.dobYear = p.dateOfBirth.year
         this.dobMonth = p.dateOfBirth.month
@@ -319,28 +324,24 @@ export default {
   },
   methods: {
     async saveProfile() {
-      // Check if user is logged in
       if (!this.user || !this.user.id) {
-        this.showSnackbar('You must be logged in to update your profile', 'error')
+        this.showSnackbar(this.$t('profile.loginRequired'), 'error')
         this.$router.push({ name: 'Login' })
         return
       }
 
-      // Validate form
       const { valid } = await this.$refs.form.validate()
       if (!valid) {
-        this.showSnackbar('Please fix the form errors', 'warning')
+        this.showSnackbar(this.$t('profile.fixErrors'), 'warning')
         return
       }
 
       this.loading = true
       try {
-        // Build dateOfBirth object
         const dateOfBirth = this.dobYear && this.dobMonth && this.dobDay
           ? { year: this.dobYear, month: this.dobMonth, day: this.dobDay }
           : null
 
-        // Update user profile via API
         const response = await fetch(`${API_URL}/users/${this.user.id}/profile`, {
           method: 'PUT',
           headers: {
@@ -369,17 +370,15 @@ export default {
         const data = await response.json()
 
         if (data.success) {
-          // Update local user object
           auth.user.profile = data.user.profile
           localStorage.setItem('user', JSON.stringify(auth.user))
-          
-          this.showSnackbar('Profile updated successfully', 'success')
+          this.showSnackbar(this.$t('profile.updateSuccess'), 'success')
         } else {
-          this.showSnackbar(data.message || 'Failed to update profile', 'error')
+          this.showSnackbar(data.message || this.$t('profile.updateError'), 'error')
         }
       } catch (error) {
         console.error('Profile update error:', error)
-        this.showSnackbar('An error occurred while saving', 'error')
+        this.showSnackbar(this.$t('profile.updateError'), 'error')
       } finally {
         this.loading = false
       }

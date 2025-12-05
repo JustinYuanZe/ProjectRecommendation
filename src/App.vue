@@ -5,14 +5,7 @@
       <v-container fluid class="px-6">
         <v-row align="center" no-gutters>
           <v-col cols="auto">
-            <span class="text-caption text-white">Ministry of Education</span>
-          </v-col>
-          <v-spacer></v-spacer>
-          <v-col cols="auto">
-            <v-btn variant="text" size="small" class="text-white text-caption">
-              <v-icon size="small" class="mr-1">mdi-earth</v-icon>
-              Language
-            </v-btn>
+            <span class="text-caption text-white">{{ $t('common.ministry') }}</span>
           </v-col>
         </v-row>
       </v-container>
@@ -26,8 +19,8 @@
             <div class="logo-section" @click="$router.push({ name: 'Home' })" style="cursor: pointer;">
               <img :src="logo" alt="Advisory System logo" height="50" width="50" class="mr-4" />
               <div class="logo-text">
-                <div class="text-h5 font-weight-bold blue-primary--text">Advisory System</div>
-                <div class="text-caption text--secondary">Career Counseling Platform</div>
+                <div class="text-h5 font-weight-bold blue-primary--text">{{ $t('common.appName') }}</div>
+                <div class="text-caption text--secondary">{{ $t('common.tagline') }}</div>
               </div>
             </div>
           </v-col>
@@ -36,18 +29,43 @@
 
           <v-col cols="auto">
             <div class="nav-menu d-flex align-center">
-              <v-btn v-for="item in menuItems" :key="item.title" :to="item.to" variant="text" class="nav-btn mx-2"
+              <v-btn v-for="item in menuItems" :key="item.key" :to="item.to" variant="text" class="nav-btn mx-2"
                 size="large">
-                {{ item.title }}
+                {{ $t(item.labelKey) }}
               </v-btn>
+
+              <!-- Language Switcher -->
+              <v-menu>
+                <template v-slot:activator="{ props }">
+                  <v-btn v-bind="props" variant="text" class="nav-btn mx-2">
+                    <v-icon class="mr-1">mdi-earth</v-icon>
+                    {{ currentLocaleName }}
+                    <v-icon size="small" class="ml-1">mdi-chevron-down</v-icon>
+                  </v-btn>
+                </template>
+                <v-list density="compact">
+                  <v-list-item
+                    v-for="lang in availableLocales"
+                    :key="lang.code"
+                    @click="changeLanguage(lang.code)"
+                    :active="currentLocale === lang.code"
+                  >
+                    <template v-slot:prepend>
+                      <v-icon v-if="currentLocale === lang.code" color="primary">mdi-check</v-icon>
+                      <v-icon v-else></v-icon>
+                    </template>
+                    <v-list-item-title>{{ lang.name }}</v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
 
               <!-- Auth buttons -->
               <template v-if="!auth.isLoggedIn">
                 <v-btn :to="{ name: 'Login' }" variant="outlined" color="primary" class="mx-2">
-                  Login
+                  {{ $t('nav.login') }}
                 </v-btn>
                 <v-btn :to="{ name: 'Register' }" color="primary" class="mx-2">
-                  Register
+                  {{ $t('nav.register') }}
                 </v-btn>
               </template>
               <template v-else>
@@ -60,10 +78,10 @@
                   </template>
                   <v-list>
                     <v-list-item :to="{ name: 'Profile' }">
-                      <v-list-item-title>Profile</v-list-item-title>
+                      <v-list-item-title>{{ $t('nav.profile') }}</v-list-item-title>
                     </v-list-item>
                     <v-list-item @click="handleLogout">
-                      <v-list-item-title>Logout</v-list-item-title>
+                      <v-list-item-title>{{ $t('nav.logout') }}</v-list-item-title>
                     </v-list-item>
                   </v-list>
                 </v-menu>
@@ -86,28 +104,28 @@
           <v-col cols="12" md="4">
             <div class="footer-logo mb-4">
               <img :src="logo" alt="Advisory System logo" height="40" width="40" class="mb-2" />
-              <div class="text-subtitle-1 font-weight-bold">Advisory System</div>
-              <div class="text-caption text--secondary">Career Counseling Platform</div>
+              <div class="text-subtitle-1 font-weight-bold">{{ $t('common.appName') }}</div>
+              <div class="text-caption text--secondary">{{ $t('common.tagline') }}</div>
             </div>
           </v-col>
 
           <v-col cols="12" md="4">
             <div class="footer-section">
-              <h4 class="text-subtitle-1 font-weight-bold mb-3">About Platform</h4>
+              <h4 class="text-subtitle-1 font-weight-bold mb-3">{{ $t('footer.aboutPlatform') }}</h4>
               <div class="footer-links">
-                <router-link to="/about" class="footer-link">About Us</router-link>
-                <router-link to="/faq" class="footer-link">FAQ</router-link>
+                <router-link to="/about" class="footer-link">{{ $t('nav.about') }}</router-link>
+                <router-link to="/faq" class="footer-link">{{ $t('nav.faq') }}</router-link>
               </div>
             </div>
           </v-col>
 
           <v-col cols="12" md="4">
             <div class="footer-section">
-              <h4 class="text-subtitle-1 font-weight-bold mb-3">Services</h4>
+              <h4 class="text-subtitle-1 font-weight-bold mb-3">{{ $t('footer.services') }}</h4>
               <div class="footer-links">
-                <router-link to="/profile" class="footer-link">Career Exploration</router-link>
-                <router-link to="/career-test" class="footer-link">Skills Assessment</router-link>
-                <router-link to="/results" class="footer-link">Learning Recommendations</router-link>
+                <router-link to="/profile" class="footer-link">{{ $t('footer.careerExploration') }}</router-link>
+                <router-link to="/career-test" class="footer-link">{{ $t('footer.skillsAssessment') }}</router-link>
+                <router-link to="/results" class="footer-link">{{ $t('footer.learningRecommendations') }}</router-link>
               </div>
             </div>
           </v-col>
@@ -118,7 +136,7 @@
         <v-row align="center">
           <v-col cols="12" class="text-center">
             <div class="text-caption text--secondary">
-              © 2025 Ministry of Education. All rights reserved.
+              {{ $t('common.copyright') }}
             </div>
           </v-col>
         </v-row>
@@ -130,7 +148,7 @@
       {{ snackbar.text }}
       <template v-slot:actions>
         <v-btn variant="text" @click="snackbar.show = false">
-          Close
+          {{ $t('common.close') }}
         </v-btn>
       </template>
     </v-snackbar>
@@ -143,6 +161,7 @@
 <script>
 import { auth } from './store/auth'
 import Chatbot from './components/Chatbot.vue'
+import { setLocale, getLocale } from './i18n'
 
 export default {
   components: {
@@ -155,20 +174,31 @@ export default {
       logo: '/logo.png',
       auth,
       menuItems: [
-        { title: 'Home', to: { name: 'Home' } },
-        { title: 'Career Test', to: { name: 'CareerTest' } },
-        { title: 'Results', to: { name: 'Results' } }
+        { key: 'home', labelKey: 'nav.home', to: { name: 'Home' } },
+        { key: 'careerTest', labelKey: 'nav.careerTest', to: { name: 'CareerTest' } },
+        { key: 'results', labelKey: 'nav.results', to: { name: 'Results' } }
       ],
       snackbar: {
         show: false,
         text: '',
         color: 'info',
         timeout: 4000
-      }
+      },
+      availableLocales: [
+        { code: 'en', name: 'English' },
+        { code: 'zh-TW', name: '繁體中文' }
+      ]
     }
   },
-  // In Vue 3 we capture events emitted by routed views using
-  // <router-view @show-snackbar="showSnackbar" /> in the template above.
+  computed: {
+    currentLocale() {
+      return getLocale()
+    },
+    currentLocaleName() {
+      const locale = this.availableLocales.find(l => l.code === this.currentLocale)
+      return locale ? locale.name : 'English'
+    }
+  },
   methods: {
     showSnackbar(message, color = 'info') {
       this.snackbar.text = message
@@ -178,7 +208,12 @@ export default {
     handleLogout() {
       auth.logout()
       this.$router.push({ name: 'Home' })
-      this.showSnackbar('Logged out successfully', 'success')
+      this.showSnackbar(this.$t('auth.logoutSuccess'), 'success')
+    },
+    changeLanguage(locale) {
+      setLocale(locale)
+      // Force re-render by updating a key or using forceUpdate
+      this.$forceUpdate()
     }
   }
 }

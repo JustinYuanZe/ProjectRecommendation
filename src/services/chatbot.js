@@ -50,15 +50,24 @@ export async function sendMessage(userMessage, context = {}) {
 /**
  * Builds context object from current app state
  */
-export function buildContext(user, currentPage, testState = null, latestResultSummary = null) {
+export function buildContext(user, currentPage, testState = null, latestResultSummary = null, locale = 'en') {
+  // Map locale to lang code for chatbot
+  const langMap = {
+    'en': 'en',
+    'zh-TW': 'zh-TW'
+  }
+  const lang = langMap[locale] || 'en'
+  
   return {
     sessionId: `session-${Date.now()}`,
     user: user ? {
       id: user.id,
       name: user.username || user.name,
-      lang: user.lang || 'en',
+      lang: lang,
       auth: !!user
-    } : null,
+    } : {
+      lang: lang
+    },
     currentPage: currentPage || 'Home',
     testState: testState || null,
     latestResultSummary: latestResultSummary || null

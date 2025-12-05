@@ -4,20 +4,34 @@
       <v-col cols="12" sm="8" md="4">
         <v-card class="elevation-12">
           <v-toolbar color="primary" dark flat>
-            <v-toolbar-title>Login</v-toolbar-title>
+            <v-toolbar-title>{{ $t('auth.loginTitle') }}</v-toolbar-title>
           </v-toolbar>
           <v-card-text>
+            <p class="text-body-2 text-grey mb-4">{{ $t('auth.loginSubtitle') }}</p>
             <v-form @submit.prevent="handleLogin">
-              <v-text-field v-model="username" label="Username" prepend-icon="mdi-account" type="text"
-                required></v-text-field>
-              <v-text-field v-model="password" label="Password" prepend-icon="mdi-lock" type="password"
-                required></v-text-field>
+              <v-text-field 
+                v-model="username" 
+                :label="$t('auth.username')" 
+                prepend-icon="mdi-account" 
+                type="text"
+                required
+              ></v-text-field>
+              <v-text-field 
+                v-model="password" 
+                :label="$t('auth.password')" 
+                prepend-icon="mdi-lock" 
+                type="password"
+                required
+              ></v-text-field>
               <div class="text-center mt-3">
-                <v-btn color="primary" type="submit" :loading="loading">Login</v-btn>
+                <v-btn color="primary" type="submit" :loading="loading" block size="large">
+                  {{ loading ? $t('auth.loggingIn') : $t('auth.loginButton') }}
+                </v-btn>
               </div>
             </v-form>
             <div class="text-center mt-4">
-              <router-link to="/register">Don't have an account? Register</router-link>
+              <span class="text-grey">{{ $t('auth.noAccount') }}</span>
+              <router-link to="/register" class="ml-1">{{ $t('auth.registerNow') }}</router-link>
             </div>
           </v-card-text>
         </v-card>
@@ -26,7 +40,7 @@
     <v-snackbar v-model="snackbar.show" :color="snackbar.color">
       {{ snackbar.text }}
       <template v-slot:actions>
-        <v-btn variant="text" @click="snackbar.show = false">Close</v-btn>
+        <v-btn variant="text" @click="snackbar.show = false">{{ $t('common.close') }}</v-btn>
       </template>
     </v-snackbar>
   </v-container>
@@ -63,6 +77,7 @@ export default {
 
         if (data.success && data.accessToken && data.refreshToken) {
           auth.login(data.user, data.accessToken, data.refreshToken)
+          this.showSnackbar(this.$t('auth.loginSuccess'), 'success')
 
           const redirectPath = sessionStorage.getItem('redirectAfterLogin')
           if (redirectPath) {

@@ -42,6 +42,7 @@ Persona & tone:
 - Friendly, encouraging career coach who genuinely wants to help users succeed
 - Concise and practical - focus on actionable advice
 - Use bullet points and numbered lists for clarity
+- If the user's language indicates Traditional Chinese (user.lang === "zh-TW"), respond in Traditional Chinese (繁體中文)
 - If the user's language indicates Vietnamese (user.lang === "vi"), respond in Vietnamese
 
 CORE CAPABILITIES - Provide helpful guidance on:
@@ -149,7 +150,9 @@ function buildChatPrompt(userMessage, context) {
   
   // Determine language preference
   const userLang = context?.user?.lang || 'en'
-  if (userLang === 'vi') {
+  if (userLang === 'zh-TW') {
+    prompt += 'User is Taiwanese/Chinese. Respond in Traditional Chinese (繁體中文) unless they explicitly ask in English.\n\n'
+  } else if (userLang === 'vi') {
     prompt += 'User is Vietnamese. Respond in Vietnamese unless they explicitly ask in English.\n\n'
   }
   
@@ -645,9 +648,12 @@ const app = new Elysia()
     
     if (!GEMINI_API_KEY) {
       const userLang = context?.user?.lang || 'en'
-      const errorMessage = userLang === 'vi' 
-        ? 'Chatbot chưa được cấu hình. Vui lòng liên hệ quản trị viên.'
-        : 'Chatbot is not configured. Please contact the administrator.'
+      let errorMessage = 'Chatbot is not configured. Please contact the administrator.'
+      if (userLang === 'zh-TW') {
+        errorMessage = '聊天機器人尚未設定。請聯繫管理員。'
+      } else if (userLang === 'vi') {
+        errorMessage = 'Chatbot chưa được cấu hình. Vui lòng liên hệ quản trị viên.'
+      }
       
       return {
         success: true,
@@ -735,9 +741,12 @@ const app = new Elysia()
       console.error('Chatbot API error:', error.message)
       
       const userLang = context?.user?.lang || 'en'
-      const errorMessage = userLang === 'vi' 
-        ? 'Xin lỗi, đã xảy ra lỗi khi xử lý yêu cầu của bạn. Vui lòng thử lại sau.'
-        : 'Sorry, an error occurred while processing your request. Please try again later.'
+      let errorMessage = 'Sorry, an error occurred while processing your request. Please try again later.'
+      if (userLang === 'zh-TW') {
+        errorMessage = '抱歉，處理您的請求時發生錯誤。請稍後再試。'
+      } else if (userLang === 'vi') {
+        errorMessage = 'Xin lỗi, đã xảy ra lỗi khi xử lý yêu cầu của bạn. Vui lòng thử lại sau.'
+      }
       
       return {
         success: true,
