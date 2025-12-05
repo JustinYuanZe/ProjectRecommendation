@@ -11,6 +11,154 @@ const SALT_ROUNDS = 10
 const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET || 'your-access-token-secret-key-change-in-production'
 const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET || 'your-refresh-token-secret-key-change-in-production'
 
+// Gemini API Configuration
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent'
+
+if (!GEMINI_API_KEY) {
+  console.warn('⚠️  GEMINI_API_KEY is not set. Chatbot functionality will be disabled.')
+}
+
+// System prompt for the AI Career Assistant
+const SYSTEM_PROMPT = `You are the Job Assistant for the Job Quiz web application - an AI career counselor specialized in helping users discover and pursue their ideal career paths. You provide practical, actionable job-related guidance.
+
+App Routes (use these exact paths for navigation):
+- Home: /
+- Career Test: /career-test
+- Results: /results
+- Profile: /profile
+- Login: /login
+- Register: /register
+- FAQ: /faq
+- About: /about
+
+Career Categories in the Quiz:
+1. TECHNICAL (Software Engineering & Computer Science): Software Developer, Data Scientist, ML Engineer, Systems Architect, Cybersecurity Specialist
+2. BUSINESS (Business Information Systems & IT Management): IT Project Manager, Business Analyst, IT Consultant, Product Manager, Data Analyst
+3. CREATIVE (Digital Design & Media Technology): UI/UX Designer, Front-end Developer, Digital Content Creator, Interactive Media Designer, Web Designer
+4. INTERDISCIPLINARY (Interdisciplinary IT & Emerging Technologies): Tech Entrepreneur, Innovation Consultant, Digital Transformation Specialist, EdTech Developer, HealthTech Specialist
+
+Persona & tone:
+- Friendly, encouraging career coach who genuinely wants to help users succeed
+- Concise and practical - focus on actionable advice
+- Use bullet points and numbered lists for clarity
+- If the user's language indicates Vietnamese (user.lang === "vi"), respond in Vietnamese
+
+CORE CAPABILITIES - Provide helpful guidance on:
+
+1. CAREER EXPLORATION & ADVICE:
+   - Explain what different IT/tech careers involve day-to-day
+   - Discuss pros/cons of different career paths
+   - Help users understand which careers match their quiz results
+   - Provide industry insights and job market trends
+   - Suggest career paths based on interests and strengths
+
+2. SKILL DEVELOPMENT GUIDANCE:
+   - Recommend specific technical skills to learn for each career
+   - Suggest free/paid learning resources (Coursera, Udemy, freeCodeCamp, etc.)
+   - Recommend certifications (AWS, Google, Microsoft, CompTIA, etc.)
+   - Provide learning roadmaps for different career paths
+   - Suggest portfolio projects to build
+
+3. JOB SEARCH STRATEGIES:
+   - Tips for writing effective resumes/CVs for tech roles
+   - LinkedIn profile optimization advice
+   - Job board recommendations (LinkedIn, Indeed, Glassdoor, AngelList, etc.)
+   - Networking strategies and tips
+   - How to find internships and entry-level positions
+
+4. INTERVIEW PREPARATION:
+   - Common interview questions for different tech roles
+   - Technical interview preparation tips
+   - Behavioral interview (STAR method) guidance
+   - Salary negotiation basics
+   - Questions to ask interviewers
+
+5. CAREER TRANSITION SUPPORT:
+   - Advice for switching between tech fields
+   - Transferable skills identification
+   - Realistic timelines for career changes
+   - First steps for career changers
+
+6. QUIZ & RESULTS GUIDANCE:
+   - Explain test instructions and question types
+   - Help interpret quiz results
+   - Suggest next steps based on results
+   - Encourage retaking if results seem off
+
+RESPONSE GUIDELINES:
+- If user has completed quiz, reference their specific results to personalize advice
+- Always provide 2-3 actionable next steps
+- Include relevant quick reply options for follow-up questions
+- Be encouraging but realistic about career expectations
+- For salary questions, give ranges and note they vary by location/experience
+
+LIMITATIONS - Do NOT:
+- Make API calls or modify user data
+- Provide medical, legal, or financial advice
+- Ask for sensitive info (passwords, payment details, ID numbers)
+- Guarantee job outcomes or make promises about employment
+- Pretend to submit applications or contact employers
+
+Response format (MUST be valid JSON):
+{
+  "reply": "Your helpful response here (can include line breaks with \\n for formatting)",
+  "action": null | { "type": "navigate", "target": "/results" },
+  "quickReplies": ["Relevant", "Follow-up", "Options"],
+  "metadata": { "confidence": 0.9 }
+}
+
+Always respond in valid JSON. The "reply" field contains your main response text.`
+
+/**
+ * Builds the context-aware prompt for the AI
+ */
+function buildChatPrompt(userMessage, context) {
+  let prompt = SYSTEM_PROMPT + '\n\n'
+  
+  // Add context information
+  if (context) {
+    prompt += 'Current Context:\n'
+    
+    if (context.user) {
+      prompt += `- User: ${context.user.name || 'Guest'} (ID: ${context.user.id || 'N/A'}, Language: ${context.user.lang || 'en'}, Authenticated: ${context.user.auth || false})\n`
+    }
+    
+    if (context.currentPage) {
+      prompt += `- Current Page: ${context.currentPage}\n`
+    }
+    
+    if (context.testState) {
+      prompt += `- Test State: Test ID ${context.testState.testId}, Question ${context.testState.questionIndex + 1}, Progress: ${(context.testState.progress * 100).toFixed(0)}%\n`
+    }
+    
+    if (context.latestResultSummary) {
+      prompt += `- Has Completed Quiz: ${context.latestResultSummary.hasCompletedQuiz ? 'Yes' : 'No'}\n`
+      if (context.latestResultSummary.hasCompletedQuiz) {
+        prompt += `- Quiz Results Summary:\n`
+        prompt += `  * Top Career Match: ${context.latestResultSummary.topCareerField || 'N/A'}\n`
+        prompt += `  * Top Score: ${context.latestResultSummary.score}/${context.latestResultSummary.maxScore} (${context.latestResultSummary.percentage}% match)\n`
+        prompt += `  * Career Rankings: ${context.latestResultSummary.allRecommendations?.join(' > ') || 'N/A'}\n`
+        prompt += `  * All Scores: ${context.latestResultSummary.detailedScores || 'N/A'}\n`
+        prompt += `\nUse these results to personalize career advice. Reference specific careers from their top match category.\n`
+      }
+    }
+    
+    prompt += '\n'
+  }
+  
+  // Determine language preference
+  const userLang = context?.user?.lang || 'en'
+  if (userLang === 'vi') {
+    prompt += 'User is Vietnamese. Respond in Vietnamese unless they explicitly ask in English.\n\n'
+  }
+  
+  prompt += `User Message: ${userMessage}\n\n`
+  prompt += 'Provide your response as a JSON object following the specified format.'
+  
+  return prompt
+}
+
 async function getDB() {
   const data = await readFile(DB_PATH, 'utf-8')
   return JSON.parse(data)
@@ -483,6 +631,122 @@ const app = new Elysia()
         username: user.username, 
         department: user.department, 
         profile: user.profile 
+      }
+    }
+  })
+  // Chatbot endpoint
+  .post('/chat', async ({ body, set }) => {
+    const { message, context } = body
+    
+    if (!message) {
+      set.status = 400
+      return { success: false, message: 'Message is required' }
+    }
+    
+    if (!GEMINI_API_KEY) {
+      const userLang = context?.user?.lang || 'en'
+      const errorMessage = userLang === 'vi' 
+        ? 'Chatbot chưa được cấu hình. Vui lòng liên hệ quản trị viên.'
+        : 'Chatbot is not configured. Please contact the administrator.'
+      
+      return {
+        success: true,
+        response: {
+          reply: errorMessage,
+          action: null,
+          quickReplies: [],
+          metadata: { confidence: 0, error: 'API key not configured' }
+        }
+      }
+    }
+    
+    try {
+      const prompt = buildChatPrompt(message, context)
+      
+      const response = await fetch(`${GEMINI_API_URL}?key=${GEMINI_API_KEY}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          contents: [{
+            parts: [{
+              text: prompt
+            }]
+          }]
+        })
+      })
+      
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}))
+        throw new Error(`API error: ${response.status} - ${errorData.error?.message || response.statusText}`)
+      }
+      
+      const data = await response.json()
+      
+      // Extract the generated text
+      const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
+      
+      if (!generatedText) {
+        throw new Error('No response generated from API')
+      }
+      
+      // Try to parse JSON from the response
+      let jsonText = generatedText.trim()
+      
+      // Remove markdown code blocks if present
+      if (jsonText.startsWith('```json')) {
+        jsonText = jsonText.replace(/^```json\s*/, '').replace(/\s*```$/, '')
+      } else if (jsonText.startsWith('```')) {
+        jsonText = jsonText.replace(/^```\s*/, '').replace(/\s*```$/, '')
+      }
+      
+      try {
+        const parsedResponse = JSON.parse(jsonText)
+        
+        // Validate response structure
+        if (!parsedResponse.reply) {
+          return {
+            success: true,
+            response: {
+              reply: generatedText,
+              action: null,
+              quickReplies: [],
+              metadata: { confidence: 0.7 }
+            }
+          }
+        }
+        
+        return { success: true, response: parsedResponse }
+      } catch (parseError) {
+        // If JSON parsing fails, return the text as reply
+        console.warn('Failed to parse JSON response, using raw text:', parseError.message)
+        return {
+          success: true,
+          response: {
+            reply: generatedText,
+            action: null,
+            quickReplies: [],
+            metadata: { confidence: 0.7 }
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Chatbot API error:', error.message)
+      
+      const userLang = context?.user?.lang || 'en'
+      const errorMessage = userLang === 'vi' 
+        ? 'Xin lỗi, đã xảy ra lỗi khi xử lý yêu cầu của bạn. Vui lòng thử lại sau.'
+        : 'Sorry, an error occurred while processing your request. Please try again later.'
+      
+      return {
+        success: true,
+        response: {
+          reply: errorMessage,
+          action: null,
+          quickReplies: [],
+          metadata: { confidence: 0, error: error.message }
+        }
       }
     }
   })

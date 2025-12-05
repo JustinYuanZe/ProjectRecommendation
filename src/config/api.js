@@ -9,5 +9,6 @@ export const API_ENDPOINTS = {
   REFRESH: `${API_URL}/refresh`,
   LOGOUT: `${API_URL}/logout`,
   TEST_RESULTS: `${API_URL}/test-results`,
-  QUESTIONS: `${API_URL}/questions`
+  QUESTIONS: `${API_URL}/questions`,
+  CHAT: `${API_URL}/chat`
 }

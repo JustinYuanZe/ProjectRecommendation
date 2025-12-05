@@ -134,13 +134,20 @@
         </v-btn>
       </template>
     </v-snackbar>
+
+    <!-- Chatbot Component -->
+    <Chatbot />
   </v-app>
 </template>
 
 <script>
 import { auth } from './store/auth'
+import Chatbot from './components/Chatbot.vue'
 
 export default {
+  components: {
+    Chatbot
+  },
   name: 'App',
   data() {
     return {
