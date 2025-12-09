@@ -10,5 +10,6 @@ export const API_ENDPOINTS = {
   LOGOUT: `${API_URL}/logout`,
   TEST_RESULTS: `${API_URL}/test-results`,
   QUESTIONS: `${API_URL}/questions`,
-  CHAT: `${API_URL}/chat`
+  CHAT: `${API_URL}/chat`,
+  CHATBOT: `${API_URL}/api/chatbot/message`
 }

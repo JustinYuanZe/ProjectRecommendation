@@ -85,18 +85,21 @@
             </div>
             <div v-else class="message-bubble bot-bubble">
               <div v-html="formatMessage(message.text)"></div>
-              <div v-if="message.quickReplies && message.quickReplies.length > 0" class="quick-replies mt-2">
-                <v-chip
-                  v-for="(reply, idx) in message.quickReplies"
-                  :key="idx"
-                  size="small"
-                  class="mr-1 mb-1"
-                  @click="handleQuickReply(reply)"
-                  style="cursor: pointer;"
-                >
-                  {{ reply }}
-                </v-chip>
-              </div>
+            </div>
+            <!-- Quick replies outside the bubble for better visibility -->
+            <div v-if="message.type === 'bot' && message.quickReplies && message.quickReplies.length > 0" class="quick-replies mt-2">
+              <v-chip
+                v-for="(reply, idx) in message.quickReplies"
+                :key="idx"
+                size="small"
+                variant="outlined"
+                color="primary"
+                class="mr-1 mb-1"
+                @click="handleQuickReply(reply)"
+                style="cursor: pointer;"
+              >
+                {{ reply }}
+              </v-chip>
             </div>
             <div class="message-time">{{ formatTime(message.timestamp) }}</div>
           </div>
@@ -296,25 +299,36 @@ export default {
       
       let formatted = text
       
-      // Escape HTML first to prevent XSS
+      // First, protect code blocks and inline code from other processing
+      const codeBlocks = []
+      const inlineCodes = []
+      
+      // Extract and store code blocks
+      formatted = formatted.replace(/```([\s\S]*?)```/g, (match, code) => {
+        codeBlocks.push(code)
+        return `__CODEBLOCK_${codeBlocks.length - 1}__`
+      })
+      
+      // Extract and store inline code
+      formatted = formatted.replace(/`([^`]+)`/g, (match, code) => {
+        inlineCodes.push(code)
+        return `__INLINECODE_${inlineCodes.length - 1}__`
+      })
+      
+      // Now escape HTML to prevent XSS (but our placeholders are safe)
       formatted = formatted
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
       
-      // Code blocks (```)
-      formatted = formatted.replace(/```([\s\S]*?)```/g, '<pre class="code-block">$1</pre>')
-      
-      // Inline code (`)
-      formatted = formatted.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>')
-      
+      // Process markdown formatting
       // Bold (**text** or __text__)
       formatted = formatted.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       formatted = formatted.replace(/__([^_]+)__/g, '<strong>$1</strong>')
       
-      // Italic (*text* or _text_)
-      formatted = formatted.replace(/\*([^*]+)\*/g, '<em>$1</em>')
-      formatted = formatted.replace(/_([^_]+)_/g, '<em>$1</em>')
+      // Italic (*text* or _text_) - be careful not to match list markers
+      formatted = formatted.replace(/(?<!\w)\*([^*\n]+)\*(?!\w)/g, '<em>$1</em>')
+      formatted = formatted.replace(/(?<!\w)_([^_\n]+)_(?!\w)/g, '<em>$1</em>')
       
       // Process lines for lists
       const lines = formatted.split('\n')
@@ -323,12 +337,12 @@ export default {
       const processedLines = []
       
       for (let i = 0; i < lines.length; i++) {
-        let line = lines[i]
+        let line = lines[i].trim()
         
-        // Numbered list (1. item)
+        // Numbered list (1. item, 2. item, etc.)
         const numberedMatch = line.match(/^(\d+)\.\s+(.+)$/)
-        // Bullet list (* item or - item)
-        const bulletMatch = line.match(/^\s*[\*\-]\s+(.+)$/)
+        // Bullet list (- item or * item)
+        const bulletMatch = line.match(/^[\*\-]\s+(.+)$/)
         
         if (numberedMatch) {
           if (!inList || listType !== 'ol') {
@@ -352,10 +366,10 @@ export default {
             inList = false
             listType = null
           }
-          // Convert line breaks for non-list items
-          if (line.trim()) {
+          // Add line (preserve empty lines as <br>)
+          if (line.length > 0) {
             processedLines.push(line)
-          } else {
+          } else if (processedLines.length > 0) {
             processedLines.push('<br>')
           }
         }
@@ -366,12 +380,31 @@ export default {
         processedLines.push(listType === 'ol' ? '</ol>' : '</ul>')
       }
       
-      // Join and handle remaining line breaks
+      // Join processed lines
       formatted = processedLines.join('\n')
       
-      // Replace remaining newlines with <br> (but not inside lists)
-      formatted = formatted.replace(/\n(?!<)/g, '<br>')
-      formatted = formatted.replace(/\n</g, '<')
+      // Replace newlines with proper spacing
+      formatted = formatted.replace(/\n(?!<[ou]l|<li|<\/[ou]l|<br)/g, '<br>')
+      formatted = formatted.replace(/\n/g, '')
+      
+      // Restore code blocks
+      codeBlocks.forEach((code, i) => {
+        // Decode HTML entities in code
+        const decodedCode = code
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&')
+        formatted = formatted.replace(`__CODEBLOCK_${i}__`, `<pre class="code-block">${decodedCode}</pre>`)
+      })
+      
+      // Restore inline code
+      inlineCodes.forEach((code, i) => {
+        const decodedCode = code
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&amp;/g, '&')
+        formatted = formatted.replace(`__INLINECODE_${i}__`, `<code class="inline-code">${decodedCode}</code>`)
+      })
       
       return formatted
     },
@@ -650,7 +683,18 @@ export default {
 .quick-replies {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 6px;
+  margin-left: 4px;
+}
+
+.quick-replies .v-chip {
+  transition: all 0.2s ease;
+  font-size: 0.813rem;
+}
+
+.quick-replies .v-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .chatbot-input {

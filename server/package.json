@@ -4,13 +4,17 @@
   "type": "module",
   "scripts": {
     "start": "bun run index.js",
-    "dev": "bun run --watch index.js"
+    "dev": "bun --watch index.js"
   },
   "dependencies": {
     "@elysiajs/cors": "^1.4.0",
     "@elysiajs/jwt": "^1.4.0",
+    "@google/generative-ai": "^0.24.1",
     "bcryptjs": "^3.0.3",
-    "dotenv": "^17.2.3",
-    "elysia": "^1.4.16"
+    "elysia": "^1.4.16",
+    "mongoose": "^8.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

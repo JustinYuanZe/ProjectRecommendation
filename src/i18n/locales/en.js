@@ -284,12 +284,12 @@ export default {
     a3: `<p><strong>Yes! The Career Advisory System is completely free.</strong></p>
       <p>All features are available at no cost, including:</p>
       <ul>
-        <li>✅ Full career assessment test</li>
-        <li>✅ Detailed results and recommendations</li>
-        <li>✅ AI Career Assistant chatbot</li>
-        <li>✅ Profile management</li>
-        <li>✅ Results history (with account)</li>
-        <li>✅ Downloadable results report</li>
+        <li> Full career assessment test</li>
+        <li> Detailed results and recommendations</li>
+        <li> AI Career Assistant chatbot</li>
+        <li> Profile management</li>
+        <li> Results history (with account)</li>
+        <li> Downloadable results report</li>
       </ul>`,
     q4: 'Who is this platform for?',
     a4: `<p>Our platform is designed for anyone exploring careers in technology and IT:</p>
@@ -401,6 +401,7 @@ export default {
     welcomeDesc: 'I can help you explore careers, prepare for interviews, and plan your professional journey.',
     tryAsking: 'Try asking:',
     placeholder: 'Type your message...',
+    modelLoading: 'Loading AI model, please wait...',
     thinking: 'Thinking...',
     clearChat: 'Clear chat',
     errorMessage: 'Sorry, I encountered an error. Please try again.',

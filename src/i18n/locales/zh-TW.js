@@ -284,12 +284,12 @@ export default {
     a3: `<p><strong>是的，完全免費！</strong></p>
       <p>所有功能都不用付費，包括：</p>
       <ul>
-        <li>✅ 完整的職涯測驗</li>
-        <li>✅ 詳細的分析報告與建議</li>
-        <li>✅ AI 職涯顧問諮詢</li>
-        <li>✅ 個人檔案管理</li>
-        <li>✅ 歷史紀錄查詢（需註冊）</li>
-        <li>✅ 報告下載功能</li>
+        <li> 完整的職涯測驗</li>
+        <li> 詳細的分析報告與建議</li>
+        <li> AI 職涯顧問諮詢</li>
+        <li> 個人檔案管理</li>
+        <li> 歷史紀錄查詢（需註冊）</li>
+        <li> 報告下載功能</li>
       </ul>`,
     q4: '這個平台適合誰使用？',
     a4: `<p>只要對科技與 IT 領域有興趣，都歡迎使用：</p>
@@ -401,6 +401,7 @@ export default {
     welcomeDesc: '我可以幫你探索職涯方向、準備面試、規劃專業發展，有問題儘管問！',
     tryAsking: '你可以這樣問我：',
     placeholder: '輸入訊息...',
+    modelLoading: '正在載入 AI 模型，請稍候...',
     thinking: '思考中...',
     clearChat: '清除對話',
     errorMessage: '抱歉，出了點問題，請再試一次。',

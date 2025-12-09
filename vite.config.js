@@ -7,5 +7,14 @@ export default defineConfig({
   test: {
     environment: 'happy-dom',
     globals: true
+  },
+  optimizeDeps: {
+    exclude: ['@huggingface/transformers']
+  },
+  server: {
+    headers: {
+      'Cross-Origin-Embedder-Policy': 'require-corp',
+      'Cross-Origin-Opener-Policy': 'same-origin'
+    }
   }
 })
