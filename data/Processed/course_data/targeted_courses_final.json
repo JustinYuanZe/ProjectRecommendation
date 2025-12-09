@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "1",
+    "code": "IN101",
+    "name": "CalculusI Teaching in English",
+    "description": "Master foundational mathematical principles essential for advanced software engineering. This course explores calculus concepts, emphasizing their application in algorithm analysis and efficient coding practices, incorporating technical terms such as **derivatives**, **integrals**, and **optimization**. Develop a rigorous understanding of mathematical tools critical for tackling complex computational challenges.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "2",
+    "code": "IN102",
+    "name": "Introduction to Computer Science Teaching in English",
+    "description": "Equip aspiring educators with the foundational knowledge to teach computer science in English, focusing on software engineering principles, algorithmic thinking, and effective coding practices. This course emphasizes pedagogical strategies for conveying concepts in object-oriented programming, data structures, and computational thinking. Develop the skills to inspire the next generation of computer scientists through engaging and technically sound instruction.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "3",
+    "code": "IN103",
+    "name": "Computer ProgrammingI Teaching in English",
+    "description": "Master foundational computer programming concepts with a strong emphasis on software engineering principles, algorithms, and best coding practices. Develop essential problem-solving skills through hands-on application of programming logic, data structures, and object-oriented design. This course provides a robust introduction to computational thinking and effective software development.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "4",
+    "code": "IN104",
+    "name": "Intellectual Property Teaching in English",
+    "description": "Explore the intellectual property landscape relevant to software engineering, covering patentability of algorithms, copyright protection for code, and trade secret considerations in coding practices. Understand the legal implications of software development through discussions on prior art, open-source licensing, and robust coding standards. This course will equip you with knowledge of **patentability**, **copyright**, and **trade secrets** within the software domain.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "5",
+    "code": "IN105",
+    "name": "CalculusII Teaching in English",
+    "description": "Master fundamental calculus concepts essential for advanced software engineering, focusing on applications in algorithm analysis and optimization through rigorous problem-solving. Develop proficiency in computational methods and data structures, employing techniques like numerical integration and symbolic differentiation to tackle complex computational challenges. This course emphasizes the practical application of calculus principles in the development of efficient and scalable software solutions.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "6",
+    "code": "IN106",
+    "name": "Discrete Mathematics Teaching in English",
+    "description": "Explore the foundational principles of discrete mathematics with a focus on their practical application to software engineering. This course develops skills in **logic**, **graph theory**, and **combinatorics** essential for algorithm design, code analysis, and robust software development. Students will strengthen problem-solving abilities and learn to implement mathematical concepts in coding practices.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "7",
+    "code": "IN107",
+    "name": "Computer ProgrammingII Teaching in English 人工智慧投資管院 人工智慧投資學程",
+    "description": "Develop robust software solutions with IN107, a comprehensive Computer Programming II course focusing on software engineering principles, efficient algorithms, and modern coding practices. This English-taught course within the Artificial Intelligence Investment Program emphasizes practical application of **data structures**, **object-oriented programming**, and **version control** to build scalable and maintainable systems. Students will gain essential skills for a career in software development and AI-driven investment technologies.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "8",
+    "code": "IN110",
+    "name": "Management Information Systems Teaching in English 人工智慧投資管院 人工智慧投資學程",
+    "description": "Explore the foundational principles of Management Information Systems with a strong emphasis on practical application through software engineering, algorithms, and coding practices. This course equips students with essential skills in **data structures**, **machine learning**, and **system analysis** to effectively leverage information technology for business solutions. Delivered entirely in English, IN110 prepares students for roles requiring both technical proficiency and strategic understanding of information systems.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "9",
+    "code": "IN111",
+    "name": "English Listening and Reading I Teaching in English",
+    "description": "Develop foundational English language skills specifically for a technical computing context with IN111. This course enhances listening and reading comprehension through materials centered on **software engineering**, **algorithms**, and effective **coding practices**. Students will improve their ability to understand and engage with English-language technical documentation and communication essential for success in the field.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "10",
+    "code": "IN112",
+    "name": "English Listening and Reading II Teaching in English",
+    "description": "Develop advanced English comprehension skills through academic articles and lectures centered on software engineering principles. This course refines listening and reading strategies while exploring topics like **data structures**, **algorithm analysis**, and **version control**. Successful completion requires active engagement with technical content delivered entirely in English.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "11",
+    "code": "IN201",
+    "name": "Linear Algebra",
+    "description": "Develop a strong foundation in linear algebra with a focus on its applications within software engineering, algorithms, and data science. This course emphasizes practical coding implementations of core concepts like **vectors**, **matrices**, and **eigenvalues** to enhance problem-solving skills. Students will gain proficiency in utilizing linear algebraic techniques for efficient algorithm design and data manipulation.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "12",
+    "code": "IN202",
+    "name": "Data Structures",
+    "description": "Develop a strong foundation in computational problem-solving with IN202 - Data Structures, a course emphasizing software engineering principles, efficient algorithms, and practical coding practices. Students will gain expertise in fundamental data structures like **arrays**, **linked lists**, and **trees**, learning to analyze their performance and apply them to real-world challenges. This course is taught in English and prepares students for advanced work in software development and algorithm design.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "13",
+    "code": "IN203",
+    "name": "Introduction to Data Communications",
+    "description": "Explore the foundational principles of data transmission and networking with IN203, emphasizing software engineering practices for robust communication systems. This course delves into key concepts like **packet switching**, **TCP/IP**, and **network security**, requiring students to apply algorithmic thinking and coding skills to real-world scenarios. Develop a strong understanding of data communication protocols and their implementation through practical exercises and projects.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "14",
+    "code": "IN204",
+    "name": "Digital System Design",
+    "description": "Develop foundational skills in digital system design through a software-centric approach, emphasizing robust algorithms and modern coding practices. This course explores the implementation of digital logic using hardware description languages like **VHDL**, **Verilog**, and focuses on **FPGA** development and verification. Students will gain practical experience translating theoretical concepts into functional digital systems.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "15",
+    "code": "IN206",
+    "name": "Web Programming",
+    "description": "Develop robust and scalable web applications with IN206, a course emphasizing software engineering principles, algorithmic efficiency, and professional coding practices. Students will gain practical experience utilizing **JavaScript**, **Node.js**, and **REST APIs** to build dynamic and interactive web solutions. This course prepares students for professional roles demanding strong web development and problem-solving skills.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "16",
+    "code": "IN301",
+    "name": "Introduction to Computer Networks",
+    "description": "Explore the foundational principles of computer networks, emphasizing a software engineering approach to network design and implementation. This course delves into core concepts like **TCP/IP**, **routing**, and **packet analysis** while reinforcing strong coding practices and algorithmic thinking for network applications. Students will gain practical experience building and analyzing network protocols, preparing them for advanced studies or industry roles.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "17",
+    "code": "IN302",
+    "name": "Introduction to Compiler",
+    "description": "Explore the fundamental principles of compiler design, focusing on robust software engineering practices, efficient algorithms, and practical coding techniques. This course delves into lexical analysis, parsing, and code generation, equipping students with a strong foundation for building language processors. Students will gain hands-on experience with **syntax analysis**, **intermediate representation**, and **optimization** techniques.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "18",
+    "code": "IN303",
+    "name": "Embedded System Design and Practice",
+    "description": "Develop practical skills in designing and implementing embedded systems with a strong emphasis on software engineering principles, efficient algorithms, and robust coding practices. This course covers the full development lifecycle, from requirements gathering to testing and deployment, utilizing **microcontrollers**, **real-time operating systems (RTOS)**, and **C programming**. Students will gain hands-on experience building and debugging embedded applications for resource-constrained environments.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "19",
+    "code": "IN304",
+    "name": "Service and Technology Management",
+    "description": "Explore the intersection of cutting-edge technology and exceptional service delivery in IN304. This course delves into managing the lifecycle of technology-driven services, with a strong emphasis on software engineering principles, efficient **algorithms**, and robust **coding practices** utilizing modern **DevOps** methodologies. Students will learn to optimize technical solutions for enhanced user experience and business value.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "20",
+    "code": "IN309",
+    "name": "Virtual Reality",
+    "description": "Develop immersive experiences with IN309 – Virtual Reality, a course focused on the software engineering principles behind VR development. Students will master core concepts including **Unity**, **C# scripting**, and **3D modeling** through hands-on coding and algorithmic problem-solving. This course prepares students for professional roles in the rapidly expanding field of virtual reality and augmented reality technologies.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "21",
+    "code": "IN311",
+    "name": "English Presentation Skills",
+    "description": "Develop compelling presentations tailored for technical audiences in the software engineering field. This course focuses on effectively communicating complex topics like **algorithms**, **data structures**, and **API design** to both technical and non-technical stakeholders. Students will hone their delivery and visual communication skills to confidently present coding practices and project insights.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "22",
+    "code": "IN312",
+    "name": "Introduction to Artificial Intelligence",
+    "description": "Explore the foundational concepts of Artificial Intelligence with a strong emphasis on practical implementation through software engineering principles. This course develops proficiency in core AI algorithms, including **machine learning**, **neural networks**, and **Python programming**, equipping students with the skills to design, build, and evaluate intelligent systems. Students will gain hands-on experience with modern coding practices essential for successful AI development.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "23",
+    "code": "IN315",
+    "name": "Introduction to Big Data Analysis",
+    "description": "Explore the fundamentals of Big Data analysis with a software engineering focus, developing practical skills in data processing and interpretation. This course emphasizes algorithmic thinking and robust coding practices using technologies like **Hadoop**, **Spark**, and **Python** to tackle large datasets. Students will learn to design, implement, and evaluate solutions for real-world Big Data challenges.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "24",
+    "code": "IN317",
+    "name": "Smart Manufacturing",
+    "description": "Develop expertise in the rapidly evolving field of Smart Manufacturing by focusing on the software foundations of modern industrial systems. This course emphasizes software engineering principles, algorithmic design, and robust coding practices applied to real-world manufacturing challenges, utilizing technologies like **IIoT**, **PLC programming**, and **data analytics**. Students will gain practical skills to design, implement, and optimize intelligent manufacturing solutions.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "25",
+    "code": "IN320",
+    "name": "Introduction to Big Data Analysis",
+    "description": "Explore the fundamentals of Big Data analysis with a software engineering focus, developing practical skills in data processing and interpretation. This course emphasizes algorithmic thinking and robust coding practices using technologies like **Hadoop**, **Spark**, and **Python** to tackle large datasets. Students will learn to design, implement, and evaluate solutions for real-world Big Data challenges.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "26",
+    "code": "IN401",
+    "name": "Introduction to Database System",
+    "description": "Explore the foundational principles of database systems with a strong emphasis on software engineering best practices, algorithmic efficiency, and practical coding implementation. This course covers database design, implementation, and querying using **SQL**, **relational algebra**, and **normalization** techniques. Students will develop skills to build and manage robust, scalable data solutions.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "27",
+    "code": "IN403",
+    "name": "Decision Support Systems",
+    "description": "Develop and implement intelligent solutions for complex decision-making problems using modern decision support systems. This course emphasizes software engineering principles, algorithmic design, and practical coding skills with a focus on technologies like **optimization**, **simulation**, and **machine learning**. Students will gain hands-on experience building and evaluating DSS applications to support data-driven insights.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "28",
+    "code": "CB545",
+    "name": "Clinical Applications of Medical Signal and Image Teaching in English",
+    "description": "Explore the clinical translation of medical signal and image processing techniques in CB545, focusing on both theoretical foundations and hands-on applications. This course delves into practical methodologies utilizing **biomedical imaging**, **physiological modeling**, and **machine learning** for improved diagnostics and treatment planning. Students will gain expertise in applying these tools to real-world clinical challenges and interpreting resulting data.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "29",
+    "code": "CB554",
+    "name": "Seminar",
+    "description": "Explore advanced concepts in [field of study] through rigorous discussion and applied projects, bridging theoretical knowledge with practical implementation. This seminar emphasizes critical analysis utilizing **machine learning**, **data mining**, and **statistical modeling** techniques. Participants will develop expertise relevant to both research and professional settings.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "30",
+    "code": "CB582",
+    "name": "Big Data Analytics",
+    "description": "Explore the principles and techniques of Big Data Analytics, bridging theoretical foundations with real-world applications. This course develops proficiency in **Hadoop**, **Spark**, and **machine learning** for processing and interpreting large datasets. Students will gain practical skills in data mining, statistical modeling, and visualization to solve complex business challenges.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "31",
+    "code": "CB584",
+    "name": "Operating Systems Teaching in English",
+    "description": "Explore the core principles of operating systems with a focus on both theoretical foundations and practical implementation. This course delves into key concepts like **process management**, **memory virtualization**, and **file systems**, equipping students with the skills to analyze, design, and troubleshoot modern OS architectures. Delivered entirely in English, CB584 prepares students for advanced study and professional roles in software development and systems engineering.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "32",
+    "code": "CB585",
+    "name": "Cryptography Teaching in English",
+    "description": "Explore the foundational principles and modern techniques of cryptography with a focus on both theoretical understanding and practical implementation. This course covers symmetric-key cryptography, public-key infrastructure (PKI), and hashing algorithms, preparing students for real-world applications in data security and communications. Students will gain hands-on experience applying cryptographic concepts using industry-standard tools and techniques.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "33",
+    "code": "CB586",
+    "name": "Computer Networking Teaching in English",
+    "description": "Explore the foundational principles and modern practices of computer networking with CB586, delivered fully in English. This course balances academic theory with hands-on labs, covering essential concepts like **TCP/IP**, **routing**, and **network security**. Students will develop a robust understanding of network design, implementation, and troubleshooting for professional application.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "34",
+    "code": "CB589",
+    "name": "VLSI Testing & Design",
+    "description": "Explore advanced techniques in Very Large Scale Integration (VLSI) testing and design, bridging theoretical foundations with hands-on implementation. This course covers fault modeling, test pattern generation, and built-in self-test (BIST) methodologies, preparing students for roles in semiconductor validation and quality assurance. Students will gain proficiency in ATPG, DFT, and fault simulation through practical exercises and case studies.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "35",
+    "code": "CB594",
+    "name": "Cybersecurity Teaching in English",
+    "description": "Equip yourself to effectively teach cybersecurity concepts in an English-speaking environment with CB594. This course blends academic theory with practical application, covering essential topics like **network security**, **cryptography**, and **incident response**. Designed for educators, it provides the tools and knowledge to confidently deliver engaging and impactful cybersecurity instruction.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "36",
+    "code": "CI001",
+    "name": "Fundamental Computer Programming- C++ LabI Teaching in English",
+    "description": "Develop foundational programming skills in C++ with a strong emphasis on software engineering principles, algorithmic thinking, and professional coding practices. This lab-based course covers essential concepts like **data structures**, **control flow**, and **object-oriented programming** through hands-on exercises. Taught entirely in English, CI001 prepares students for more advanced computer science coursework and real-world application development.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "37",
+    "code": "CI002",
+    "name": "Fundamental Computer Programming- C++ LabII",
+    "description": "Develop practical programming skills in C++ with a focus on software engineering principles, algorithmic thinking, and industry-standard coding practices. This lab-based course reinforces core concepts through hands-on exercises utilizing **data structures**, **object-oriented programming**, and **debugging** techniques. Students will build a strong foundation for more advanced software development endeavors.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "38",
+    "code": "CI004",
+    "name": "Fundamental Computer Programming- Web Programming II",
+    "description": "Develop advanced web applications with a strong emphasis on software engineering principles, algorithmic efficiency, and professional coding practices. This course delves into server-side development utilizing **Node.js**, database interactions with **SQL**, and front-end frameworks like **React**. Students will build robust, scalable web solutions through practical project work and code review.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "39",
+    "code": "CI006",
+    "name": "Fundamental Computer ProgrammingII",
+    "description": "Develop robust software solutions through advanced programming techniques, focusing on software engineering principles, algorithmic efficiency, and clean coding practices. This course emphasizes practical application of **data structures**, **object-oriented programming**, and **debugging** skills to build maintainable and scalable applications. Students will gain a strong foundation for future software development endeavors.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "40",
+    "code": "CS106",
+    "name": "Computer ProgrammingI 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 互動多媒體微學程 互動多媒體學程 智慧校園與智慧照護學程",
+    "description": "Develop foundational programming skills with CS106, a course emphasizing software engineering principles, algorithmic thinking, and robust coding practices. Students will gain proficiency in **data structures**, **control flow**, and **debugging** techniques essential for further study in related micro-programs like Artificial Intelligence & Bioinformatics or Interactive Multimedia. This course is taught in Chinese and serves as a crucial stepping stone for students pursuing specialized tracks within the university.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "41",
+    "code": "CS107",
+    "name": "Discrete Mathematics",
+    "description": "Develop a foundational understanding of discrete mathematics essential for rigorous software engineering practices. This course emphasizes logical reasoning, **algorithm** analysis, and **proof techniques** applied to coding, including topics like set theory, graph theory, and **combinatorics**. Students will strengthen problem-solving skills crucial for designing and implementing efficient, reliable software systems.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "42",
+    "code": "CS114",
+    "name": "Computer ProgrammingII 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 互動多媒體微學程 互動多媒體學程",
+    "description": "Develop robust software solutions with CS114, a course emphasizing software engineering principles, algorithmic design, and practical coding techniques. Students will gain proficiency in **data structures**, **object-oriented programming**, and **version control** through hands-on implementation. This course serves as a foundational element for multiple micro- and full-degree programs including Artificial Intelligence & Bioinformatics and Interactive Multimedia.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "43",
+    "code": "CS140",
+    "name": "Introduction to Computer Science 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程",
+    "description": "Develop a foundational understanding of computer science principles with CS140, focusing on software engineering, algorithm design, and efficient coding practices. This course emphasizes practical application of **data structures**, **debugging**, and **version control** to build robust and scalable software solutions. Taught in English, it prepares students for further study and professional careers in the field.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "44",
+    "code": "CS147",
+    "name": "CalculusI",
+    "description": "Develop foundational programming skills through rigorous exploration of software engineering principles, algorithmic design, and practical coding techniques. This course emphasizes implementation and analysis using **data structures**, **recursion**, and **object-oriented programming**. Students will gain experience building robust and efficient software solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "45",
+    "code": "CS148",
+    "name": "CalculusII",
+    "description": "Develop proficiency in foundational calculus concepts essential for advanced computer science applications, delivered entirely in Spanish. This course emphasizes rigorous problem-solving and prepares students for subsequent coursework in areas like data structures, algorithm analysis, and numerical methods. Key topics include integration, series, and multivariable calculus, fostering a strong mathematical basis for software development.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "46",
+    "code": "CS151",
+    "name": "Website Programming Practice",
+    "description": "Develop foundational skills in web development through practical application of software engineering principles, algorithmic thinking, and robust coding practices. This course emphasizes hands-on experience with **HTML**, **CSS**, and **JavaScript** to build and maintain dynamic websites. Students will learn to design, implement, and test web applications with a focus on code quality and scalability.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "47",
+    "code": "CS152",
+    "name": "General Physics",
+    "description": "Develop a foundational understanding of physics principles through a computational lens, emphasizing software engineering best practices. This course utilizes algorithmic thinking and coding to model physical systems, focusing on numerical methods, data visualization, and object-oriented programming. Students will gain practical experience applying these skills to solve complex physics problems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "48",
+    "code": "CS153",
+    "name": "Circuit Theory",
+    "description": "Analyze and design electrical circuits using fundamental principles, emphasizing software implementation for simulation and analysis. This course develops proficiency in **circuit analysis**, **algorithmic design**, and **SPICE modeling** through practical coding exercises and projects. Students will gain a strong foundation in translating theoretical concepts into robust, software-based solutions for electrical engineering problems.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "49",
+    "code": "CS154",
+    "name": "Introduction to Medical EngineeringI",
+    "description": "Develop foundational software engineering skills specifically applied to the medical domain, emphasizing algorithm design and robust coding practices. This course covers essential concepts in **biomedical signal processing**, **image analysis**, and **machine learning** for medical applications. Students will gain practical experience through project-based learning, preparing them for advanced work in medical engineering.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "50",
+    "code": "CS155",
+    "name": "Introduction to Medical EngineeringII",
+    "description": "Develop foundational skills in medical device software engineering through practical application of algorithms and robust coding practices. This course emphasizes software lifecycle management, **embedded systems**, **signal processing**, and **machine learning** techniques relevant to the healthcare industry. Students will gain experience designing and implementing software solutions for real-world medical challenges.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "51",
+    "code": "CS156",
+    "name": "Introduction to Medical Informatics",
+    "description": "Explore the foundational principles of medical informatics through a software engineering lens, emphasizing robust algorithms and practical coding techniques. This course develops skills in **data mining**, **interoperability**, and **machine learning** applied to healthcare challenges. Students will gain experience building and evaluating informatics solutions for real-world medical applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "52",
+    "code": "CS157",
+    "name": "Competitive ProgrammingI",
+    "description": "Develop foundational skills in algorithmic problem-solving, software engineering principles, and efficient coding practices essential for competitive programming. This course emphasizes data structures, dynamic programming, and graph algorithms, preparing students for participation in coding competitions. Successful completion requires proficiency in implementing and analyzing algorithms with a focus on optimization and code quality.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "53",
+    "code": "CS203",
+    "name": "Data Structures 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 互動多媒體微學程 互動多媒體學程",
+    "description": "Develop foundational skills in data structures and algorithms essential for robust software engineering. This course emphasizes practical coding practices alongside core concepts like **linked lists**, **trees**, and **graph traversal**. Designed for students in the AI & Bioinformatics or Interactive Multimedia programs, it’s taught in Chinese and prepares learners for advanced computational challenges.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "54",
+    "code": "CS204",
+    "name": "Digital System Design",
+    "description": "Develop foundational skills in digital system design through a practical exploration of software engineering principles, algorithmic thinking, and efficient coding practices. This course emphasizes hardware description languages (HDL), finite state machines (FSM), and Verilog simulation for building and verifying digital circuits. Students will gain expertise in translating system-level specifications into implementable, optimized digital designs.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "55",
+    "code": "CS205",
+    "name": "Engineering Mathematics",
+    "description": "Utilize mathematical foundations to rigorously analyze and design software systems. This course emphasizes algorithmic complexity, discrete mathematics, and linear algebra as applied to practical coding challenges and software engineering principles. Students will develop proficiency in **algorithms**, **complexity analysis**, and **data structures** through implementation and theoretical exploration.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "56",
+    "code": "CS206",
+    "name": "Digital Systems Design and Practice",
+    "description": "Develop proficiency in designing and implementing digital systems with a strong emphasis on software engineering principles, algorithmic efficiency, and robust coding practices. This course utilizes **VHDL**, **FPGA**, and **Verilog** to provide hands-on experience translating theoretical concepts into practical hardware solutions. Students will master techniques for system modeling, verification, and optimization throughout the design process.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "57",
+    "code": "CS222",
+    "name": "Programming Languages",
+    "description": "Explore the foundational principles of programming language design and implementation with a strong emphasis on software engineering best practices, algorithmic efficiency, and robust coding techniques. This course delves into concepts like **compilation**, **data structures**, and **object-oriented programming** to equip students with the skills to develop high-quality software solutions. Offered in [Language - specify if known, otherwise omit], it prepares students for advanced work in computer science and related fields.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "58",
+    "code": "CS226",
+    "name": "Probability and Statistics",
+    "description": "Develop a foundational understanding of probability and statistical inference with a focus on applications within software engineering. This course emphasizes rigorous coding practices and algorithmic implementation of key concepts like **hypothesis testing**, **regression analysis**, and **Bayesian networks**. Students will gain practical experience applying statistical methods to analyze data and improve software system reliability and performance.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "59",
+    "code": "CS229",
+    "name": "Introduction to Data Communications",
+    "description": "Explore the foundational principles of data transmission and network architecture with a strong emphasis on robust software engineering practices. This course develops proficiency in designing and implementing communication systems through practical algorithm development and meticulous coding, utilizing concepts like **TCP/IP**, **packet switching**, and **network security**. Students will gain hands-on experience building reliable and efficient data communication solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "60",
+    "code": "CS233",
+    "name": "Linear Algebra",
+    "description": "Implement foundational linear algebra concepts with a strong emphasis on practical software engineering principles, algorithm design, and efficient coding practices. This course utilizes **matrices**, **vector spaces**, and **eigenvalues** to build a robust understanding of their application in computational systems. Students will develop skills crucial for performance optimization and data manipulation in complex software projects.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "61",
+    "code": "CS249",
+    "name": "Windows Programming 互動多媒體微學程 互動多媒體學程",
+    "description": "Develop robust Windows applications utilizing fundamental software engineering principles, algorithmic thinking, and practical coding techniques. This course covers core concepts in **C++**, **GUI design**, and **API integration** within the Windows environment. Students will gain hands-on experience building interactive multimedia micro-learning modules.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "62",
+    "code": "CS250",
+    "name": "Assembly Language and Computer Organization 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程",
+    "description": "Explore the foundational principles of computer systems through assembly language programming, focusing on software engineering best practices, algorithm design, and efficient coding techniques. This course delves into computer organization, utilizing concepts like **memory management**, **instruction sets**, and **CPU architecture** to build a strong understanding of the software-hardware interface. Offered in Chinese, students will gain practical experience in system-level programming and optimization.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "63",
+    "code": "CS258",
+    "name": "Introduction to Therapeutic Radiology",
+    "description": "Develop foundational skills in medical imaging software through this intensive course focusing on the engineering principles behind therapeutic radiology systems. Students will implement and analyze algorithms for image reconstruction, treatment planning, and dose calculation, utilizing **C++**, **Monte Carlo methods**, and **DICOM** standards. Emphasis is placed on robust coding practices and software validation essential for clinical applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "64",
+    "code": "CS303",
+    "name": "Introduction to Java 互動多媒體微學程 互動多媒體學程",
+    "description": "Develop foundational programming skills with CS303, an introductory Java course emphasizing software engineering principles, algorithmic thinking, and robust coding practices. Students will gain practical experience in **object-oriented programming**, **data structures**, and **debugging** through hands-on projects. This course, delivered in Chinese, prepares learners for further study in computer science and related fields.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "65",
+    "code": "CS305",
+    "name": "Introduction to Operating System 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程",
+    "description": "Explore the fundamental principles of operating systems with a strong emphasis on software engineering, algorithm design, and efficient coding practices. This course delves into core OS concepts like **process management**, **memory allocation**, and **file systems**, equipping students with practical skills for system-level programming. Taught in English, CS305 provides a solid foundation for advanced studies in computer systems and related fields.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "66",
+    "code": "CS309",
+    "name": "Introduction to Algorithms 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 金融科技微學程四",
+    "description": "Develop foundational skills in algorithm design and analysis with CS309, emphasizing practical software engineering and coding best practices. This course covers essential concepts like **dynamic programming**, **graph algorithms**, and **data structures** – crucial for building efficient and scalable solutions. Offered in Chinese, it serves as a core component within several specialized micro- and full-degree programs.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "67",
+    "code": "CS311",
+    "name": "Introduction to Computer Networks",
+    "description": "Explore the foundational principles of computer networks with a strong emphasis on software engineering methodologies, algorithmic efficiency, and practical coding implementation. This course delves into network protocols, data transmission, and system architecture, utilizing concepts like **TCP/IP**, **routing**, and **packet analysis**. Students will develop robust network applications through hands-on projects and rigorous code review.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "68",
+    "code": "CS321",
+    "name": "Introduction to Compiler 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程",
+    "description": "Develop a foundational understanding of compiler design principles with CS321, emphasizing software engineering best practices, algorithm analysis, and efficient coding techniques. This course explores lexical analysis, parsing, and code generation, equipping students with practical skills in **syntax analysis**, **intermediate representation**, and **optimization**. Taught in English, it prepares students for roles involving language processing and software tool development.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "69",
+    "code": "CS322",
+    "name": "Mobile Application Programming 互動多媒體微學程 互動多媒體學程",
+    "description": "Develop robust mobile applications with a focus on software engineering principles, algorithmic efficiency, and modern coding practices. This course—taught in Mandarin—covers essential concepts in **Android Studio**, **Kotlin**, and **UI/UX design** for creating interactive mobile experiences. Students will gain practical skills in building and deploying functional applications within the interactive multimedia domain.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "70",
+    "code": "CS324",
+    "name": "Windows ProgrammingII",
+    "description": "Develop advanced Windows applications utilizing robust software engineering principles, focusing on efficient algorithms and modern coding practices. This course emphasizes practical application of **multithreading**, **COM**, and **WPF** to build scalable and maintainable software solutions. Students will gain expertise in designing and implementing complex systems within the Windows environment.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "71",
+    "code": "CS335",
+    "name": "Introduction to Wireless Internet",
+    "description": "Explore the foundational principles of wireless internet through a software engineering lens, emphasizing algorithm design and robust coding practices. This course delves into **modulation**, **packet switching**, and **network protocols** to build a comprehensive understanding of wireless communication systems. Students will develop practical skills in designing and implementing wireless applications, preparing them for advanced research and development in the field.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "72",
+    "code": "CS337",
+    "name": "Cloud Computing and Services 人工智慧與金融科技微學程 人工智慧與金融科技學程 金融科技微學程二 智慧校園與智慧照護學程",
+    "description": "Explore the fundamentals of cloud computing with a strong emphasis on software engineering principles, algorithm design, and practical coding techniques. This course delves into cloud **virtualization**, **containerization**, and **serverless** architectures, preparing students for developing and deploying scalable cloud-based applications. Offered in Chinese, it’s integrated within the AI & Fintech and Smart Campus/Healthcare programs.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "73",
+    "code": "CS341",
+    "name": "Introduction to Biology 人工智慧與生物資訊微學程 人工智慧與生物資訊學程",
+    "description": "Explore the intersection of computational techniques and biological systems in this course, emphasizing software engineering principles for bioinformatics applications. Students will develop proficiency in **algorithm design**, **data structures**, and **Python programming** to tackle real-world biological challenges. This program, delivered in Chinese, prepares students for further study and research in the rapidly evolving field of artificial intelligence and bioinformatics.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "74",
+    "code": "CS349",
+    "name": "Artificial Intelligence of Things 人工智慧與金融科技微學程 人工智慧與金融科技學程 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程 智慧校園與智慧照護學程",
+    "description": "Develop foundational skills in artificial intelligence and its applications, particularly within the realms of finance and integrated computing systems. This course emphasizes software engineering principles, algorithmic design, and practical coding techniques, utilizing **machine learning**, **data analytics**, and **embedded systems**. Students will gain expertise applicable to smart campus, healthcare, and fintech innovations through hands-on project work.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "75",
+    "code": "CS352",
+    "name": "Introduction to Database System 人工智慧與生物資訊微學程 人工智慧與生物資訊學程",
+    "description": "Explore fundamental database concepts and their implementation with a strong emphasis on software engineering principles, algorithmic efficiency, and practical coding techniques. This course covers relational models, SQL, database design, and data integrity, utilizing keywords such as **normalization**, **transactions**, and **indexing**. Designed for students in the Artificial Intelligence and Bioinformatics program, it provides a crucial foundation for managing and analyzing biological datasets.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "76",
+    "code": "CS354",
+    "name": "Introduction to Computer and Network Security",
+    "description": "Explore fundamental principles of computer and network security with a strong emphasis on secure software engineering, algorithmic analysis, and robust coding practices. This course delves into vulnerability assessment, cryptography, and network protocols to equip students with practical skills for building secure systems. Students will gain proficiency in identifying and mitigating threats through hands-on application of security techniques.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "77",
+    "code": "CS378",
+    "name": "Introduction to VLSI Design 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程",
+    "description": "Explore the fundamentals of Very Large Scale Integration (VLSI) design, bridging software and hardware implementation with a strong emphasis on efficient algorithms and coding practices. This course delves into hardware description languages (HDLs), digital logic design, and circuit optimization techniques – all crucial for modern integrated circuit development. Students will gain practical experience applying software engineering principles to hardware systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "78",
+    "code": "CS380",
+    "name": "Web Programming 互動多媒體微學程 互動多媒體學程 智慧校園與智慧照護學程",
+    "description": "Develop robust web applications with a focus on software engineering principles, algorithmic efficiency, and modern coding practices. This course covers fundamental concepts in **JavaScript**, **HTML**, and **CSS** within the context of interactive multimedia and smart campus/healthcare technologies. Students will gain practical experience building dynamic web solutions through hands-on projects.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "79",
+    "code": "CS383",
+    "name": "Introduction to Medical ImagingI",
+    "description": "Explore the foundational principles of medical image processing with a strong emphasis on software development methodologies. This course delves into algorithm design, implementation, and best coding practices for applications utilizing **DICOM**, **segmentation**, and **filtering** techniques. Students will gain practical experience building robust and efficient medical imaging software solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "80",
+    "code": "CS410",
+    "name": "Information and Communication Technology for Intelligent Applications",
+    "description": "Develop foundational skills in software engineering, algorithmic design, and coding implementation essential for building intelligent applications. This course emphasizes practical application of techniques including **data structures**, **machine learning**, and **API integration** through rigorous coding exercises. Students will gain proficiency in creating robust and scalable software solutions for complex problems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "81",
+    "code": "CS412",
+    "name": "Data Mining 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 智慧校園與智慧照護學程",
+    "description": "Develop practical data mining skills through a software engineering lens, emphasizing algorithm design and robust coding practices. This course covers essential techniques in **machine learning**, **data visualization**, and **pattern recognition** to extract valuable insights from complex datasets. Designed for students in related micro- and full-degree programs, it provides a strong foundation for advanced applications in AI, bioinformatics, and fintech.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "82",
+    "code": "CS416",
+    "name": "Special ProjectI",
+    "description": "Develop a substantial software project applying rigorous software engineering principles, focusing on efficient algorithms and modern coding practices. This course emphasizes practical application of concepts like **data structures**, **version control**, and **testing frameworks** to build a deployable system. Students will gain experience in all phases of the software development lifecycle, culminating in a professional-quality deliverable.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "83",
+    "code": "CS417",
+    "name": "Special ProjectII",
+    "description": "Develop a substantial software project applying advanced principles of software engineering, algorithm design, and clean coding practices. This course emphasizes practical implementation and rigorous testing, utilizing technologies like **Git**, **REST APIs**, and **data structures**. Students will refine their professional skillset through collaborative development and project documentation in a team environment.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "84",
+    "code": "CS423",
+    "name": "Network LabI",
+    "description": "Implement and analyze network protocols using a software engineering approach, emphasizing robust algorithms and efficient coding practices. This laboratory course focuses on practical application of concepts like **TCP/IP**, **sockets**, and **packet analysis** to build networked applications. Students will develop proficiency in debugging, testing, and documenting network software.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "85",
+    "code": "CS426",
+    "name": "Practical TrainingIII",
+    "description": "Develop robust software solutions through intensive practical application of software engineering principles, algorithmic design, and modern coding practices. This course emphasizes hands-on experience with **data structures**, **version control**, and **testing frameworks** to prepare students for professional software development roles. Delivered in [Language - specify if known, otherwise omit], CS426 aims to solidify core competencies and foster collaborative project execution.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "86",
+    "code": "CS427",
+    "name": "Practical TrainingIV",
+    "description": "Develop robust software solutions through intensive practical application of software engineering principles, algorithmic design, and modern coding practices. This course emphasizes hands-on experience with **data structures**, **version control**, and **testing frameworks** to prepare students for professional software development roles. Delivered in [Language - specify if known, otherwise omit], it aims to solidify theoretical knowledge with real-world project implementation.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "87",
+    "code": "CS502",
+    "name": "Special Topics on Mobile Multimedia Networking",
+    "description": "Explore advanced mobile multimedia networking concepts with a strong emphasis on robust software engineering principles, efficient algorithm design, and practical coding implementation. This course delves into topics like **QoS**, **congestion control**, and **video streaming** to prepare students for developing high-performance mobile applications. Participants will gain hands-on experience building and analyzing networked multimedia systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "88",
+    "code": "CS508",
+    "name": "Computer Vision Teaching in English",
+    "description": "Develop a strong foundation in computer vision principles with a focus on robust software engineering practices, algorithmic implementation, and efficient coding. This course explores core concepts like **image processing**, **feature detection**, and **machine learning** for vision tasks, equipping students to build practical, scalable solutions. Taught entirely in English, CS508 emphasizes hands-on coding and prepares students for advanced research or industry applications.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "89",
+    "code": "CS509",
+    "name": "Digital Learning",
+    "description": "Explore advanced software development principles within a digital learning environment, emphasizing robust algorithms and professional coding practices. This course delves into topics like **data structures**, **object-oriented programming**, and **version control** to build scalable and maintainable applications. Students will refine their technical skills through practical implementation and collaborative projects.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "90",
+    "code": "CS512",
+    "name": "Embedded Real-Time Operating Systems",
+    "description": "Explore the design and implementation of software for resource-constrained systems with CS512. This course emphasizes robust software engineering principles, efficient algorithm development, and practical coding techniques for real-time applications utilizing **RTOS**, **interrupts**, and **scheduling**. Students will gain expertise in building reliable embedded systems through hands-on projects and a focus on deterministic behavior.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "91",
+    "code": "CS514",
+    "name": "Human-Computer Interaction Design 互動多媒體微學程 互動多媒體學程",
+    "description": "Develop interactive multimedia applications with a strong foundation in software engineering principles within this course. Students will explore user interface design alongside core concepts like **algorithm** optimization, **front-end development**, and **usability testing**. Taught in Mandarin, this program within the Interactive Multimedia Micro-credential prepares students for roles requiring both creative design and robust coding skills.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "92",
+    "code": "CS519",
+    "name": "Wireless Networking",
+    "description": "Explore the intricacies of wireless communication systems with a strong emphasis on software-defined networking, protocol implementation, and performance optimization. This course delves into the algorithmic foundations and coding best practices essential for developing robust and efficient wireless network applications. Students will gain practical experience utilizing techniques like **MAC protocols**, **channel coding**, and **network simulation** to analyze and design modern wireless solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "93",
+    "code": "CS522",
+    "name": "Interactive Video Game Development Teaching in English 互動多媒體微學程 互動多媒體學程",
+    "description": "Develop robust and engaging video games through a focused exploration of software engineering principles, algorithms, and coding best practices. This course emphasizes practical application of **C++**, **Unity**, and **version control** systems to build interactive experiences. Taught entirely in English, CS522 prepares students for professional roles in the game development industry.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "94",
+    "code": "CS528",
+    "name": "Big Data Analytics 智慧校園與智慧照護學程",
+    "description": "Explore advanced techniques in big data analytics with a strong emphasis on software engineering principles, algorithmic design, and practical coding implementation. This course delves into processing massive datasets using technologies like **Spark**, **Hadoop**, and **machine learning** to build scalable and robust data solutions. Students will develop expertise in designing and implementing efficient data pipelines for real-world applications within the context of smart campus and smart healthcare initiatives.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "95",
+    "code": "CS529",
+    "name": "Internet of Things",
+    "description": "Explore the development of interconnected devices and systems within the Internet of Things, emphasizing robust software engineering principles and efficient algorithmic design. This course delves into practical coding practices for resource-constrained environments, utilizing **embedded systems**, **MQTT**, and **data analytics**. Students will gain expertise in building scalable and secure IoT applications through hands-on project work.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "96",
+    "code": "CS534",
+    "name": "Biostatistics Teaching in English",
+    "description": "Develop essential skills for effectively teaching biostatistics through a practical lens, emphasizing software engineering principles and computational techniques. This course focuses on algorithm design, reproducible coding practices using **R**, statistical **modeling**, and data **visualization** – all crucial for modern biostatistical education. Students will gain the ability to convey complex concepts with clarity and rigor, preparing them to lead impactful biostatistics instruction.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "97",
+    "code": "CS535",
+    "name": "Computational Biology",
+    "description": "Develop robust bioinformatics solutions through rigorous software engineering principles, algorithmic design, and practical coding implementation. This course emphasizes best practices for building scalable and maintainable biological data analysis pipelines, utilizing techniques in **genomics**, **phylogenetics**, and **machine learning**. Students will gain hands-on experience translating biological problems into efficient and well-documented code.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "98",
+    "code": "CS536",
+    "name": "Medical Informatics and Medical Decision Making",
+    "description": "Develop robust healthcare solutions through the application of software engineering principles, algorithmic design, and advanced coding practices. This course emphasizes the creation of intelligent systems for medical diagnosis and treatment, utilizing techniques in **machine learning**, **data mining**, and **knowledge representation**. Students will gain practical experience building and evaluating medical decision support tools.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "99",
+    "code": "CS537",
+    "name": "Bioinformatics",
+    "description": "Develop robust bioinformatics solutions through a rigorous exploration of software engineering principles, algorithmic design, and practical coding techniques. This course emphasizes implementation of efficient data structures and analysis pipelines for biological data, utilizing skills in **Python**, **NGS**, and **biopython**. Students will gain expertise in building scalable and maintainable bioinformatics software.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "100",
+    "code": "CS538",
+    "name": "Data Mining and Its Applications in Biomedical Domains",
+    "description": "Explore advanced data mining techniques and their practical implementation within biomedical applications. This course emphasizes robust software engineering principles, efficient algorithm design, and practical coding skills for analyzing complex biological datasets using **machine learning**, **bioinformatics**, and **statistical modeling**. Students will develop expertise in building and deploying data-driven solutions to address real-world biomedical challenges.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "101",
+    "code": "CS539",
+    "name": "Clinical Applications of Medical Signal and Image Teaching in English",
+    "description": "Explore the development and implementation of software solutions for modern medical imaging and physiological signal processing in CS539. This course emphasizes robust software engineering principles, algorithmic design, and practical coding skills applied to clinical challenges, covering topics like **DICOM**, **machine learning**, and **image segmentation**. Students will gain hands-on experience building applications relevant to real-world healthcare scenarios.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "102",
+    "code": "CS554",
+    "name": "Seminar",
+    "description": "Explore advanced topics in software development through a research-focused seminar emphasizing practical application of algorithms, design patterns, and refactoring techniques. Participants will critically analyze and present current literature, honing their coding practices and collaborative skills. This course is conducted entirely in Spanish and requires a strong foundation in computer science principles.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "103",
+    "code": "CS555",
+    "name": "Operating Systems Teaching in English",
+    "description": "Explore the fundamental principles of operating systems with a strong emphasis on software engineering, algorithmic efficiency, and practical coding implementation. This course delves into core OS concepts like **concurrency**, **memory management**, and **virtualization** through hands-on projects and rigorous analysis. Students will develop robust systems-level programming skills essential for building and maintaining complex software.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "104",
+    "code": "CS556",
+    "name": "Research Project",
+    "description": "Investigate a focused research topic within software engineering, applying advanced algorithms and modern coding practices to develop a substantial project. This course demands independent work and culminates in a formal report demonstrating proficiency in areas like **refactoring**, **complexity analysis**, and **design patterns**. Students will strengthen analytical and implementation skills through rigorous experimentation and evaluation.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "105",
+    "code": "CS561",
+    "name": "Database Systems",
+    "description": "Explore the foundational principles of database systems with a strong emphasis on software engineering best practices, algorithmic efficiency, and robust coding techniques. This course delves into relational models, query optimization, and transaction management, utilizing **SQL**, **indexing**, and **normalization** to build scalable and reliable data solutions. Students will gain practical experience designing, implementing, and maintaining database applications through hands-on projects.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "106",
+    "code": "CS564",
+    "name": "Cybersecurity Teaching in English",
+    "description": "Develop a robust understanding of cybersecurity principles through the lens of software engineering, focusing on secure coding practices, algorithmic analysis, and vulnerability mitigation. This course emphasizes practical application of concepts like **cryptography**, **network security**, and **penetration testing** to build resilient systems. Taught entirely in English, it prepares students to address modern cybersecurity challenges with a strong technical foundation.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "107",
+    "code": "CS565",
+    "name": "Cryptography Teaching in English",
+    "description": "Explore the foundational principles of modern cryptography with a practical focus on software implementation and secure coding practices. This course delves into cryptographic algorithms, protocol design, and vulnerability analysis, emphasizing hands-on development using **AES**, **RSA**, and **SHA-256**. Students will gain expertise in building and evaluating secure systems through rigorous coding assignments and a software engineering lens.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "108",
+    "code": "CS567",
+    "name": "Image Processing 人工智慧「智慧視覺分析」微學程 人工智慧「電腦輔助診斷應用」微學程 人工智慧學程 互動多媒體微學程 互動多媒體學程 數位科技應用學程",
+    "description": "Develop foundational skills in image processing through a software engineering lens, emphasizing algorithm design and robust coding practices. This course covers core concepts like **convolutional neural networks**, **feature extraction**, and **image segmentation** – applicable to fields such as intelligent visual analysis and computer-aided diagnosis. Offered in Chinese, it’s ideal for students in AI, Interactive Multimedia, and Digital Technology programs.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "109",
+    "code": "CS569",
+    "name": "Computer Graphics Teaching in English 互動多媒體微學程 互動多媒體學程",
+    "description": "Develop foundational skills in computer graphics through a software engineering lens, emphasizing robust algorithms and modern coding practices. This course covers core concepts like **rendering**, **shaders**, and **geometric modeling** – all taught in English – preparing students for advanced graphics development. Successful completion requires a strong focus on practical implementation and efficient code design.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "110",
+    "code": "CS578",
+    "name": "Computer Networking Teaching in English",
+    "description": "Explore the foundational principles of computer networking with a strong emphasis on software engineering best practices, algorithmic efficiency, and practical coding implementation. This course delves into network protocols, architectures, and security mechanisms, utilizing concepts like **TCP/IP**, **routing**, and **sockets** to build robust network applications. Students will gain hands-on experience designing, implementing, and analyzing network systems in a professional context.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "111",
+    "code": "CS606",
+    "name": "Special Topics on Computer Assisted Instruction",
+    "description": "Explore advanced techniques in Computer Assisted Instruction, emphasizing robust software engineering principles, efficient algorithm design, and modern coding practices. This course delves into the development of intelligent tutoring systems utilizing **machine learning**, **natural language processing**, and **adaptive testing** methodologies. Students will gain practical experience building and evaluating CAI software solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "112",
+    "code": "CS624",
+    "name": "Computation Theory",
+    "description": "Explore the foundational principles of computation with a practical emphasis on software engineering, algorithm design, and efficient coding practices. This course delves into formal languages, automata theory, and computational complexity—utilizing **finite state machines**, **Turing completeness**, and **recursive functions**—to build a robust understanding of problem-solving in computer science. Develop analytical skills crucial for designing and evaluating the performance of complex software systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "113",
+    "code": "CS641",
+    "name": "Artificial Intelligence Teaching in English 人工智慧與生物資訊微學程 人工智慧與生物資訊學程",
+    "description": "Develop a strong foundation in Artificial Intelligence with CS641, emphasizing practical software engineering principles, algorithmic design, and robust coding practices. This course explores key AI concepts through hands-on implementation, focusing on **machine learning**, **deep learning**, and **data mining** techniques. Taught entirely in English, it prepares students for advanced study and application in the rapidly evolving field of AI and bioinformatics.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "114",
+    "code": "CS646",
+    "name": "Generative AI and Applications Teaching in English",
+    "description": "Explore the forefront of artificial intelligence with CS646, a course focused on the practical application of generative AI techniques. Develop robust AI systems through a software engineering lens, emphasizing algorithmic foundations, efficient coding practices, and hands-on experience with **transformers**, **diffusion models**, and **LLMs**. This course prepares students to build and deploy cutting-edge AI solutions in real-world scenarios.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "115",
+    "code": "CS650",
+    "name": "Electronic Design Automation Teaching in English 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程",
+    "description": "Develop proficiency in the tools and techniques essential for modern electronic design automation through a software-focused approach. This course emphasizes robust algorithms, efficient coding practices, and practical application of concepts like **verification**, **synthesis**, and **place-and-route**. Taught entirely in English, it’s ideal for students in the Computer Software and Hardware System Design Micro/Program.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "116",
+    "code": "CS657",
+    "name": "Machine Learning 人工智慧與生物資訊微學程 人工智慧與生物資訊學程 人工智慧與金融科技微學程 人工智慧與金融科技學程 智慧校園與智慧照護學程",
+    "description": "Develop a strong foundation in machine learning principles with CS657, emphasizing software engineering best practices, algorithmic design, and practical coding implementation. This course covers core concepts like **supervised learning**, **neural networks**, and **data mining** – preparing students for specializations in AI & Bioinformatics, AI & Fintech, or Smart Campus/Healthcare. Taught in Mandarin, it’s ideal for those seeking to build robust, real-world machine learning applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "117",
+    "code": "CS660",
+    "name": "Deep Learning 人工智慧與金融科技微學程 人工智慧與金融科技學程",
+    "description": "Explore the foundations of deep learning with a strong emphasis on practical software engineering, algorithmic implementation, and robust coding practices. This course delves into core concepts utilizing **neural networks**, **backpropagation**, and **TensorFlow** within the context of artificial intelligence and financial technology. Students will gain hands-on experience building and deploying deep learning models for real-world applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "118",
+    "code": "CS668",
+    "name": "VLSI Testing & Design 計算機軟硬系統設計與整合微學程 計算機軟硬系統設計與整合學程",
+    "description": "Explore advanced techniques in VLSI testing and design, emphasizing software-driven methodologies for hardware validation and optimization. This course delves into algorithmic test generation, fault simulation, and design-for-testability (DFT) principles, requiring strong software engineering and coding skills. Students will gain practical experience with **ATE patterns**, **scan chains**, and **fault coverage** analysis.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "119",
+    "code": "CS674",
+    "name": "Special Topics on Software Engineering",
+    "description": "Explore advanced concepts in software engineering, focusing on efficient algorithms, robust coding practices, and system design principles. This course delves into topics like **refactoring**, **testing**, and **architecture** to enhance software quality and maintainability. Delivered entirely in [Language - specify if known, otherwise omit], it prepares students for complex software development challenges.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "120",
+    "code": "CS675",
+    "name": "Special Topics on Intelligent Systems",
+    "description": "Explore advanced intelligent systems development with a strong emphasis on robust software engineering principles, efficient algorithms, and modern coding practices. This course delves into practical applications of **machine learning**, **deep learning**, and **neural networks** through hands-on implementation. Students will refine their technical skills to build and deploy scalable, intelligent solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "121",
+    "code": "CS678",
+    "name": "Graph Theory Teaching in English",
+    "description": "Explore the foundational principles of graph theory and their practical applications within software engineering, emphasizing algorithmic design and efficient coding practices. This course delves into topics like network flows, graph algorithms, and data structures, equipping students with skills relevant to real-world problem-solving. Key areas of focus include **connectivity**, **shortest paths**, and **graph traversal**.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "122",
+    "code": "CS679",
+    "name": "Special Topics on Distributed Systems",
+    "description": "Explore advanced concepts in distributed systems with a strong emphasis on robust software engineering, efficient algorithm design, and practical coding techniques. This course delves into topics like **concurrency**, **fault tolerance**, and **message passing** to prepare students for building scalable and reliable applications. Offered entirely in a non-English language, it demands fluency for successful participation and project completion.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "123",
+    "code": "CS683",
+    "name": "Special Topics on Electronic Design Automation",
+    "description": "Explore advanced techniques in Electronic Design Automation with a strong emphasis on robust software engineering principles, algorithmic design, and efficient coding practices. This course delves into topics such as **static analysis**, **graph partitioning**, and **logic synthesis**, preparing students for complex EDA tool development. Participants will gain practical experience through implementation and analysis of cutting-edge methodologies.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "124",
+    "code": "DE101",
+    "name": "Calculus I Teaching in English",
+    "description": "Develop a foundational understanding of calculus with a focus on its application to electrical engineering principles. This course explores limits, derivatives, and integrals as they relate to **circuit analysis**, **signal processing**, and **hardware** design. Students will gain analytical skills essential for solving complex engineering problems through a rigorous, English-taught curriculum.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "125",
+    "code": "DE102",
+    "name": "Calculus II Teaching in English",
+    "description": "Explore advanced calculus techniques essential for electrical engineering applications, focusing on the mathematical foundations of circuits, signals, and systems. This course develops proficiency in integration, series, and differential equations – key tools for analyzing **impedance**, **Fourier transforms**, and **transient response**. Delivered entirely in English, DE102 prepares students for rigorous engineering problem-solving.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "126",
+    "code": "DE103",
+    "name": "Computer Programming Lab.I Teaching in English 智慧製造學程",
+    "description": "Develop foundational programming skills alongside a strong understanding of hardware interaction in DE103 – Computer Programming Lab.I. This course emphasizes engineering principles, focusing on circuits, signals, and microcontroller programming for students in the Smart Manufacturing program. Expect practical application of concepts using **embedded systems**, **digital logic**, and **C programming**.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "127",
+    "code": "DE104",
+    "name": "Computer Programming Lab.II Teaching in English 智慧製造學程",
+    "description": "Develop practical skills in hardware-software integration through hands-on laboratory experience focusing on circuits, signals, and fundamental engineering principles. This course, designed for the Smart Manufacturing program, utilizes embedded systems and microcontroller programming to reinforce theoretical concepts. Students will gain proficiency in digital logic, circuit analysis, and signal processing techniques.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "128",
+    "code": "DE105",
+    "name": "Introduction to Chemical Engineering & Materials Science Teaching in English",
+    "description": "Explore the foundational principles of chemical engineering and materials science with a hardware-focused approach, delving into circuits, signals, and core engineering concepts. This introductory course emphasizes practical application and builds a strong base in **thermodynamics**, **kinetics**, and **material properties**. Delivered entirely in English, DE105 prepares students for further study in related engineering disciplines.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "129",
+    "code": "DE106",
+    "name": "Introduction to Industrial Engineering Teaching in English",
+    "description": "Explore the foundational principles of Industrial Engineering with a focus on the hardware, circuits, and signal processing essential to modern systems. This course introduces core engineering concepts and problem-solving techniques applicable to industrial optimization and design. Students will gain practical knowledge in **automation**, **systems analysis**, and **process control**.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "130",
+    "code": "DE107",
+    "name": "General Chemistry Teaching in English",
+    "description": "Develop a foundational understanding of general chemistry principles specifically for English-medium instruction, emphasizing effective pedagogical techniques. This course explores core chemical concepts while preparing instructors to deliver engaging lessons on topics like stoichiometry, thermodynamics, and chemical kinetics. Successful completion requires proficiency in translating complex scientific ideas and utilizing appropriate **spectroscopy**, **titration**, and **electrochemistry** demonstrations.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "131",
+    "code": "DE108",
+    "name": "General Physics Teaching in English",
+    "description": "Explore the foundational principles of physics with a focus on practical application through hardware, circuits, and signal analysis. This course, delivered in English, emphasizes engineering concepts essential for understanding physical systems and developing problem-solving skills. Key areas include **electromagnetism**, **oscillations**, and **semiconductors**.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "132",
+    "code": "DE110",
+    "name": "Introduction to Mechanical Engineering Teaching in English",
+    "description": "Explore the foundational principles of mechanical engineering through a hands-on curriculum emphasizing hardware, circuits, and signal processing. This introductory course delivers core engineering concepts and practical applications, building a strong base in **mechanics**, **electronics**, and **automation**. Delivered entirely in English, DE110 prepares students for further study and professional practice in the field.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "133",
+    "code": "DE111",
+    "name": "Introduction to Biotechnology and Biomedicine Teaching in English",
+    "description": "Explore the foundational principles of biotechnology and biomedicine with a strong emphasis on the engineering aspects driving innovation in these fields. This course delves into the hardware, circuit design, and signal processing essential for developing biomedical devices and biotechnological systems, utilizing concepts from **bioinstrumentation**, **biosensors**, and **microfluidics**. Delivered entirely in English, it prepares students for advanced study and careers at the intersection of biology and engineering.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "134",
+    "code": "DE121",
+    "name": "Materials Science Teaching in English 全校性跨領域--材料科技學程",
+    "description": "Explore the foundational principles of materials science with a hardware-focused approach, delving into circuits, signals, and engineering design. This course emphasizes the relationship between material properties and technological applications, utilizing concepts in **semiconductors**, **metallurgy**, and **polymer science**. Delivered entirely in English, it prepares students for interdisciplinary work in materials technology.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "135",
+    "code": "DE201",
+    "name": "Special Topics in Engineering I Teaching in English",
+    "description": "Explore fundamental engineering principles with a focus on hardware design, circuit analysis, and signal processing in this introductory course. DE201 provides a practical foundation in core electrical engineering concepts, utilizing hands-on applications and theoretical understanding. Students will gain proficiency in **analog circuits**, **digital logic**, and **embedded systems**.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "136",
+    "code": "DE204",
+    "name": "Experimental Design Teaching in English",
+    "description": "Develop a robust understanding of experimental methodologies applied to electrical engineering through hands-on projects. This course emphasizes practical application of hardware, circuit analysis, and signal processing techniques while reinforcing core engineering principles. Students will gain proficiency in data acquisition, statistical analysis, and technical reporting – key skills for effective research and development.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "137",
+    "code": "DE207",
+    "name": "Green Ergonomics & Sustainable Manufacturing Teaching in English",
+    "description": "Explore the intersection of ecological responsibility and efficient design in DE207 – Green Ergonomics & Sustainable Manufacturing. This course applies fundamental engineering principles to optimize manufacturing processes, focusing on hardware integration, signal processing, and circuit design for reduced environmental impact. Students will develop skills in creating sustainable systems through practical application of **lifecycle assessment**, **energy efficiency**, and **human-machine interfaces**.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "138",
+    "code": "DE211",
+    "name": "Engineering Drawing Teaching in English",
+    "description": "Develop foundational engineering communication skills through the creation of precise technical drawings. This course emphasizes hardware representation, circuit schematics, and signal flow diagrams, applying core engineering principles to practical drafting exercises. Students will gain proficiency in **CAD**, **GD&T**, and **orthographic projection** – essential tools for effective technical documentation.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "139",
+    "code": "DE217",
+    "name": "Engineering Mathematics II Teaching in English",
+    "description": "Develop a strong foundation in essential mathematical tools for electrical engineering with DE217. This course applies concepts of linear algebra, differential equations, and Fourier analysis to analyze circuits, signals, and hardware systems. Students will gain proficiency in modeling and solving complex engineering problems using these core mathematical principles.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "140",
+    "code": "DE218",
+    "name": "Mechanics of Materials Teaching in English",
+    "description": "Explore the fundamental behavior of solid materials under various loads and stresses in DE218 - Mechanics of Materials. This course emphasizes applying engineering principles to analyze **stress**, **strain**, and **deformation** within mechanical systems, bridging theoretical concepts with practical applications in hardware and circuit design. Students will develop a strong foundation in signal processing and material response crucial for robust engineering solutions.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "141",
+    "code": "DE235",
+    "name": "Transport Phenomena and Unit Operations I Teaching in English 全校性跨領域--綠色能源學程",
+    "description": "Explore fundamental transport phenomena and unit operations essential for green energy technologies, emphasizing hardware implementation and engineering principles. This course covers **heat transfer**, **fluid mechanics**, and **mass transfer** with a focus on circuit analysis and signal processing applications within energy systems. Students will develop a strong foundation for designing and analyzing sustainable energy solutions.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "142",
+    "code": "DE236",
+    "name": "Physical Chemistry II Teaching in English",
+    "description": "Delve into the advanced principles of physical chemistry with a focus on thermodynamics, kinetics, and quantum mechanics. This course, instructed in English, equips students with the theoretical framework and problem-solving skills essential for understanding complex chemical systems – utilizing **spectroscopy**, **electrochemistry**, and **statistical mechanics**. Successful completion requires a strong foundation in mathematical and computational techniques.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "143",
+    "code": "DE253",
+    "name": "Linear Algebra Teaching in English",
+    "description": "Develop a strong foundation in linear algebra with a focus on practical applications within electrical engineering. This course emphasizes the use of matrices, vectors, and transformations to analyze circuits, signals, and systems – utilizing concepts like **eigenvalues**, **Fourier analysis**, and **state-space representation**. Taught entirely in English, DE253 prepares students for advanced work in hardware-oriented engineering disciplines.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "144",
+    "code": "DE354",
+    "name": "Production Planning and Control II Teaching in English",
+    "description": "Develop advanced production planning and control strategies for complex manufacturing systems, focusing on the unique challenges of hardware-intensive industries. This course applies engineering principles to optimize workflows involving circuits, signals, and embedded systems, ensuring efficient resource allocation and timely product delivery. Students will gain expertise in areas like capacity planning, scheduling, and inventory management within a technical context.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "145",
+    "code": "EE800",
+    "name": "Researching Project",
+    "description": "Investigate a focused engineering problem within the domains of hardware, circuits, and signal processing through independent research and practical application. This course demands a rigorous exploration of fundamental engineering principles, culminating in a detailed project report and demonstration. Keywords: **FPGA**, **embedded systems**, **signal integrity**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "146",
+    "code": "EE801",
+    "name": "Adaptive Signal Processing",
+    "description": "Explore advanced techniques for designing and implementing adaptive filters in hardware, focusing on real-time signal processing applications. This course delves into the circuit-level realization of algorithms like LMS and RLS, emphasizing stability and convergence analysis. Key topics include **VLSI**, **digital filters**, and **adaptive algorithms**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "147",
+    "code": "EE803",
+    "name": "Signal Detection",
+    "description": "Explore the foundational principles of signal detection with a strong emphasis on hardware implementation and circuit design. This course delves into the analysis and optimization of receiver systems, covering topics like **modulation**, **filtering**, and **noise analysis** to enhance signal recovery in challenging environments. Students will apply engineering principles to design and evaluate practical signal detection systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "148",
+    "code": "EE804",
+    "name": "Random Signal Processing",
+    "description": "Analyze and design systems for processing random signals with a strong emphasis on hardware implementation and circuit-level considerations. This course delves into statistical signal processing techniques, focusing on applications in communication systems and sensor arrays utilizing concepts like **estimation**, **filtering**, and **spectral analysis**. Students will gain practical experience applying engineering principles to real-world random signal challenges.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "149",
+    "code": "EE806",
+    "name": "Deep Learning and its Vision Applications",
+    "description": "Explore the foundational engineering principles underlying deep learning, with a specific focus on its application to computer vision systems. This course delves into the hardware acceleration, circuit design, and signal processing techniques crucial for efficient implementation of convolutional neural networks. Students will gain expertise in **FPGA**, **ASIC**, and **embedded systems** for real-world vision applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "150",
+    "code": "EE845",
+    "name": "Digital Signal Processing",
+    "description": "Explore the foundational principles of digital signal processing with a strong emphasis on hardware realization and circuit-level implementation. This course delves into the engineering aspects of signal representation, filtering, and transformation using concepts like **FPGA**, **DSP architectures**, and **quantization**. Students will gain practical experience designing and analyzing digital signal processing systems for real-world applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "151",
+    "code": "EE849",
+    "name": "Image Processing",
+    "description": "Explore the foundational engineering principles behind image processing, emphasizing hardware implementation and signal analysis. This course delves into circuit design for image acquisition, filtering techniques, and real-time processing architectures. Key topics include **FPGA**, **embedded systems**, and **digital signal processing (DSP)**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "152",
+    "code": "EE850",
+    "name": "Antenna Design and Characteristic Measurement",
+    "description": "Explore advanced techniques in antenna design, fabrication, and characterization, emphasizing practical implementation of hardware and circuit principles. This course covers topics including **impedance matching**, **radiation patterns**, and **Smith charts** to optimize antenna performance. Students will gain hands-on experience with signal integrity and measurement methodologies essential for modern wireless systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "153",
+    "code": "EE852",
+    "name": "Science & Technology Innovation and Foresight Thinking",
+    "description": "Explore advanced methodologies for anticipating and shaping future technological landscapes within electrical engineering. This course delves into innovation and foresight, specifically applying these principles to hardware development, focusing on areas like **signal processing**, **circuit design**, and **embedded systems**. Students will learn to strategically assess emerging technologies and cultivate a proactive approach to engineering challenges.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "154",
+    "code": "EE853",
+    "name": "Analysis and Best Practice to High-Tech Industry",
+    "description": "Examine the critical analysis and implementation of best practices within the high-tech industry, focusing on foundational hardware engineering principles. This course delves into advanced topics in **circuit design**, **signal integrity**, and **embedded systems** to prepare students for real-world challenges. Students will develop a comprehensive understanding of translating theoretical knowledge into practical, innovative solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "155",
+    "code": "EE880",
+    "name": "Fourier Optics",
+    "description": "Explore the fundamental principles of optical signal processing with a strong emphasis on hardware implementation and circuit design. This course delves into **diffraction**, **modulation**, and **spatial filtering** techniques, applying electrical engineering concepts to analyze and manipulate light waves. Students will gain practical experience in building and testing optical systems for diverse applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "156",
+    "code": "EE881",
+    "name": "Image Inspection and Detection Technique",
+    "description": "Explore advanced techniques for automated visual inspection systems, emphasizing hardware implementation and signal processing for defect detection. This course delves into the engineering principles behind machine vision, covering topics like **FPGA**-based image processing, **sensor** calibration, and **embedded systems** design for real-time applications. Students will gain practical experience in building and analyzing robust image inspection solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "157",
+    "code": "EEA112",
+    "name": "Digital Logic Design 智慧型控制學程 數位科技應用學程 積體電路設計學程",
+    "description": "Explore the fundamental principles of digital systems, encompassing hardware design, circuit analysis, and signal processing. This course provides a strong foundation in Boolean algebra, combinational logic, and sequential circuits – essential for students in integrated circuit design and related engineering fields. Students will develop practical skills in analyzing and implementing digital logic systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "158",
+    "code": "EEA122",
+    "name": "General PhysicsII Teaching in English",
+    "description": "Explore the fundamental principles of electricity and magnetism with EEA122 - General Physics II, delivered fully in English. This course emphasizes practical applications of **circuits**, **signals**, and **electromagnetism** through a hardware-focused approach to engineering problem-solving. Students will develop a strong foundation in essential concepts for further study in electrical engineering and related fields.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "159",
+    "code": "EEA124",
+    "name": "General Physics Lab.II",
+    "description": "Explore fundamental physics principles through hands-on experimentation with electrical circuits and signal analysis. This laboratory course emphasizes practical application of engineering concepts, focusing on hardware implementation and data acquisition. Students will gain proficiency in **oscilloscopes**, **circuit analysis**, and **signal processing**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "160",
+    "code": "EEA125",
+    "name": "CalculusII",
+    "description": "Explore advanced mathematical concepts foundational to electrical engineering, applying calculus to analyze circuits, signals, and systems. This course develops proficiency in differential equations, Fourier analysis, and Laplace transforms – essential tools for modeling and solving complex engineering problems. Students will strengthen analytical skills crucial for hardware design and signal processing applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "161",
+    "code": "EEA128",
+    "name": "Digital Logic Design Laboratory",
+    "description": "Explore the fundamental principles of digital systems through hands-on laboratory experience, focusing on the design, implementation, and testing of hardware circuits. This course reinforces theoretical concepts with practical application of **Boolean algebra**, **combinational logic**, and **sequential circuits** using industry-standard tools. Students will develop essential skills in signal analysis and engineering problem-solving within a digital design context.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "162",
+    "code": "EEA130",
+    "name": "Programming Language Lab.II 智慧電網學程 數位科技應用學程",
+    "description": "Explore the foundational principles of electrical engineering through hands-on laboratory work focusing on hardware, circuits, and signal processing. This course reinforces theoretical concepts with practical application, utilizing tools for **microcontroller** programming, **circuit analysis**, and **embedded systems** development. Students will gain essential skills for designing and implementing solutions within the smart grid and digital technology fields.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "163",
+    "code": "EEA204",
+    "name": "Engineering MathematicsII",
+    "description": "Explore advanced mathematical techniques essential for analyzing electrical engineering systems, with a strong emphasis on circuit theory, signal processing, and hardware implementation. Develop proficiency in applying concepts like **Laplace transforms**, **Fourier analysis**, and **complex impedance** to solve practical engineering problems. This course reinforces foundational principles and prepares students for specialized study in electrical and electronic engineering fields.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "164",
+    "code": "EEA206",
+    "name": "ElectronicsII 智慧型控制學程 積體電路設計學程",
+    "description": "Explore advanced electronic circuit design and analysis, focusing on hardware implementation and signal processing techniques. This course delves into fundamental engineering principles with applications in integrated circuit design and intelligent control systems, utilizing concepts like **analog circuits**, **digital filters**, and **embedded systems**. Students will gain practical experience in building and testing electronic systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "165",
+    "code": "EEA227",
+    "name": "ElectromagneticsI 全校性跨領域--綠色能源學程 智慧電網學程",
+    "description": "Explore fundamental electromagnetic principles and their application to electrical engineering systems with a strong emphasis on hardware and circuit analysis. This course develops a foundational understanding of signals, transmission lines, and Maxwell’s equations, preparing students for advanced work in related fields. Key topics include **antennas**, **waveguides**, and **impedance matching**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "166",
+    "code": "EEA232",
+    "name": "Electronic Circuits ExperimentsII",
+    "description": "Explore advanced electronic circuit analysis and design through hands-on experimentation, reinforcing core engineering principles. This laboratory course emphasizes practical application of concepts related to **oscillators**, **filters**, and **amplifiers** using industry-standard hardware and signal generation techniques. Students will develop proficiency in circuit building, measurement, and troubleshooting for complex electronic systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "167",
+    "code": "EEA243",
+    "name": "Advance in Electric Circuits 智慧電網學程",
+    "description": "Explore advanced electric circuit analysis and design, focusing on practical hardware implementation and fundamental engineering principles relevant to smart grid technologies. This course delves into topics like power electronics, signal processing, and control systems, equipping students with a strong foundation for real-world applications. Students will gain expertise in circuit modeling, analysis, and troubleshooting for intelligent energy systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "168",
+    "code": "EEA305",
+    "name": "Signals and Systems 智慧生醫學程",
+    "description": "Explore the foundational principles of signals and systems with a strong emphasis on hardware implementation and circuit analysis. This course delves into signal processing techniques, utilizing concepts of **Fourier analysis**, **Laplace transforms**, and **filter design** to analyze and synthesize biomedical engineering systems. Students will develop a practical understanding of engineering principles essential for designing and evaluating signal acquisition and processing circuits.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "169",
+    "code": "EEA478",
+    "name": "Electrical Topics",
+    "description": "Explore fundamental electrical engineering concepts with a strong emphasis on practical hardware implementation, circuit analysis, and signal processing. This course delves into core engineering principles essential for understanding and designing electrical systems. Key areas of study include **analog circuits**, **digital logic**, and **power systems**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "170",
+    "code": "EEA525",
+    "name": "Optimal Control",
+    "description": "Explore advanced control techniques applied to electrical engineering systems, emphasizing practical implementation with hardware and circuit design. This course develops a strong foundation in state-space representation, **observability**, **controllability**, and **Lyapunov stability** analysis for optimal system performance. Students will apply these principles to real-world signal processing and power electronics applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "171",
+    "code": "EEA529",
+    "name": "Stochastic Control",
+    "description": "Explore advanced control methodologies for dynamic systems with inherent uncertainty, focusing on applications within electrical engineering. This course develops a rigorous understanding of optimal control strategies applied to hardware implementations, utilizing concepts from signal processing and circuit theory. Key topics include **Kalman filtering**, **Markov decision processes**, and **stochastic optimization**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "172",
+    "code": "EEA531",
+    "name": "VLSI Signal Processing Teaching in English 積體電路設計學程",
+    "description": "Explore advanced techniques in VLSI signal processing, focusing on hardware implementation of digital signal processing algorithms. This course delves into circuit-level design, signal integrity, and system-on-chip (SoC) architectures, equipping students with a strong foundation in engineering principles. Students will gain practical experience with **FPGA**, **DSP**, and **Verilog** through hands-on projects.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "173",
+    "code": "EEA564",
+    "name": "Communication Electronics Teaching in English 人工智慧「智慧終端晶片設計」微學程 人工智慧學程 積體電路設計學程",
+    "description": "Explore advanced communication electronics with a hardware-focused approach, delving into circuits, signals, and fundamental engineering principles. This course covers key areas of **RFIC design**, **mixed-signal circuits**, and **low-power techniques** for intelligent terminal chip development. Taught entirely in English, it’s ideal for students in integrated circuit design and artificial intelligence programs.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "174",
+    "code": "EEA588",
+    "name": "Digital VLSI Design 人工智慧「智慧終端晶片設計」微學程 人工智慧學程 積體電路設計學程",
+    "description": "Develop expertise in digital Very Large Scale Integration (VLSI) design with this intensive course, focusing on hardware implementation for intelligent edge devices. Explore fundamental circuits, signal processing techniques, and system-level considerations crucial for AI chip design – covering topics like **ASIC**, **FPGA**, and **SoC** integration. This program, delivered in Mandarin, is ideal for students in electrical engineering and related fields seeking specialized skills in integrated circuit design.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "175",
+    "code": "EEA600",
+    "name": "Neural Network Teaching in English 人工智慧「智慧控制與無人載具」微學程 人工智慧「智慧視覺分析」微學程 人工智慧學程 智慧型控制學程",
+    "description": "Explore the foundational principles of neural networks with a strong emphasis on hardware implementation and engineering design. This course delves into circuits, signal processing, and system-level considerations crucial for deploying intelligent systems – covering topics relevant to intelligent control, autonomous vehicles, and visual analysis. Key areas include **embedded systems**, **digital signal processing (DSP)**, and **circuit design**.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "176",
+    "code": "EEA607",
+    "name": "Seminar",
+    "description": "Explore advanced topics in electrical engineering through focused discussion and analysis of current research. This seminar delves into the core principles of **hardware**, **signal processing**, and **circuit design**, demanding a strong foundation in engineering fundamentals. Participants will critically evaluate technical literature and present original work in Spanish.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "177",
+    "code": "EEA608",
+    "name": "The Advanced VLSI System Design Teaching in English",
+    "description": "Delve into the complexities of modern integrated circuit design with EEA608, an advanced VLSI systems course taught entirely in English. This rigorous program emphasizes fundamental hardware principles, circuit analysis, and signal integrity, preparing students for professional roles utilizing **ASIC**, **FPGA**, and **SystemVerilog** methodologies. Students will gain expertise in designing, verifying, and implementing sophisticated VLSI systems.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "178",
+    "code": "EEA625",
+    "name": "Computer Vision Teaching in English 人工智慧「智慧視覺分析」微學程 人工智慧「電腦輔助診斷應用」微學程 人工智慧學程 智慧生醫學程",
+    "description": "Explore the foundational engineering principles behind computer vision, focusing on hardware implementation, signal processing, and circuit design for image analysis. This course delves into practical applications within artificial intelligence, including diagnostic imaging and broader AI systems. Students will gain expertise in **embedded systems**, **FPGA**, and **image sensors** through a hands-on, English-taught curriculum.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "179",
+    "code": "EEA647",
+    "name": "Transmission Standards of Digital Home Network 物聯網學程 數位科技應用學程",
+    "description": "Explore the fundamental transmission standards governing digital home networks, with a strong emphasis on hardware implementation and signal integrity. This course delves into the engineering principles behind technologies like **HomePlug AV**, **Zigbee**, and **Z-Wave**, focusing on circuit analysis and practical application. Students will gain a comprehensive understanding of the physical layer challenges and solutions within the Internet of Things (IoT) ecosystem.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "180",
+    "code": "EEA656",
+    "name": "Algorithms of Image Processing: Development and Applications Teaching in English",
+    "description": "Explore the foundational algorithms and practical applications driving modern image processing systems. This course emphasizes a hardware-focused approach, integrating principles of signals, circuits, and engineering to develop efficient image processing solutions. Key topics include **FPGA**, **convolutional neural networks**, and **image filtering**.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "181",
+    "code": "EEA658",
+    "name": "Special topics on next generation network and network implementation",
+    "description": "Explore advanced concepts in next-generation network design and practical implementation, emphasizing a foundational understanding of hardware, circuits, and signal processing. This course delves into the engineering principles underpinning modern networks, covering topics such as **FPGA**, **SDN**, and **channel coding**. Students will gain expertise in translating theoretical knowledge into tangible network solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "182",
+    "code": "EEA665",
+    "name": "Advanced Design and Implementation of Integrated Circuits Ⅱ",
+    "description": "Delve into the advanced methodologies of integrated circuit design, focusing on hardware realization and signal integrity. This course explores complex circuit architectures, emphasizing practical implementation techniques and utilizing concepts in **Verilog**, **ASIC**, and **low-power design**. Students will gain expertise in translating theoretical knowledge into functional integrated systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "183",
+    "code": "EEA667",
+    "name": "Advanced Design and Implementation of Integrated Circuits Ⅳ",
+    "description": "Delve into the advanced methodologies of integrated circuit design, focusing on hardware realization and signal integrity. This course explores complex circuit architectures, emphasizing practical implementation and verification techniques utilizing **Verilog**, **ASIC** flow, and **timing analysis**. Students will gain expertise in translating system-level specifications into optimized, functional integrated circuits.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "184",
+    "code": "EEA677",
+    "name": "Data Science Teaching in English",
+    "description": "Develop the pedagogical skills to effectively teach data science concepts to an English-speaking audience, with a unique focus on applying these techniques to hardware, circuits, and signal processing. This course equips educators with strategies for conveying complex engineering principles using data-driven approaches, emphasizing **signal analysis**, **circuit modeling**, and **embedded systems** applications. Successful completion will prepare instructors to deliver engaging and technically rigorous data science instruction within an engineering context.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "185",
+    "code": "EEA680",
+    "name": "Deep Learning Teaching in English 人工智慧學程 數位科技應用學程",
+    "description": "Explore the foundational engineering principles underpinning deep learning with EEA680, a course delivered in English focusing on hardware acceleration, circuit design, and signal processing for AI systems. This advanced offering delves into the practical implementation of neural networks, requiring a strong understanding of electrical engineering concepts. Students will gain expertise in **FPGA**, **ASIC**, and **embedded systems** as applied to cutting-edge artificial intelligence technologies.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "186",
+    "code": "EEA685",
+    "name": "Systems Engineering",
+    "description": "Explore the foundational principles of systems engineering with a strong emphasis on hardware design, circuit analysis, and signal processing. This course develops practical skills in applying engineering fundamentals to complex system architectures and implementation. Key areas of study include **embedded systems**, **digital logic**, and **control theory**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "187",
+    "code": "EEA689",
+    "name": "Wireless Power Transfer Technology in 5G and IoT Era Teaching in English",
+    "description": "Explore the rapidly evolving field of wireless power transfer (WPT) and its critical role in enabling next-generation 5G and Internet of Things (IoT) deployments. This course delves into the hardware, circuit design, and signal processing techniques underpinning WPT systems, emphasizing practical engineering principles and covering topics like **resonant inductive coupling**, **rectennas**, and **beamforming**. Students will gain a comprehensive understanding of implementing efficient and reliable power delivery solutions for a connected world.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "188",
+    "code": "EEA699",
+    "name": "Reinforcement Learning Teaching in English 人工智慧學程",
+    "description": "Explore the foundations of Reinforcement Learning with a unique emphasis on the underlying hardware and engineering principles crucial for practical implementation. This course delves into the intersection of artificial intelligence and physical systems, covering topics in circuits, signal processing, and embedded systems for intelligent agents. Students will gain expertise in **Q-learning**, **policy gradients**, and **Markov Decision Processes** through a hands-on, technically rigorous approach.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "189",
+    "code": "EEA704",
+    "name": "Power Systems and Green Energy Teaching in English",
+    "description": "Explore the fundamentals of modern power systems and the integration of renewable energy sources with a strong emphasis on hardware, circuit analysis, and signal processing. This course delivers a rigorous understanding of engineering principles applied to power generation, transmission, and distribution, covering topics like **grid stability**, **power electronics**, and **renewable integration**. Students will develop practical skills essential for analyzing and designing sustainable energy solutions.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "190",
+    "code": "EEA802",
+    "name": "Projects Production",
+    "description": "Develop practical engineering skills through the design and implementation of a substantial hardware project. This course emphasizes application of core principles in **circuit** design, **signal processing**, and **embedded systems**, culminating in a fully functional prototype. Students will gain hands-on experience translating theoretical knowledge into tangible engineering solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "191",
+    "code": "EEB101",
+    "name": "CalculusI",
+    "description": "Explore the foundational mathematical principles underpinning electrical engineering through a calculus-based approach. This course emphasizes applications in **circuit analysis**, **signal processing**, and **system modeling**, delivered entirely in [Language - specify if known, otherwise omit]. Students will develop problem-solving skills essential for analyzing and designing hardware systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "192",
+    "code": "EEB102",
+    "name": "CalculusII",
+    "description": "Explore advanced calculus techniques essential for electrical engineering applications, focusing on the mathematical foundations of circuits, signals, and systems. Develop proficiency in **integration**, **differential equations**, and **Fourier analysis** to model and analyze complex engineering problems. This course reinforces theoretical understanding with practical relevance to hardware-focused disciplines.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "193",
+    "code": "EEB108",
+    "name": "Introduction to Computer Science 物聯網學程",
+    "description": "Explore the foundational principles of computer science with a strong emphasis on the physical components that drive modern technology. This course delves into hardware, circuit design, and signal processing, applying core engineering principles to understand interconnected systems. Key areas of study include **microcontrollers**, **digital logic**, and **embedded systems**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "194",
+    "code": "EEB110",
+    "name": "Linear Algebra 數位科技應用學程",
+    "description": "Explore the foundational principles of linear algebra with a focus on practical applications within electrical engineering and digital technologies. This course emphasizes hardware implementation, circuit analysis, and signal processing techniques, utilizing concepts like **matrices**, **eigenvalues**, and **vector spaces**. Students will develop a strong mathematical toolkit essential for advanced engineering problem-solving.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "195",
+    "code": "EEB111",
+    "name": "Digital Logic Design 智慧型控制學程 數位科技應用學程 積體電路設計學程",
+    "description": "Explore the fundamental principles of digital systems, encompassing hardware design, circuit analysis, and signal processing. This course provides a strong foundation in Boolean algebra, combinational logic, and sequential circuits – essential for students in integrated circuit design and related engineering fields. Students will develop practical skills in digital logic implementation and analysis using industry-standard tools.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "196",
+    "code": "EEB113",
+    "name": "Data Structures 物聯網學程 智慧生醫學程 數位科技應用學程",
+    "description": "Explore fundamental data structures and their implementation with a strong emphasis on hardware foundations, circuit analysis, and signal processing principles. This course equips students with essential engineering knowledge for applications in IoT, smart biomedicine, and digital technology. Key topics include **algorithms**, **memory management**, and **embedded systems**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "197",
+    "code": "EEB116",
+    "name": "General Physics",
+    "description": "Explore fundamental physics principles with a strong emphasis on practical applications in electrical engineering. This course develops a foundational understanding of **circuit analysis**, **signal processing**, and **semiconductor** behavior through hands-on hardware experimentation and theoretical study. Students will gain essential skills for analyzing and designing basic electrical systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "198",
+    "code": "EEB118",
+    "name": "Logic Circuit Lab. Teaching in English",
+    "description": "Explore the fundamental principles of digital logic through hands-on experimentation with hardware components. This laboratory course reinforces theoretical concepts with practical application, focusing on circuit design, signal analysis, and Boolean algebra. Students will gain proficiency in utilizing oscilloscopes, logic analyzers, and breadboarding techniques to validate and troubleshoot digital systems.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "199",
+    "code": "EEB124",
+    "name": "General Physics Lab.",
+    "description": "Investigate fundamental physics principles through hands-on experimentation with electrical circuits and signal analysis. This laboratory course emphasizes practical application of engineering concepts, utilizing hardware to reinforce theoretical understanding of **oscilloscopes**, **impedance**, and **circuit analysis**. Students will develop essential skills in measurement, data acquisition, and technical reporting.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "200",
+    "code": "EEB126",
+    "name": "Programming Language Labs I 人工智慧學程",
+    "description": "Explore fundamental engineering principles through hands-on laboratory exercises focusing on hardware, circuits, and signal processing. This course reinforces theoretical concepts with practical application, developing proficiency in **circuit analysis**, **digital logic**, and **embedded systems**. Designed for students in the Artificial Intelligence program, EEB126 provides a crucial foundation for future technical coursework.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "201",
+    "code": "EEB127",
+    "name": "Programming Language Labs II",
+    "description": "Develop practical programming skills for embedded systems through hands-on laboratory exercises focusing on hardware interaction. This course reinforces fundamental engineering principles with applications in **microcontrollers**, **digital logic**, and **signal processing**. Students will gain experience interfacing with physical circuits and analyzing real-world signals using programming techniques.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "202",
+    "code": "EEB131",
+    "name": "Introduction to Artificial Intelligence and Information Technology Teaching in English",
+    "description": "Explore the foundational principles of Artificial Intelligence and Information Technology with a strong emphasis on the underlying hardware and engineering concepts. This course delves into **circuits**, **signals**, and **embedded systems** to provide a practical understanding of AI implementation. Delivered entirely in English, it prepares students for further study and application in this rapidly evolving field.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "203",
+    "code": "EEB202",
+    "name": "ElectronicsII 智慧型控制學程 積體電路設計學程",
+    "description": "Explore advanced electronic circuit design and analysis, focusing on hardware implementation and signal processing principles. This course delves into topics including **analog circuits**, **digital logic**, and **embedded systems** for students in the Integrated Circuit Design and Smart Control programs. Students will strengthen their foundational engineering skills through practical application and theoretical understanding.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "204",
+    "code": "EEB204",
+    "name": "Engineering MathematicsII",
+    "description": "Explore advanced mathematical techniques essential for electrical engineering applications, focusing on circuit analysis, signal processing, and system modeling. Develop proficiency in **Laplace transforms**, **Fourier analysis**, and **differential equations** to solve complex hardware-related problems. This course reinforces fundamental engineering principles through rigorous mathematical formulation and practical application.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "205",
+    "code": "EEB206",
+    "name": "Electronic Circuits ExperimentsII",
+    "description": "Explore advanced electronic circuit analysis and design through hands-on experimentation, reinforcing core engineering principles. This laboratory course emphasizes practical skills in signal processing, circuit implementation, and component-level troubleshooting using industry-standard equipment. Students will gain proficiency in **oscillators**, **filters**, and **amplifiers** while developing robust hardware skills.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "206",
+    "code": "EEB209",
+    "name": "Micro-Computer Systems 物聯網學程 智慧型控制學程 數位科技應用學程",
+    "description": "Explore the foundational principles of micro-computer systems, emphasizing hardware design, circuit analysis, and signal processing. This course delivers a rigorous understanding of engineering fundamentals essential for applications in embedded systems, digital logic, and microcontroller programming. Students will develop practical skills in system-level implementation and troubleshooting.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "207",
+    "code": "EEB210",
+    "name": "ElectromagneticsI 全校性跨領域--綠色能源學程 智慧電網學程",
+    "description": "Explore fundamental electromagnetic principles with a strong emphasis on hardware implementation and circuit analysis. This course develops a foundational understanding of signals, transmission lines, and Maxwell’s equations, essential for further study in electrical engineering. Students will gain practical skills applicable to power systems and related technologies.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "208",
+    "code": "EEB211",
+    "name": "Signals and Systems 智慧生醫學程",
+    "description": "Explore fundamental engineering principles underpinning signal processing and system analysis with a strong emphasis on hardware implementation and circuit design. This course delves into concepts crucial for biomedical applications, utilizing techniques in **circuit analysis**, **signal processing**, and **system modeling**. Students will gain practical experience applying these principles to real-world engineering challenges.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "209",
+    "code": "EEB215",
+    "name": "Introduction to Computer Vision and Image Processing",
+    "description": "Explore the foundational engineering principles behind computer vision systems, emphasizing hardware implementation and signal processing techniques for image acquisition and analysis. This course delves into circuit design for image sensors, digital signal processing algorithms, and embedded systems utilized in visual applications. Students will gain practical experience with **FPGA**, **convolutional filters**, and **image sensors**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "210",
+    "code": "EEB216",
+    "name": "Game Programming",
+    "description": "Explore the foundational engineering principles underpinning interactive game development, focusing on hardware integration and low-level system control. This course delves into circuit design, signal processing, and embedded systems to enable students to create performant and innovative gaming experiences. Students will gain expertise in **microcontrollers**, **FPGA**, and **digital logic** through practical application.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "211",
+    "code": "EEB221",
+    "name": "Electrical Topics",
+    "description": "Explore fundamental electrical engineering concepts with a strong emphasis on practical hardware implementation, circuit analysis, and signal processing. This course develops a robust understanding of core engineering principles through hands-on application of **oscilloscopes**, **impedance**, and **modulation** techniques. Designed for students seeking a deep dive into electrical systems, it prepares learners for advanced study and professional practice.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "212",
+    "code": "EEB222",
+    "name": "Introduction to Cloud Computing Teaching in English",
+    "description": "Explore the foundational principles of cloud computing with a unique emphasis on the underlying hardware, electrical circuits, and signal processing that enable these technologies. This course bridges electrical engineering fundamentals with cloud infrastructure, covering topics like **virtualization**, **networking**, and **data centers**. Students will gain a practical understanding of how engineering principles translate into scalable and reliable cloud solutions.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "213",
+    "code": "EEB312",
+    "name": "Communications Network 物聯網學程",
+    "description": "Explore the foundational principles of communications networks with a strong emphasis on hardware implementation for Internet of Things (IoT) applications. This course delves into circuit design, signal processing, and network protocols, providing a rigorous understanding of underlying engineering concepts. Key areas of study include **modulation**, **embedded systems**, and **RF circuits**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "214",
+    "code": "EEB501",
+    "name": "Research Project",
+    "description": "Undertake an independent research project concentrating on the practical application of electrical engineering principles. This course demands rigorous investigation into hardware design, signal processing, and circuit analysis, culminating in a comprehensive technical report. Students will demonstrate proficiency in **embedded systems**, **FPGA development**, and **power electronics** through their chosen project.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "215",
+    "code": "EEB502",
+    "name": "Seminar",
+    "description": "Explore advanced topics in electrical engineering through focused discussion and analysis of current research. This seminar delves into hardware design, signal processing, and circuit theory, demanding a strong foundation in engineering principles. Participants will critically evaluate technical literature and present findings related to areas like embedded systems, power electronics, and RF design.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "216",
+    "code": "EEB504",
+    "name": "Microwave Engineering",
+    "description": "Analyze and design microwave systems with a focus on practical hardware implementation, circuit theory, and signal propagation. This course delves into key engineering principles surrounding components like **waveguides**, **filters**, and **amplifiers** to develop a strong foundation in microwave engineering. Students will gain expertise in both theoretical analysis and hands-on application of microwave technologies.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "217",
+    "code": "EEB505",
+    "name": "High Frequency Circuit Design",
+    "description": "Analyze and design high-frequency electronic circuits with a focus on practical hardware implementation and fundamental engineering principles. This course covers advanced topics in **impedance matching**, **S-parameters**, and **noise analysis** for radio frequency (RF) and microwave systems. Students will develop skills essential for realizing high-performance circuits utilizing modern design tools and techniques.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "218",
+    "code": "EEB507",
+    "name": "Antenna Theory",
+    "description": "Analyze and design advanced antenna systems with a strong emphasis on practical implementation, circuit analysis, and signal propagation. This course delves into the engineering principles behind various antenna types, covering topics such as **impedance matching**, **radiation patterns**, and **mutual coupling**. Students will gain expertise in hardware-focused techniques for optimizing antenna performance in real-world applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "219",
+    "code": "EEB512",
+    "name": "Coding Theory",
+    "description": "Explore the fundamental principles of error correction and detection as applied to digital communication systems. This course emphasizes a hardware-oriented approach, covering topics like **convolutional codes**, **Reed-Solomon codes**, and **finite field arithmetic** within the context of circuit design and signal processing. Students will develop a strong understanding of practical implementation challenges and engineering trade-offs in coding schemes.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "220",
+    "code": "EEB515",
+    "name": "Advanced High-Frequency Circuit Design",
+    "description": "Delve into the intricacies of high-frequency circuit design, emphasizing practical hardware implementation and fundamental engineering principles. This course explores advanced techniques in **impedance matching**, **noise analysis**, and **S-parameter** applications for optimal circuit performance. Students will gain expertise in designing and analyzing circuits operating at microwave and millimeter-wave frequencies.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "221",
+    "code": "EEB523",
+    "name": "Software Defined Radio With Lab.",
+    "description": "Explore the foundational principles of Software Defined Radio (SDR) through a hands-on approach emphasizing hardware implementation, circuit design, and signal processing techniques. This course delves into practical applications utilizing **FPGA**, **modulation**, and **RF front-ends** to develop and analyze modern radio systems. Students will gain expertise in designing, building, and testing SDR platforms within a laboratory setting.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "222",
+    "code": "EEB524",
+    "name": "Micro-wave Measurements and Experiments",
+    "description": "Explore advanced techniques for characterizing high-frequency systems through hands-on experimentation and theoretical analysis. This course delves into practical **vector network analysis**, **Smith chart** utilization, and **microwave** component testing, emphasizing fundamental engineering principles and circuit behavior. Students will develop proficiency in designing, implementing, and interpreting measurements for diverse microwave applications.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "223",
+    "code": "EEB532",
+    "name": "Pattern Recognition Teaching in English",
+    "description": "Explore advanced techniques in pattern recognition with a strong emphasis on the underlying hardware, circuit design, and signal processing foundations. This course delves into the engineering principles crucial for implementing robust recognition systems, covering topics like **feature extraction**, **machine learning**, and **embedded systems**. Students will gain practical experience translating theoretical concepts into tangible, real-world applications.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "224",
+    "code": "EEB555",
+    "name": "Electromagnetics for high speed digital system design Teaching in English",
+    "description": "Explore the fundamental principles of electromagnetics as they apply to high-speed digital system design, emphasizing hardware implementation and signal integrity. This course delves into transmission lines, impedance matching, and electromagnetic compatibility (EMC) to equip students with practical skills for analyzing and mitigating signal distortion. Students will gain a strong understanding of circuit behavior and engineering trade-offs crucial for successful high-speed digital designs.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "225",
+    "code": "EEB560",
+    "name": "Advanced to Electromagnetic Compatibility",
+    "description": "Explore advanced techniques for mitigating electromagnetic interference in complex electronic systems, focusing on hardware design, signal integrity, and circuit analysis. This course delves into practical applications of shielding, filtering, and grounding methodologies to ensure compliance with stringent EMC standards. Key topics include **radiated emissions**, **conducted immunity**, and **common-mode chokes**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "226",
+    "code": "EEB561",
+    "name": "Antenna Design and Characteristic Measurement",
+    "description": "Explore the foundational principles of antenna design, encompassing hardware implementation, circuit analysis, and signal propagation. This course delves into practical techniques for characterizing antenna performance using industry-standard measurement equipment, focusing on **impedance matching**, **radiation patterns**, and **Smith charts**. Students will gain hands-on experience applying engineering principles to real-world antenna systems.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "227",
+    "code": "EEB564",
+    "name": "Introduction to RF System Design for Mobile Communications Systems",
+    "description": "Explore the foundational hardware and engineering principles behind radio frequency (RF) system design specifically for modern mobile communications. This course delves into circuit analysis, signal processing, and antenna theory, equipping students with practical skills for developing and analyzing RF front-ends. Key topics include **modulation**, **impedance matching**, and **low-noise amplifiers**.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "228",
+    "code": "EEB567",
+    "name": "Network Programming and Applications 物聯網學程",
+    "description": "Explore the foundational principles of network communication with a strong emphasis on hardware implementation and signal processing. This course delves into circuit design, embedded systems, and network protocols essential for Internet of Things (IoT) applications. Students will gain practical experience in **embedded systems**, **signal integrity**, and **network security** through hands-on projects.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "229",
+    "code": "EEB569",
+    "name": "Machine Learning Teaching in English 人工智慧「智慧控制與無人載具」微學程 人工智慧「智慧視覺分析」微學程 人工智慧「電腦輔助診斷應用」微學程 物聯網學程",
+    "description": "Explore advanced machine learning techniques with a strong foundation in underlying hardware and engineering principles. This course delves into applications within intelligent control, autonomous vehicles, visual analysis, and medical diagnostics, emphasizing **signal processing**, **embedded systems**, and **circuit design**. Offered in English, it’s ideal for students in related IoT and AI micro-programs seeking practical, technically-focused skills.",
+    "taught_in_english": true,
+    "credits": 3,
+    "level": 1
+  },
+  {
+    "id": "230",
+    "code": "EEB570",
+    "name": "Programming with Mobile Applications 物聯網學程",
+    "description": "Develop practical skills in mobile application programming integrated with Internet of Things (IoT) technologies, emphasizing a strong foundation in hardware, circuits, and signal processing. This course explores the engineering principles behind connected devices, utilizing **embedded systems**, **sensor networks**, and **microcontroller programming**. Students will gain hands-on experience building and deploying mobile-integrated IoT solutions.",
+    "taught_in_english": false,
+    "credits": 3,
+    "level": 1
+  }
+]

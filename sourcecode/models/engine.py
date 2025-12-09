@@ -1,4 +1,3 @@
-# engine.py
 import json
 import os
 import torch
@@ -21,31 +20,17 @@ class YZUAdvisorEngine:
             raise FileNotFoundError(f"Data file not found: {self.data_path}")
 
         with open(self.data_path, 'r', encoding='utf-8') as f:
-            raw_data = json.load(f)
+            self.database = json.load(f)
 
-        cleaned_data = []
-        for course in raw_data:
-            seen_skills = set()
-            unique_mapped_skills = []
-            for skill_data in course.get('mapped_skills', []):
-                skill_lower = skill_data['skill'].lower()
-                if skill_lower not in seen_skills:
-                    seen_skills.add(skill_lower)
-                    unique_mapped_skills.append(skill_data)
-            course['mapped_skills'] = unique_mapped_skills
-            cleaned_data.append(course)
-        
-        self.database = cleaned_data
         print(f"Loaded {len(self.database)} courses")
-
         print(f"Loading AI model: {self.model_name}")
         self.model = SentenceTransformer(self.model_name, device='cpu')
 
         print("Creating vector embeddings...")
         search_corpus = []
+        
         for course in self.database:
-            skills_str = " ".join([s['skill'] for s in course.get('mapped_skills', [])])
-            full_text = f"{course['name']} {course['name']} {course['name']}. {course['description']} {skills_str}"
+            full_text = f"{course['code']} {course['name']} {course['description']}"
             search_corpus.append(full_text)
         
         self.embeddings = self.model.encode(search_corpus, convert_to_tensor=True)
@@ -59,8 +44,7 @@ class YZUAdvisorEngine:
         query_vec = self.model.encode(user_goal, convert_to_tensor=True)
         scores = util.cos_sim(query_vec, self.embeddings)[0]
         
-        # Get top 50 candidates first
-        candidates_k = 50
+        candidates_k = min(50, len(self.database))
         top_results = torch.topk(scores, k=candidates_k)
 
         results = []
@@ -68,37 +52,41 @@ class YZUAdvisorEngine:
             course = self.database[idx.item()]
             course_code = course.get('code', '')
             
-            # Extract course level from course code
-            level = 99
+            level = course.get('level', 1)
             match = re.search(r'\d', course_code)
             if match:
-                level = int(match.group())
+                extracted_level = int(match.group())
+                if 1 <= extracted_level <= 4:
+                    level = extracted_level
             
             response_item = {
                 "code": course_code,
                 "name": course.get('name', 'Unknown'),
                 "description": course.get('description', ''),
-                "mapped_skills": course.get('mapped_skills', []),
                 "match_score": round(float(score), 2),
-                "level": level
+                "level": level,
+                "mapped_skills": []
             }
             results.append(response_item)
             
         return results[:top_k]
 
 if __name__ == "__main__":
-    TEST_DATA_PATH = r"c:\Users\MSI\career-advisor-ai\data\Processed\course_data\final_mapped_data.json"
+    TEST_DATA_PATH = r"C:\Users\MSI\career-advisor-ai\data\Processed\course_data\targeted_courses_final.json"
     
     try:
         advisor = YZUAdvisorEngine(TEST_DATA_PATH)
         advisor.load_resources()
         
-        print("\n--- TEST ---")
-        query = "I want to learn Artificial Intelligence"
-        results = advisor.recommend(query)
-        
-        for course in results:
-            print(f"[{course['match_score']}] | {course['code']:<10} | {course['name']}")
+        print("\n--- TEST 1: Data Scientist ---")
+        results = advisor.recommend("I want to analyze big data and use machine learning")
+        for c in results[:3]:
+            print(f"[{c['match_score']}] {c['code']} - {c['name']}")
+
+        print("\n--- TEST 2: Web Developer ---")
+        results = advisor.recommend("I want to build websites and backend api")
+        for c in results[:3]:
+            print(f"[{c['match_score']}] {c['code']} - {c['name']}")
             
     except Exception as e:
         print(f"Error: {e}")
