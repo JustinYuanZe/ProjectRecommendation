@@ -45,8 +45,27 @@ const app = new Elysia()
       secret: REFRESH_TOKEN_SECRET
     })
   )
+  .get('/', () => ({ 
+    status: 'online',
+    message: 'Job Quiz API Server',
+    version: '1.0.0',
+    timestamp: new Date().toISOString(),
+    endpoints: {
+      health: '/health',
+      auth: '/login, /register, /refresh, /logout',
+      test: '/api/test',
+      user: '/api/user',
+      questions: '/api/questions',
+      chatbot: '/api/chatbot'
+    }
+  }))
   // Health check endpoint
-  .get('/health', () => ({ status: 'ok', timestamp: new Date().toISOString() }))
+  .get('/health', () => ({ 
+    status: 'ok', 
+    timestamp: new Date().toISOString(),
+    database: 'connected',
+    uptime: process.uptime()
+  }))
   // Mount routes
   .use((app) => {
     const jwtPlugin = app.decorator.jwt

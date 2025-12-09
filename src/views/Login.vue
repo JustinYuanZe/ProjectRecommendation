@@ -62,19 +62,6 @@
               </div>
             </v-form>
           </v-card-text>
-
-          <!-- Footer with additional info -->
-          <v-card-text class="pa-4 pt-0">
-            <v-alert 
-              density="compact" 
-              type="info" 
-              variant="tonal"
-              class="text-caption"
-            >
-              <v-icon start size="small">mdi-information</v-icon>
-              {{ $t('auth.loginHint') || 'Secure login with encrypted credentials' }}
-            </v-alert>
-          </v-card-text>
         </v-card>
       </v-col>
     </v-row>
