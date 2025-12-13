@@ -254,7 +254,7 @@ export const chatbotRoutes = new Elysia({ prefix: '/api/chatbot' })
       context: t.Optional(t.Object({
         sessionId: t.Optional(t.String()),
         user: t.Optional(t.Object({
-          id: t.Optional(t.String()),
+          id: t.Optional(t.Union([t.String(), t.Number()])),
           name: t.Optional(t.String()),
           lang: t.Optional(t.String()),
           auth: t.Optional(t.Boolean())

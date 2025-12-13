@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "bun run index.js",
-    "dev": "bun --watch index.js"
+    "dev": "bun --watch index.js",
+    "seed:questions": "bun run scripts/seedQuestions.js"
   },
   "dependencies": {
     "@elysiajs/cors": "^1.4.0",

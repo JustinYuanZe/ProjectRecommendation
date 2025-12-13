@@ -27,6 +27,7 @@ const app = new Elysia()
       'https://jobquiz.vercel.app',
       'https://www.jobquiz.vercel.app',
       'http://localhost:5173',
+      'http://localhost:5174',
       'http://localhost:3000'
     ],
     credentials: true,
