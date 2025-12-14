@@ -30,7 +30,8 @@ class YZUAdvisorEngine:
         search_corpus = []
         
         for course in self.database:
-            full_text = f"{course['code']} {course['name']} {course['description']}"
+            dept = course.get('department', '')
+            full_text = f"{course['code']} {course['name']} {dept} {course['description']}"
             search_corpus.append(full_text)
         
         self.embeddings = self.model.encode(search_corpus, convert_to_tensor=True)
@@ -62,10 +63,12 @@ class YZUAdvisorEngine:
             response_item = {
                 "code": course_code,
                 "name": course.get('name', 'Unknown'),
+                "department": course.get('department', ''),
                 "description": course.get('description', ''),
+                "taught_in_english": course.get('taught_in_english', False),
+                "credits": course.get('credits', 3),
                 "match_score": round(float(score), 2),
-                "level": level,
-                "mapped_skills": []
+                "level": level
             }
             results.append(response_item)
             
@@ -81,12 +84,12 @@ if __name__ == "__main__":
         print("\n--- TEST 1: Data Scientist ---")
         results = advisor.recommend("I want to analyze big data and use machine learning")
         for c in results[:3]:
-            print(f"[{c['match_score']}] {c['code']} - {c['name']}")
+            print(f"[{c['match_score']}] {c['code']} - {c['name']} ({c['department']})")
 
         print("\n--- TEST 2: Web Developer ---")
         results = advisor.recommend("I want to build websites and backend api")
         for c in results[:3]:
-            print(f"[{c['match_score']}] {c['code']} - {c['name']}")
+            print(f"[{c['match_score']}] {c['code']} - {c['name']} ({c['department']})")
             
     except Exception as e:
         print(f"Error: {e}")

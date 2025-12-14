@@ -1,0 +1,28 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "code": "IN101",
+      "name": "Calculus(I)",
+      "description": "Develop a foundational understanding of calculus essential for advanced study in informatics, focusing on limits, derivatives, and integrals as applied to modeling computational processes. Students will learn to utilize these concepts for algorithm analysis, optimization problems, and discrete event simulation – skills crucial for software development and data science. This course prepares students for subsequent coursework in machine learning, computer graphics, and numerical methods.",
+      "taught_in_english": true,
+      "department": "International Bachelor Program in Informatics",
+      "credits": 3,
+      "level": 1,
+      "generated_at": "2025-12-11T20:17:16.053813"
+    },
+    {
+      "id": "2",
+      "code": "IN102",
+      "name": "Introduction to Computer Science",
+      "description": "Explore the foundational principles of computer science, including data structures, algorithm design, and object-oriented programming using Python. Students will develop practical software development skills through hands-on projects, preparing them for further study in informatics or entry-level roles in the tech industry. This course provides a strong base for building a successful career in a rapidly evolving technological landscape.",
+      "taught_in_english": true,
+      "department": "International Bachelor Program in Informatics",
+      "credits": 3,
+      "level": 1,
+      "generated_at": "2025-12-11T20:17:18.463500"
+    }
+  ],
+  "last_index": 2,
+  "timestamp": "2025-12-11T20:17:20.804618"
+}
