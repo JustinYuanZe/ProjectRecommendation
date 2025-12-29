@@ -5,7 +5,7 @@ import pandas as pd
 from groq import Groq
 
 # --- CONFIGURATION ---
-client = Groq(api_key="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") 
+client = Groq(api_key="") 
 
 # Input files
 COURSES_FILE = "data/Processed/course_data/cleaned_course_data.csv"
