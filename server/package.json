@@ -1,0 +1,19 @@
+{
+  "name": "job-quiz-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.js",
+    "dev": "bun --watch --no-clear-screen index.js",
+    "seed:questions": "bun run scripts/seedQuestions.js",
+    "create:admin": "bun run scripts/createAdmin.js"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.4.0",
+    "@elysiajs/jwt": "^1.4.0",
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^3.0.3",
+    "elysia": "^1.4.19",
+    "mongoose": "^9.0.2"
+  }
+}

@@ -1,0 +1,15 @@
+# Vercel
+.vercel
+
+# Environment variables
+.env
+.env.local
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test coverage
+coverage/
