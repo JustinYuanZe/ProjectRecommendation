@@ -5,7 +5,6 @@ import pandas as pd
 from groq import Groq
 
 # --- CONFIGURATION ---
-client = Groq() 
 
 # Corrected paths based on your file structure
 INPUT_FILE = "data/Raw/JobsDatasetProcessed.csv"
