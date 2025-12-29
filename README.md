@@ -1,2 +1,1 @@
-# career-advisor-ai
-YZU CS/Informatics career advisor 
+API backend for Career-Advising System
