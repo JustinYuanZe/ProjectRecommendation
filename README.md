@@ -38,7 +38,7 @@
 
 ## Project Overview
 
-The **AI Career Advisor System** is a comprehensive solution designed to solve the complexity of course selection and career planning. It combines a **Vue.js** web interface with a **Python-based AI engine** that uses TF-IDF and LLMs to recommend courses based on user personality and skill sets.
+The **AI Career Advisor System** is a website designed to solve the difficulties and ineffectiveness of course selection and career planning. It combines a **Vue.js** web interface with a **Python-based AI engine** that uses TF-IDF and LLMs to recommend courses based on user personality and skill sets, thus, students won't have to waste time or choose useless courses.
 
 ## Features
 
@@ -106,7 +106,7 @@ pip install -r requirements.txt
 
 ```
 
-> **Note:** Ensure you have your API Keys (Groq/Gemini) set in your environment variables if running the scraping pipelines.
+> **Note:** Make sure you have your API Keys (Groq/Gemini) set in your environment variables if running the scraping pipelines.
 
 ### 2. Frontend Setup (Vue/Bun)
 
