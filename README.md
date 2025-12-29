@@ -49,10 +49,10 @@ The **AI Career Advisor System** is a website designed to solve the difficulties
 - **LLM Enrichment:** Uses Google Gemini/Groq to enhance course descriptions.
 
 ### 💻 Frontend & UI
-- **Interactive Quiz:** Comprehensive career test with dynamically loaded questions.
-- **AI Chatbot:** Contextual conversations for career guidance powered by Gemini.
+- **Interactive Quiz:** Effective career test with already prepared and ready questions to test compatibility.
+- **AI Chatbot:** Conversations and questions for career guidance powered by Gemini.
 - **User Dashboard:** Track result history and manage user profiles.
-- **Internationalization:** Support for English and Traditional Chinese (繁體中文).
+- **Supports both languages:** Support for English and Traditional Chinese (繁體中文).
 - **Responsive Design:** Built with Vuetify for mobile and desktop.
 
 ---
