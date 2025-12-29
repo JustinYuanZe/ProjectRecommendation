@@ -5,7 +5,6 @@ import pandas as pd
 from groq import Groq
 
 # --- CONFIGURATION ---
-client = Groq() 
 
 INPUT_FILE = "data/Raw/JobsDatasetProcessed.csv"
 OUTPUT_FILE = "data/processed/generated_master_skills.txt"
