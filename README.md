@@ -1,320 +1,79 @@
-# Job Quiz
+# AI Career Advisor System
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Vue.js-3.5-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js"/>
-  <img src="https://img.shields.io/badge/Vuetify-3.10-1867C0?style=for-the-badge&logo=vuetify&logoColor=white" alt="Vuetify"/>
-  <img src="https://img.shields.io/badge/Bun-Runtime-f9f1e1?style=for-the-badge&logo=bun&logoColor=black" alt="Bun"/>
-  <img src="https://img.shields.io/badge/Elysia-1.4-7c3aed?style=for-the-badge" alt="Elysia"/>
-  <img src="https://img.shields.io/badge/MongoDB-8.20-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-</p>
+<div align="center">
 
-<p align="center">
-  <strong>An intelligent career assessment platform powered by AI to help users discover their ideal career paths.</strong>
-</p>
+<img src="https://img.shields.io/badge/Vue.js-3.5-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js"/>
+<img src="https://img.shields.io/badge/Vuetify-3.10-1867C0?style=for-the-badge&logo=vuetify&logoColor=white" alt="Vuetify"/>
+<img src="https://img.shields.io/badge/Bun-Runtime-f9f1e1?style=for-the-badge&logo=bun&logoColor=black" alt="Bun"/>
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TF-IDF"/>
+<img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+
+<br/>
+
+<strong>An intelligent career assessment platform powered by AI to help YZU students discover ideal career paths and mapping course curriculums.</strong>
+
+[Live API Demo](https://justinyz-career-advisor-api.hf.space)
+
+</div>
 
 ---
 
 ## Table of Contents
 
-- [Features](#features)
+- [Project Overview](#project-overview)
 - [Architecture](#architecture)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment Configuration](#environment-configuration)
-  - [Running the Application](#running-the-application)
-- [Testing](#testing)
+- [Features](#features)
 - [Project Structure](#project-structure)
-- [API Endpoints](#api-endpoints)
-- [Internationalization](#internationalization)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
+- [Prerequisites](#prerequisites)
+- [Installation & Setup](#installation--setup)
+  - [1. Backend Setup (AI/Python)](#1-backend-setup-aipython)
+  - [2. Frontend Setup (Vue/Bun)](#2-frontend-setup-vuebun)
+- [Running the Application](#running-the-application)
+- [Testing](#testing)
+- [Contributors](#contributors)
+
+---
+
+## Project Overview
+
+The **AI Career Advisor System** is a comprehensive solution designed to solve the complexity of course selection and career planning. It combines a **Vue.js** web interface with a **Python-based AI engine** that uses TF-IDF and LLMs to recommend courses based on user personality and skill sets.
 
 ## Features
 
-### Career Assessment
+### 🧠 AI & Backend
+- **Course Recommendation Engine:** Uses TF-IDF and Cosine Similarity to map user skills to YZU curriculum.
+- **Data Pipeline:** Custom web scrapers (`Selenium`) that aggregate course data.
+- **Hugging Face Integration:** Deployed API for public access.
+- **LLM Enrichment:** Uses Google Gemini/Groq to enhance course descriptions.
 
-- **Interactive Quiz** — Take a comprehensive career test with dynamically loaded questions
-- **AI-Powered Results** — Get personalized career recommendations based on your responses
-- **Result History** — Track and review your past assessment results
-
-### AI Chatbot
-
-- **Gemini Integration** — Powered by Google's Generative AI for intelligent career guidance
-- **Contextual Conversations** — Get personalized advice based on your quiz results
-
-### User Management
-
-- **Secure Authentication** — JWT-based login and registration with access/refresh tokens
-- **User Profiles** — Manage your account and view your career journey
-- **Admin Dashboard** — Administrative tools for managing users and content
-
-### Accessibility
-
-- **Multi-language Support** — Available in English and Traditional Chinese (繁體中文)
-- **Responsive Design** — Beautiful UI with Vuetify that works on all devices
-
----
-
-## Getting Started
-
-### Prerequisites
-
-| Requirement | Version | Notes                                                                         |
-| ----------- | ------- | ----------------------------------------------------------------------------- |
-| **Bun**     | Latest  | Recommended runtime ([Install Bun](https://bun.sh))                           |
-| **Node.js** | 18+     | Alternative if not using Bun                                                  |
-| **MongoDB** | 6+      | Local or [MongoDB Atlas](https://www.mongodb.com/atlas) (free tier available) |
-
-### Installation
-
-1.  **Clone the repository**
-
-    ```bash
-    git clone <repository-url>
-    cd job-quiz
-    ```
-
-2.  **Install frontend dependencies**
-
-    ```bash
-    bun install
-    # or: npm install
-    ```
-
-3.  **Install backend dependencies**
-
-    ```bash
-    cd server
-    bun install
-    # or: npm install
-    cd ..
-    ```
-
-### Environment Configuration
-
-#### Frontend (`.env`)
-
-Create a `.env` file in the root directory:
-
-```env
-# API Configuration
-VITE_API_URL=http://localhost:3000
-
-# For production, set this to your deployed backend URL
-# VITE_API_URL=https://your-backend-url.vercel.app
-```
-
-#### Backend (`server/.env`)
-
-Create a `.env` file in the `server` directory:
-
-```env
-# MongoDB Connection String
-MONGODB_URI=mongodb://localhost:27017/job-quiz
-
-# JWT Secrets (CHANGE THESE IN PRODUCTION!)
-ACCESS_TOKEN_SECRET=your-super-secret-access-token-key
-REFRESH_TOKEN_SECRET=your-super-secret-refresh-token-key
-
-# Google Gemini API Key
-# Get your key from: https://aistudio.google.com/apikey
-GEMINI_API_KEY=your-gemini-api-key-here
-```
-
-### Running the Application
-
-#### Development Mode (Recommended)
-
-Start both frontend and backend simultaneously:
-
-```bash
-bun run app
-# or: npm run app
-```
-
-This will start:
-
-- **Frontend**: http://localhost:5173
-- **Backend**: http://localhost:3000
-
-#### Run Separately
-
-**Frontend only:**
-
-```bash
-bun run dev
-```
-
-**Backend only:**
-
-```bash
-cd server
-bun run dev
-```
-
-### Database Seeding
-
-Populate the database with initial quiz questions:
-
-```bash
-cd server
-bun run seed:questions
-```
-
-Create an admin user:
-
-```bash
-cd server
-bun run create:admin
-```
-
----
-
-## Testing
-
-The project includes a comprehensive testing suite using **Vitest** with Playwright for browser testing.
-
-### Test Categories
-
-| Type            | Directory            | Description                       |
-| --------------- | -------------------- | --------------------------------- |
-| **Unit**        | `tests/unit/`        | Component and utility unit tests  |
-| **Integration** | `tests/integration/` | API and service integration tests |
-| **Functional**  | `tests/functional/`  | User workflow and feature tests   |
-| **E2E**         | `tests/e2e/`         | End-to-end browser tests          |
-
-### Running Tests
-
-```bash
-# Run all tests
-bun run test
-
-# Run tests once (no watch mode)
-bun run test:clean
-
-# Run tests with UI
-bun run test -- --ui
-```
+### 💻 Frontend & UI
+- **Interactive Quiz:** Comprehensive career test with dynamically loaded questions.
+- **AI Chatbot:** Contextual conversations for career guidance powered by Gemini.
+- **User Dashboard:** Track result history and manage user profiles.
+- **Internationalization:** Support for English and Traditional Chinese (繁體中文).
+- **Responsive Design:** Built with Vuetify for mobile and desktop.
 
 ---
 
 ## Project Structure
 
-```
-job-quiz/
-├── public/              # Static assets
-├── src/                 # Frontend source code
-│   ├── assets/          # Images, fonts, etc.
-│   ├── components/      # Reusable Vue components
-│   ├── config/          # Frontend configuration
-│   ├── i18n/            # Internationalization
-│   │   └── locales/     # Language files (en, zh-TW)
-│   ├── router/          # Vue Router configuration
-│   ├── services/        # API service layer
-│   ├── store/           # State management
-│   ├── views/           # Page components
-│   ├── App.vue             # Root component
-│   ├── main.js             # Application entry point
-│   └── style.css           # Global styles
-├── server/              # Backend source code
-│   ├── api/             # Vercel API handlers
-│   ├── scripts/         # Database scripts
-│   └── src/
-│       ├── config/      # Server configuration
-│       ├── middleware/  # Express middleware
-│       ├── models/      # Mongoose models
-│       ├── routes/      # API route handlers
-│       └── index.js        # Server entry point
-├── tests/               # Test suites
-├── .env.example         # Environment template
-├── package.json         # Frontend dependencies
-├── vite.config.js       # Vite configuration
-└── README.md            # This file
+This repository contains both the AI Engine and the User Interface.
 
-C:.
-|   .gitignore
-|   LICENSE
-|   README.md
-|   requirements.txt
-|   training_data.json
-|
-+---.vs
-|   |   ProjectSettings.json
-|   |   slnx.sqlite
-|   |   VSWorkspaceState.json
-|   |
-|   \---career-advisor-ai
-|       +---FileContentIndex
-|       |       4865099a-9639-40d9-ad14-b72da8c50631.vsidx
-|       |
-|       \---v17
-|               .wsuo
-|               DocumentLayout.json
-|
-+---.vscode
-|       settings.json
-|
-+---data
-|   \---Processed
-|       |   enriched_courses_SAMPLE.jsonl
-|       |   generated_master_skills.txt
-|       |   progress_tracker.txt
-|       |   prototype_course_skills.jsonl
-|       |   prototype_skill_embeddings.npy
-|       |   prototype_skill_index.json
-|       |   refined_skills_and_interests.txt
-|       |   training_data.json
-|       |
-|       \---course_data
-|               all_course_listings.csv
-|               cleaned_course_data.csv
-|               courses_with_descriptions.json
-|               courses_with_descriptions_checkpoint_20.json
-|               courses_with_descriptions_checkpoint_40.json
-|               courses_with_descriptions_checkpoint_60.json
-|               course_mapping_summary.csv
-|               enriched_courses.jsonl
-|               enriched_courses_final.jsonl
-|               final_cleaned_courses.csv
-|               final_cleaned_course_data.csv
-|               final_mapped_data.json
-|               targeted_courses_final.json
-|               targeted_courses_final_progress.json
-|               targeted_data.csv
-|               unique_courses_summary.csv
-|
-+---models
-|       recommendation_model.pkl
-|
-\---sourcecode
-    +---data_pipeline
-    |       apicreatedescription_pro.py
-    |       cleaner.py
-    |       finalcleaner.py
-    |       html_to_csv.py
-    |       yzucurriculumscrapping.py
-    |
-    +---mapping
-    |       generate_skills_from_descriptions.py
-    |       generate_skills_from_titles.py
-    |       map_API.py
-    |       process_data.py
-    |       prototype_map_courses.py
-    |       refine_onet_data.py
-    |       run_mapping.py
-    |
-    \---models
-            create_training_data.py
-            engine.py
-            enhanced_api.py
-            focused_tfidf_mapper.py
-            main.py
-            prototype_recommend.py
-            recommendation_api.py
-            recommendation_model.py
-            simple_tfidf_api.py
-```
-
----
+```text
+Project Root
+├── backend/                  # Python AI Recommendation Engine
+│   ├── data/                 # Processed datasets and CSVs
+│   ├── models/               # Pickle models and logic
+│   ├── sourcecode/           # Scrapers and Pipeline scripts
+│   │   ├── models/
+│   │   │   └── main.py       # Main Entry point for Backend
+│   │   └── ...
+│   ├── requirements.txt      # Python dependencies
+│   └── ...
+│
+├── frontend/                 # Vue.js + Bun Application
+│   ├── src/                  # Vue source code
+│   ├── server/               # Node/Express Middleware & Database
+│   ├── package.json          # Frontend dependencies
+│   └── ...
