@@ -1,3 +1,4 @@
+
 # AI Career Advisor System
 
 <div align="center">
@@ -77,24 +78,41 @@ Project Root
 │   ├── server/               # Node/Express Middleware & Database
 │   ├── package.json          # Frontend dependencies
 │   └── ...
-Prerequisites
-| Technology | Version | Usage | |Data|------|-------| | Python | 3.10+ | AI Engine & Data Processing | | Bun | Latest | Frontend Runtime (Install Bun) | | Node.js | 18+ | Alternative if not using Bun | | MongoDB | 6.0+ | User Data & Quiz History |
 
-Installation & Setup
-1. Backend Setup (AI/Python)
+```
+
+---
+
+## Prerequisites
+
+| Technology | Version | Usage |
+| --- | --- | --- |
+| **Python** | 3.10+ | AI Engine & Data Processing |
+| **Bun** | Latest | Frontend Runtime ([Install Bun](https://bun.sh)) |
+| **Node.js** | 18+ | Alternative if not using Bun |
+| **MongoDB** | 6.0+ | User Data & Quiz History |
+
+---
+
+## Installation & Setup
+
+### 1. Backend Setup (AI/Python)
+
 Navigate to the backend folder and install the required Python libraries.
 
-Bash
-
+```bash
 cd backend
 pip install -r requirements.txt
-Note: Ensure you have your API Keys (Groq/Gemini) set in your environment variables if running the scraping pipelines.
 
-2. Frontend Setup (Vue/Bun)
+```
+
+> **Note:** Ensure you have your API Keys (Groq/Gemini) set in your environment variables if running the scraping pipelines.
+
+### 2. Frontend Setup (Vue/Bun)
+
 Navigate to the frontend folder and install dependencies.
 
-Bash
-
+```bash
 cd frontend
 
 # Install frontend dependencies
@@ -104,71 +122,104 @@ bun install
 cd server
 bun install
 cd ..
-Configuration (frontend/.env): Create a .env file in frontend/:
 
-Code snippet
+```
 
+**Configuration (`frontend/.env`):**
+Create a `.env` file in `frontend/`:
+
+```env
 VITE_API_URL=http://localhost:3000
-Configuration (frontend/server/.env): Create a .env file in frontend/server/:
 
-Code snippet
+```
 
+**Configuration (`frontend/server/.env`):**
+Create a `.env` file in `frontend/server/`:
+
+```env
 MONGODB_URI=mongodb://localhost:27017/job-quiz
 ACCESS_TOKEN_SECRET=your_secret
 REFRESH_TOKEN_SECRET=your_refresh_secret
 GEMINI_API_KEY=your_gemini_key
-Running the Application
+
+```
+
+---
+
+## Running the Application
+
 To run the full system locally, you need to start the Python Backend and the Frontend server separately.
 
-Step 1: Start the AI Backend
+### Step 1: Start the AI Backend
+
 This runs the local recommendation engine.
 
-Bash
-
+```bash
 # From the backend/ directory
 python sourcecode/models/main.py
-Step 2: Start the Frontend & Middleware
+
+```
+
+### Step 2: Start the Frontend & Middleware
+
 This runs the UI and the Node.js server.
 
-Bash
-
+```bash
 # From the frontend/ directory
 bun run app
-Frontend: http://localhost:5173
 
-Backend Middleware: http://localhost:3000
+```
 
-Testing
-The frontend includes a comprehensive testing suite using Vitest.
+* **Frontend:** http://localhost:5173
+* **Backend Middleware:** http://localhost:3000
 
-Bash
+---
 
+## Testing
+
+The frontend includes a comprehensive testing suite using **Vitest**.
+
+```bash
 cd frontend
 # Run all tests
 bun run test
 
 # Run tests with UI
 bun run test -- --ui
-Deployment
-AI API
+
+```
+
+---
+
+## Deployment
+
+### AI API
+
 The Python AI Backend is deployed and accessible via Hugging Face:
 
-URL: https://justinyz-career-advisor-api.hf.space
+> **URL:** [https://justinyz-career-advisor-api.hf.space](https://justinyz-career-advisor-api.hf.space)
 
-Database Seeding
+### Database Seeding
+
 To populate the initial quiz questions for the UI:
 
-Bash
-
+```bash
 cd frontend/server
 bun run seed:questions
-Contributors
-Group 7 - Yuan Ze University
 
-Justin (Le Ho Trong Tin) 
+```
 
-Nury (Nursoltan) 
+---
 
-Conor (Kohsuke) 
+## Contributors
 
-Lumi (Dai Chung Sin) 
+**Group 7 - Yuan Ze University**
+
+* **Justin (Le Ho Trong Tin)** 
+* **Nury (Nursoltan)** 
+* **Conor (Kohsuke)** 
+* **Lumi (Dai Chung Sin)** 
+
+```
+
+```
