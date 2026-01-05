@@ -1,6 +1,4 @@
 API backend for Career-Advising System
-Github Clonning:
-git clone https://github.com/JustinYuanZe/career-advisor-ai
 
 Installation:
 

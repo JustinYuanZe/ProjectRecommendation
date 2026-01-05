@@ -1,8 +1,8 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { mount } from '@vue/test-utils'
 import CareerTest from '../../src/views/CareerTest.vue'
-import { auth } from '../../src/store/auth'
-import { API_URL } from '../../src/config/api'
+import { auth } from '../../../src/store/auth'
+import { API_URL } from '../../../src/config/api'
 
 const fetchMock = vi.fn()
 globalThis.fetch = fetchMock
